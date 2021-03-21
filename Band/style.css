@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: black;
+}
+
+.app{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header h1{
+    margin: 5px 0px 32px 0px;
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 0.25rem;
+    font-weight: 900;
+    color: grey;
+}
+
+.header p{
+    text-align: center;
+    font-size: 19px;
+    color: grey;
+}
+
+img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pads{
+    background: black;
+    width: 100vw;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.pads > div{
+    height: 230px;
+    width: 100px;
+    flex: 1;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.pad-1{
+    background-image: linear-gradient(to right,#20AAE5 ,#A722D6);
+}
+.pad-2{
+    background-image: linear-gradient(180deg,#0fa5e6 ,#7b06f0);
+}
+.pad-3{
+     background-image: linear-gradient(90deg, #1A0223,#DB26B6, #EE570F);
+}
+.pad-4{
+    background-image: linear-gradient(to right,#06425c ,#410955);
+}
+.pad-5{
+    background-image: linear-gradient(180deg, #1A0223,#DB26B6, #EE570F);
+}
+.pad-6{
+    background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
+}
+
+.visual > div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+@keyframes jump{
+    0%{
+        left: 20%;
+        bottom: 0px;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        left: 80%;
+        bottom: 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pads img{
+        width:110px;
+        height: 200px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .pads img{
+        width:130px;
+        height: 200px;
+    }
+}
+

@@ -1,0 +1,64 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:rgba(165, 42, 42, 0.979);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color:black;
+  height:auto;
+  color:white;
+  width: 760px;
+  text-align: center;
+}
+.bt{
+  height: 30px;
+  width: 30px;
+  border-radius: 40px;
+  margin: 0px 0px 25px 20px;
+  border:none;
+}
+#btn1{
+  background-color:green ;
+}
+#btn2{
+  background-color:red ;
+}
+.piano {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: #CCC;
+}
+
+.black {
+  --width: 60px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #333;
+}
