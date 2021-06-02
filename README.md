@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-    <img src="demo.jpg" height="250px"  />
+    <img src="demo.png" height="250px"  />
   </a>
 
   <p align="center">
@@ -24,7 +24,7 @@
 
 A platform for <strong>Music Lovers </strong>
 <br/>
-You can listen your favourite music ,try your hands on the band and the piano, play music related games and dance on the music beats.
+You can listen your favourite music🎧 ,try your hands on the band and the piano🎹, play music related games and dance on the music beats💃.
 
 ### Built With
 The project is built using</br>
@@ -39,5 +39,6 @@ To contribute to the project
 ```sh
 git clone https://github.com/<your_user_name>/Musicophilia.git
 ```
-Now you are ready to go.Happy contributing🌟
+Now you are ready to go✔️
+Happy contributing🌟
 
