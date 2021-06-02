@@ -34,8 +34,8 @@ The project is built using</br>
 
 ### Note
 To contribute to the project
--Fork the repository
--Clone your forked copy to the project
+- Fork the repository
+- Clone your forked copy to the project
 ```sh
 git clone https://github.com/<your_user_name>/Musicophilia.git
 ```
