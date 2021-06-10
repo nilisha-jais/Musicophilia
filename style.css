@@ -14,6 +14,12 @@
     margin-top:0px;
     position:sticky;
   }
+  .sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
   
   .nav  .nav-header {
     display: inline;
