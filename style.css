@@ -115,7 +115,6 @@
 }
   .container{
       display:flex;
-      /*border:2px  solid red;*/
       padding:24px;
       justify-content:space-evenly;
       flex-direction: row;
@@ -125,10 +124,10 @@
   .content{
       height:auto;
       width:25vw;
-      
       border:5px solid rgb(15, 15, 15);
       transition:all 0.5s;
       border-radius: 17px;
+      background-color: rgba(0, 128, 0, 0.637);
   }
   .heading{
       margin:auto;
@@ -137,6 +136,8 @@
       font-family: 'Chango', cursive;
   }
   .content:hover{
+      border:7px solid rgb(71, 255, 47);
+      box-shadow: 10px 10px 10px 0 rgb(207, 183, 183);
       transform:scale(1.13);
   }
   .btn{
