@@ -178,3 +178,19 @@
       text-align: center
      
   }
+  #myBtn {
+    position: relative; /* relative position */
+     height: 48px;/*height of button */
+    bottom: -318px; /* Place the button at the bottom of the page */
+    left: 253px; /* Place the button  */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    font-weight: bold;/* Bold "Top" */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 23px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }

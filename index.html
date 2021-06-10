@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
-    <script href="app.js"></script>
+    <script href="app.js">
+mybutton = document.getElementById("myBtn");
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+    </script>
 </head>
 
 <body>
@@ -97,7 +103,7 @@
                 <br><br>
             </div>
             
-           
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top &#8593;</button>
         </div>
     </div>
     <br><br>
