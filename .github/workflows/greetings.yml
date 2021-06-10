@@ -14,6 +14,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issue_message: "Hello @${{github.actor}}, <br>
-            Thank you for opening an issue. :partying_face: <br>
-            To get assigned to this particular issue please use <b>/assign</b><br>"
-          PR_message: "<h1> :partying_face: Congratulations :tada: </h1> <h3> :pray: Thank you @${{github.actor}} for taking out your time and contributing to our project. We will soon review this and if everything looks good it will be merged.</h3>"
+            Thank you for opening an issue. :partying_face: <br>"
+          PR_message: "<h1> :partying_face: Congratulations :tada: </h1> <h3> :pray: Thank you @${{github.actor}} for taking out your time and contributing to our project. We will soon review this and if everything looks good it will be merged. Happy Contributing!</h3>"
