@@ -131,6 +131,8 @@
       font-family: 'Chango', cursive;
   }
   .content:hover{
+      border:7px solid rgb(71, 255, 47);
+      box-shadow: 10px 10px 10px 0 rgb(207, 183, 183);
       transform:scale(1.13);
   }
   .btn{
