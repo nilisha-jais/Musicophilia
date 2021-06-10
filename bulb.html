@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicophilia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <script href="app.js"></script>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="nav ">
+
+        <div class="nav-header">
+            <div class="nav-title">
+                &mu;SICOPHILIA
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+    </div>
+    <div class="main ">
+        <div class="heading">Mindfull Music</div>
+        <div class="container">
+
+            
+            <div class="content">
+                <h1>Music Box</h1>
+                <span style='font-size:80px;'>&#127911;</span>
+                <h3>Solace in songs</h3>
+                <a href="musicBox/index.html"><button class="btn"  id="box-1">GO</button></a>
+                <br><br>
+            </div>
+            <div class="content" >
+                <h1>The Band</h1>
+                <span style='font-size:80px;'>&#127908;</span>
+                <h3>Make your own beats</h3>
+                <a href="Band/index.html"><button class="btn" id="box-6">GO</button></a>
+                <br><br>
+            </div>
+            <div class="content" >
+                <h1>Piano</h1>
+                <span style='font-size:80px;'>🎹</span>
+                <h3>Play your own notes</h3>
+                <a href="Piano/index.html"><button class="btn" id="box-2">GO</button></a>
+                <br><br>
+            </div>
+        </div>
+    </div>
+   
+    <div class="main">
+        <div class="heading">Rollick Games</div>
+        <div class="container">
+
+            <div class="content">
+                <h1>Memory Game</h1>
+                <span style='font-size:80px;'>&#129351;</span>
+                <h3>Test your memory by this music game</h3>
+                <a href="Memory-game/index.html"><button class="btn"  id="box-3">GO</button></a>
+                <br><br>
+            </div>
+            <div class="content">
+                <h1>Music Quiz</h1>
+                <span style='font-size:80px;'>&#128373;</span>
+                <h3>How much do you know your music industry?</h3>
+                <a href="Quiz/index.html"><button class="btn"  id="box-4">GO</button></a>
+                <br><br>
+            </div>
+          
+        </div>
+    </div>
+    <div class="main">
+        <div class="heading">Zestful Dance</div>
+        <div class="container">
+
+            <div class="content">
+                <h1>Lets Dance</h1>
+                <span style='font-size:80px;'>💃</span>
+                <h3>Dance along with us</h3>
+                <a href="https://www.youtube.com/results?search_query=dances++of+world"><button class="btn" id="box-5">GO</button></a>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        &copy; Nilisha | All rights reserved
+    </footer>
+
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+        document.addEventListener("mousemove", (e)=>{
+            let x = e.pageX;
+            let y = e.pageY;
+
+            cursor.style.top = y + "px";
+            cursor.style.left = x + "px";
+            cursor.style.display = "block";
+
+            function mouseStopped(){
+                cursor.stylr.display = "none";
+            }
+            clearTimeout(timeout);
+            timeout = setTimeout(mouseStopped, 1000);
+        });
+        
+        document.addEventListener("mouseout",() => {
+            cursor.style.display = "none";
+        });
+        </script>
+</body>
