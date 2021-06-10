@@ -18,7 +18,7 @@
     padding: 50px 50px;
     width: 600px;
     border-radius: 16px;
-    box-shadow: 5px 5px 6px green;
+    box-shadow: 10px 10px 6px rgb(42, 187, 6);
 }
 
 .song-img {
@@ -49,7 +49,7 @@
     left: -20px;
     right: -20px;
     bottom: -20px;
-    border: 2px solid #EEE;
+    border: 20px solid rgb(75, 177, 8);
     border-radius: 50%;
 }
 
