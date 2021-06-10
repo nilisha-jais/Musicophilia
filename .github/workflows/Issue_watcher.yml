@@ -1,5 +1,5 @@
 name: Issue_watcher
-
+ 
 on:
   issues:
     types: [opened]
@@ -13,7 +13,7 @@ jobs:
       - name: Run Action
         uses: TesseractCoding/Issue_Watcher@main
         with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
-          author: "${{github.actor}}"
-          repo: TesseractCoding/NeoAlgo
+          token: '${{ secrets.GITHUB_TOKEN }}'
+          author: '${{github.actor}}'
+          repo: nilisha-jais/Musicophilia
           maxIssue: 2
