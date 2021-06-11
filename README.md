@@ -169,3 +169,16 @@ Now submit the pull request.
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
 =======
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
+=======
+## Our Contributors
+### Credits goes to these people:✨
+
+<table>
+<tr>
+<td>
+<a href="https://github.com/nilisha-jais/Musicophilia/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=nilisha-jais/Musicophilia" />
+</a>
+</td>
+</tr>
+</table>
