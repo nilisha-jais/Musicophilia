@@ -23,13 +23,13 @@ body{
     font-size: 3.5rem;
     letter-spacing: 0.25rem;
     font-weight: 900;
-    color: grey;
+    color: green;
 }
 
 .header p{
     text-align: center;
     font-size: 19px;
-    color: grey;
+    color: green;
 }
 
 img{
