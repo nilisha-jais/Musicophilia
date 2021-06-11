@@ -1,0 +1,70 @@
+body{
+  margin:10px;
+  background-image: url("https://tse4.mm.bing.net/th?id=OIP.3DT7eIggLIt_ShviAr_TgAHaEK&pid=Api&P=0&w=302&h=171");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:rgb(0, 0, 0);
+}
+
+
+    
+    .cardData{
+      border: 5px solid rgb(245, 245, 245);
+      border-radius: 50px 0 50px 0px;
+      display:inline-block;
+      box-shadow: 10px 10px 15px white ;
+      margin: 2%;
+      padding:0;
+      transition:  0.5s;
+      
+
+    }
+   
+    .cardData ul {
+      list-style-type: none;
+      color: black;
+      font-family: cursive;
+      display: inline-block;
+      font-size: x-large;
+      text-align:left;
+      
+
+    }
+    .cardData:hover{
+      margin:5px 2px 5px 2px;
+      padding:5px;
+      box-shadow: 15px 15px 15px #47972f ;
+      transition:  0.5s;
+
+    }
+    .cardData a{
+      text-decoration: none;
+      color:inherit;
+    }
+
+     .cardData img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border: 5px solid rgb(12, 12, 12);
+      border-radius: 50px 0 0 0; ;
+    }
+    @media (max-width:990px) {
+      .cardData{
+        width:60%;
+        margin:15%;
+
+      }
+      .cardData:hover{
+        margin:2px;
+        padding:2px;
+        box-shadow: 15px 15px 15px #47972f ;
+        transition:  0.5s;
+  
+      }
+        
+
+    }
+
+
+
