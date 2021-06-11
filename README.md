@@ -166,4 +166,8 @@ Now submit the pull request.
 <p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
 
 ## License 
+<<<<<<< HEAD
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
+=======
+<p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
+>>>>>>> d87ba27c6baf2a6838a510f22738644e4a124d3f
