@@ -185,3 +185,27 @@
       text-align: center
      
   }
+
+  .content span {
+    font-size: 6rem;
+  }
+  
+  @media (max-width:470px) {
+    .content {
+      font-size: .8rem;
+      overflow: auto;
+    }
+    .content span {
+      font-size: 3rem;
+    }
+  
+    .btn {
+      font-size: 15px;
+      padding: 8px 16px;
+    }
+  }
+  
+  
+  
+  
+  
