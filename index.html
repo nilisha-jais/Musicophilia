@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
     <script href="app.js"></script>
     <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
     <meta
@@ -48,6 +51,34 @@
          #myBtn:hover {
          background-color: black;
          }
+
+         /*For icon shaking*/
+                 
+        @keyframes shakeit {
+                0% { -webkit-transform: translate(2px, 1px) rotate(0deg);}
+                10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+                20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+                30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+                40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+                50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+                60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+                70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+                80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+                90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+                100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+        }
+        .girl {
+            animation-name: shakeit;
+            -webkit-animation-name: shakeit;
+            animation-duration: 1.2s;
+            -webkit-animation-duration: 1.2s;
+            transform-origin:50% 50%;
+            -webkit-transform-origin:50% 50%;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            -webkit-animation-timing-function: linear;
+        }
      </style>
 </head>
 
@@ -84,21 +115,21 @@
 
             <div class="content">
                 <h1>Music Box</h1>
-                <span style='font-size:80px;'>&#127911;</span>
+                <span style='font-size:80px;'><i class='bx bx-headphone bx-tada'></i></span>
                 <h3>Solace in songs</h3>
                 <a href="musicBox/index.html"><button class="btn"  id="box-1">GO</button></a>
                 <br><br>
             </div>
             <div class="content" >
                 <h1>The Band</h1>
-                <span style='font-size:80px;'>&#127908;</span>
+                <span style='font-size:80px;'><i class='bx bx-tada bxs-playlist'></i></span>
                 <h3>Make your own beats</h3>
                 <a href="Band/index.html"><button class="btn" id="box-6">GO</button></a>
                 <br><br>
             </div>
             <div class="content" >
                 <h1>Piano</h1>
-                <span style='font-size:80px;'>🎹</span>
+                <span style='font-size:80px;'><i class='bx bx-tada bxs-piano'></i></span>
                 <h3>Play your own notes</h3>
                 <a href="Piano/index.html"><button class="btn" id="box-2">GO</button></a>
                 <br><br>
@@ -112,14 +143,14 @@
 
             <div class="content">
                 <h1>Memory Game</h1>
-                <span style='font-size:80px;'>&#129351;</span>
+                <span style='font-size:80px;'><i class='bx bx-tada bxs-medal'></i></span>
                 <h3>Test your memory by this music game</h3>
                 <a href="Memory-game/choose.html"><button class="btn"  id="box-3">GO</button></a>
                 <br><br>
             </div>
             <div class="content">
                 <h1>Music Quiz</h1>
-                <span style='font-size:80px;'>&#128373;</span>
+                <span style='font-size:80px;'><i class='bx bx-tada bxs-music'></i></span>
                 <h3>How much do you know your music industry?</h3>
                 <a href="Quiz/index.html"><button class="btn"  id="box-4">GO</button></a>
                 <br><br>
@@ -133,7 +164,7 @@
 
             <div class="content">
                 <h1>Lets Dance</h1>
-                <span style='font-size:80px;'>💃</span>
+                <div style='font-size:80px;' class="girl">💃</div>
                 <h3>Dance along with us</h3>
                 <a href="https://www.youtube.com/results?search_query=dances++of+world"><button class="btn" id="box-5">GO</button></a>
                 <br><br>
