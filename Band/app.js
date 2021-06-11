@@ -23,33 +23,29 @@ window.addEventListener('load', ()=>{
     document.addEventListener('keypress', function(event) {
         var keyPressed = event.key;
         switch(keyPressed){
-            case 'w':
-               var crash = new Audio('sounds/crash.mp3');
-               crash.play();  
-               break;
-           case 'a':
-               var kick = new Audio('sounds/kick-bass.mp3');
-               kick.play();  
+            case 'a':
+               var closed_hithat  = new Audio('sounds/sound1.mp3');
+               closed_hithat.play();  
                break;
            case 's':
-               var snare = new Audio('sounds/snare.mp3');
-               snare.play();  
+               var kick = new Audio('sounds/sound2.mp3');
+               kick.play();  
                break;
            case 'd':
-               var tom_1 = new Audio('sounds/tom-1.mp3');
-               tom_1.play(); 
+               var clap = new Audio('sounds/sound3.mp3');
+               clap.play();  
                break;
            case 'j':
-                var tom_2 = new Audio('sounds/tom-2.mp3');
-                tom_2.play();  
-                break;
-           case 'k':
-               var tom_3 = new Audio('sounds/tom-3.mp3');
-               tom_3.play();  
+               var open_hithat = new Audio('sounds/sound4.mp3');
+               open_hithat.play(); 
                break;
-            case 'l':
-               var tom_4 = new Audio('sounds/tom-4.mp3');
-               tom_4.play();  
+           case 'k':
+                var snare = new Audio('sounds/sound5.mp3');
+                snare.play();  
+                break;
+           case 'l':
+               var crash = new Audio('sounds/sound6.mp3');
+               crash.play();  
                break;
         }
      })
