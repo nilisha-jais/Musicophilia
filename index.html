@@ -13,6 +13,16 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <script href="app.js"></script>
+    <meta
+      name="Musicophilia"
+      content="A platform for Music Lovers "
+    />
+    <meta property="og:title" content="Musicophilia - A platform for Music Lovers " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://musicophilia.netlify.app/" />
+    <meta name="keywords" content="Music, Music lover, Quiz,HTML, CSS, JavaScript">
+    <meta name="description" content="You can listen your favourite musicheadphones ,try your hands on the band and the pianomusical_keyboard, play music related games and dance on the music beatswoman_dancing.">
+    <meta name="author" content=" Nilisha Jais">
 
     <!--Below styling is for go to the top button-->
     <style>
@@ -20,7 +30,7 @@
         html{
             scroll-behavior: smooth;
         }
-        
+
          #myBtn {
                 display: none;
                 position: fixed;
@@ -36,7 +46,7 @@
                 padding: 15px;
                 border-radius: 4px;
           }
- 
+
          #myBtn:hover {
          background-color: black;
          }
@@ -72,11 +82,11 @@
 </head>
 
 <body>
-   
-  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
-    
-  <header class="sticky">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+
     <div class="nav">
+
         <div class="nav-header">
             <div class="nav-title">
                 &mu;SICOPHILIA
@@ -94,14 +104,14 @@
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contact Us</a>
+
         </div>
     </div>
-  </header>
     <div class="main">
         <div class="heading">Mindfull Music</div>
         <div class="container">
 
-            
+
             <div class="content">
                 <h1>Music Box</h1>
                 <span style='font-size:80px;'><i class='bx bx-headphone bx-tada'></i></span>
@@ -125,7 +135,7 @@
             </div>
         </div>
     </div>
-   
+
     <div class="main">
         <div class="heading">Rollick Games</div>
         <div class="container">
@@ -134,7 +144,7 @@
                 <h1>Memory Game</h1>
                 <span style='font-size:80px;'><i class='bx bx-tada bxs-medal'></i></span>
                 <h3>Test your memory by this music game</h3>
-                <a href="Memory-game/index.html"><button class="btn"  id="box-3">GO</button></a>
+                <a href="Memory-game/choose.html"><button class="btn"  id="box-3">GO</button></a>
                 <br><br>
             </div>
             <div class="content">
@@ -144,7 +154,7 @@
                 <a href="Quiz/index.html"><button class="btn"  id="box-4">GO</button></a>
                 <br><br>
             </div>
-          
+
         </div>
     </div>
     <div class="main">
@@ -158,8 +168,8 @@
                 <a href="https://www.youtube.com/results?search_query=dances++of+world"><button class="btn" id="box-5">GO</button></a>
                 <br><br>
             </div>
-            
-           
+
+
         </div>
     </div>
     <br><br>
@@ -171,10 +181,10 @@
     <script>
         //Get the button
         var mybutton = document.getElementById("myBtn");
-        
+
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {scrollFunction()};
-        
+
         function scrollFunction() {
           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             mybutton.style.display = "block";
@@ -182,14 +192,14 @@
             mybutton.style.display = "none";
           }
         }
-        
+
         // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
         </script>
-    
+
 </body>
 
 </html>
