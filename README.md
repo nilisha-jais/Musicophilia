@@ -154,3 +154,15 @@ Now submit the pull request.
 ## Till Then 
 <p align="center"><img src="https://thumbs.dreamstime.com/b/keep-learning-word-written-wood-block-text-table-concept-175173431.jpg" width=50%></p>
 
+## Our Contributors
+### Credits goes to these people:✨
+
+<table>
+<tr>
+<td>
+<a href="https://github.com/nilisha-jais/Musicophilia/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=nilisha-jais/Musicophilia" />
+</a>
+</td>
+</tr>
+</table>
