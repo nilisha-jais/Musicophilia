@@ -1,9 +1,8 @@
-
-  body {
+body {
     color:white;
     margin: 0px;
     font-family: 'segoe ui';
-    background:url('https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg') no-repeat center center fixed ;
+    background: black;
     background-size: cover;
   }
   
@@ -14,12 +13,6 @@
     margin-top:0px;
     position:sticky;
   }
-  .sticky{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 20;
-}
   
   .nav  .nav-header {
     display: inline;
@@ -115,6 +108,7 @@
 }
   .container{
       display:flex;
+      /*border:2px  solid red;*/
       padding:24px;
       justify-content:space-evenly;
       flex-direction: row;
@@ -124,10 +118,10 @@
   .content{
       height:auto;
       width:25vw;
+      
       border:5px solid rgb(15, 15, 15);
       transition:all 0.5s;
       border-radius: 17px;
-      background-color: rgba(0, 128, 0, 0.637);
   }
   .heading{
       margin:auto;
@@ -136,8 +130,6 @@
       font-family: 'Chango', cursive;
   }
   .content:hover{
-      border:7px solid rgb(71, 255, 47);
-      box-shadow: 10px 10px 10px 0 rgb(207, 183, 183);
       transform:scale(1.13);
   }
   .btn{
@@ -185,3 +177,39 @@
       text-align: center
      
   }
+
+  .cursor{
+    z-index: 999;
+    position: fixed;
+    background: #2696E8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696E8,
+                0 0 60px #2696E8,
+                0 0 100px #2696E8;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes colors{
+    0%{
+        filter:  hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before{
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%,-30%);
+    border-radius: 50%;
+}
