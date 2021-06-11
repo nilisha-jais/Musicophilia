@@ -14,6 +14,12 @@
     margin-top:0px;
     position:sticky;
   }
+  .sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
   
   .nav  .nav-header {
     display: inline;
@@ -109,7 +115,6 @@
 }
   .container{
       display:flex;
-      /*border:2px  solid red;*/
       padding:24px;
       justify-content:space-evenly;
       flex-direction: row;
@@ -119,10 +124,10 @@
   .content{
       height:auto;
       width:25vw;
-      
       border:5px solid rgb(15, 15, 15);
       transition:all 0.5s;
       border-radius: 17px;
+      background-color: rgba(0, 128, 0, 0.637);
   }
   .heading{
       margin:auto;

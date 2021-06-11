@@ -1,0 +1,11 @@
+body{
+    background-color:black;
+    color:white;
+}
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    height:400px;
+    width:600px;
+    margin-top:50px;
+}
