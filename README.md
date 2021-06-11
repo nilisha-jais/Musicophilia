@@ -154,6 +154,22 @@ Now submit the pull request.
 ## Till Then 
 <p align="center"><img src="https://thumbs.dreamstime.com/b/keep-learning-word-written-wood-block-text-table-concept-175173431.jpg" width=50%></p>
 
+
+## The geeks🤓 behind this initiative:
+
+#### Our valuable Contributors👩‍💻👨‍💻 :
+<a href="https://github.com/nilisha-jais/Musicophilia/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=nilisha-jais/Musicophilia" />
+</a>
+
+## Code of Conduct
+<p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
+
+## License 
+<p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
+=======
+<p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
+=======
 ## Our Contributors
 ### Credits goes to these people:✨
 
