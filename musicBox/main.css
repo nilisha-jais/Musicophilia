@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
     background-color: black;
 }
 
@@ -16,9 +17,9 @@
     background-color: white;
     margin: 25px 25px;
     padding: 50px 50px;
-    width: 600px;
+    width: 400px;
     border-radius: 16px;
-    box-shadow: 5px 5px 6px green;
+    box-shadow: 10px 10px 6px rgb(42, 187, 6);
 }
 
 .song-img {
@@ -49,7 +50,7 @@
     left: -20px;
     right: -20px;
     bottom: -20px;
-    border: 2px solid #EEE;
+    border: 20px solid rgb(75, 177, 8);
     border-radius: 50%;
 }
 

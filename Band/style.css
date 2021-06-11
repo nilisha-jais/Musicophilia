@@ -14,7 +14,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 98vh;
 }
 
 .header h1{
@@ -39,7 +39,7 @@ img{
 
 .pads{
     background: black;
-    width: 100vw;
+    width: 90vw;
     display: flex;
     flex-wrap:wrap;
 }
@@ -96,16 +96,78 @@ img{
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .pads img{
-        width:110px;
-        height: 200px;
-    }
-}
-@media only screen and (min-width: 600px) {
-    .pads img{
-        width:130px;
-        height: 200px;
-    }
-}
 
+/* For Responsiveness */
+@media (min-width: 1020px) and (max-width:1190px){
+    .app{
+        height: 80vh;
+    }
+    .pads > div{
+        margin: 1.1rem;
+    }
+    @keyframes jump{
+        0%{
+            left: 20%;
+            bottom: 0px;
+        }
+        50%{
+            bottom: 60%;
+            left: 50%;
+        }
+        100%{
+            left: 80%;
+            bottom: 0%;
+        }
+    }
+}
+@media only screen and (min-width: 601px) {
+    .pads > div{
+        width: 10rem;
+        height: auto;
+        margin: 0.8rem;
+    }
+    .pads > div img{
+        width: 10rem;
+        height: auto;        
+    }
+
+}
+@media only screen and (max-width:600px){
+    .header img{
+        width: auto;
+        height: 15rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+      }
+      .pads > div{
+        width: 7rem;
+        height: auto;
+        margin: 0.8rem;
+    }
+    .pads > div img{
+        width: 7rem;
+        height: auto;        
+    }
+}
+@media only screen and (max-width:330px){
+    .header img{
+        width: auto;
+        height: 12rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+      }
+      .pads > div{
+        width: 6rem;
+        height: auto;
+        margin: 0.7rem;
+    }
+    .pads > div img{
+        width: 6rem;
+        height: auto;        
+    }
+    .header p{
+        font-size: 1rem;
+    }
+}
