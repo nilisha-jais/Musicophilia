@@ -1,14 +1,14 @@
 
   body {
-    color:white;
+    color: white ;
     margin: 0px;
     font-family: 'segoe ui';
     background:url('https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg') no-repeat center center fixed ;
     background-size: cover;
   }
-  
+ 
   .nav {
-    height: 50px;
+    height: 70px;
     width: 100%;
     background-color:green;
     margin-top:0px;
@@ -20,7 +20,13 @@
   width: 100%;
   z-index: 20;
 }
-  
+.nav-img{
+  height: 50px;
+  width: 80px;
+  margin-top: 0px;
+  display: inline-block;
+  margin-left: 20px;
+}
   .nav  .nav-header {
     display: inline;
   }
@@ -29,7 +35,7 @@
     display: inline-block;
     font-size: 25px;
     color:rgb(17, 17, 17);
-    padding: 10px 10px 10px 10px;
+    padding: 18px 10px 10px 10px;
     font-weight:bold;
   }
   
@@ -41,23 +47,33 @@
     display: inline;
     float: right;
     font-size: 18px;
+    padding-right: 30px;
   }
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    margin-top: 7px;
+    padding: 13px 20px 13px 20px;
     text-decoration: none;
-    color: #efefef;
+    color: white;
   }
   
   .nav > .nav-links > a:hover {
-    background-color:rgb(34, 33, 33);
+    font-size: 20px;
+    transition: 00.5s;
+    border-bottom: solid 2px white;
   }
-  
-  .nav > #nav-check {
-    display: none;
-  }
-  
+ .current{
+   background-color: rgba(0, 0, 0, 0.247);
+   border-radius: 20px;
+   font-weight: bold;
+   border: solid 2px black;
+ }
+ .current:hover{
+    border: solid 2px black !important;
+    font-size: 18px !important;
+ }
+
   @media (max-width:600px) {
     .nav > .nav-btn {
       display: inline-block;
@@ -124,10 +140,14 @@
   .content{
       height:auto;
       width:25vw;
-      border:5px solid rgb(15, 15, 15);
+      /* border:5px solid rgb(15, 15, 15); */
       transition:all 0.5s;
       border-radius: 17px;
-      background-color: rgba(0, 128, 0, 0.637);
+      /* background-color: rgba(0, 128, 0, 0.637); */
+      background: rgba( 0, 128, 0, 0.40 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 11.0px );
+      -webkit-backdrop-filter: blur( 11.0px );
   }
   .heading{
       margin:auto;
