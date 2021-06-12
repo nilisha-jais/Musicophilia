@@ -23,7 +23,31 @@ h1 {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-  
+
+.duration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+input[type="range"] {
+	-webkit-appearance: none;
+	width: 80%;
+	outline: none;
+	height: 2px;
+	margin: 5 15px;
+    
+    background-color: #313131;
+}
+input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	height: 20px;
+	width: 20px;
+	background: #FF8A65;
+	border-radius: 50%;
+	cursor: pointer;
+
+}
 .app-wrapper 
 {
     display: flex;
