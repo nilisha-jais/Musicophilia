@@ -1,0 +1,12 @@
+body{
+    background-color:rgb(107, 105, 109);
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    height:200px;
+    width:800px;
+    margin-top:50px;
+}
