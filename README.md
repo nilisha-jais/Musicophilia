@@ -1,7 +1,7 @@
 # Musicophilia 🎧
 <!-- PROJECT LOGO -->
 <p align="center">
-    <img src="demo.png" height="200px"  align="center"/>
+    <img src="Logo/Logo-black.png" height="200px"  align="center"/>
 
   <p align="center">
     <a href="https://youtu.be/D8yykcH3j2U">Video Demo</a> || <a href="https://nilisha-jais.github.io/Musicophilia/">Live Site</a>
