@@ -155,6 +155,17 @@ Now submit the pull request.
 <p align="center"><img src="https://thumbs.dreamstime.com/b/keep-learning-word-written-wood-block-text-table-concept-175173431.jpg" width=50%></p>
 
 
+### This project is a part of following Open Source Program
+<table style="width:80%;background-color:white;border-radius:30px;">
+    <tr>
+  <td>
+
+  ![Lets Grow More Summer of Code](https://user-images.githubusercontent.com/60106112/121303829-28c07900-c919-11eb-8cf2-afd39b5c54ab.png)
+  </td>
+  </tr>
+</table>
+
+
 ## The geeks🤓 behind this initiative:
 
 #### Our valuable Contributors👩‍💻👨‍💻 :
@@ -167,18 +178,3 @@ Now submit the pull request.
 
 ## License 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
-=======
-<p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
-=======
-## Our Contributors
-### Credits goes to these people:✨
-
-<table>
-<tr>
-<td>
-<a href="https://github.com/nilisha-jais/Musicophilia/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=nilisha-jais/Musicophilia" />
-</a>
-</td>
-</tr>
-</table>
