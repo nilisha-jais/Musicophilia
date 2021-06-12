@@ -56,11 +56,11 @@
     padding: 13px 20px 13px 20px;
     text-decoration: none;
     color: white;
+    transition: 0.3s;
   }
 
   .nav > .nav-links > a:hover {
     font-size: 20px;
-    transition: 00.5s;
     border-bottom: solid 2px white;
   }
  .current{
@@ -135,82 +135,82 @@
       text-align: center;
       /* box-shadow: 5px 5px 3px green; */
 }
-  .container{
-      display:flex;
-      padding:24px;
-      justify-content:space-evenly;
-      flex-direction: row;
-      flex-wrap: wrap;
-     margin-top: 30px;
-  }
-  .content{
-      height:auto;
-      width:25vw;
-      transition:all 0.5s;
-      border-radius: 17px;
-      background: rgba( 0, 128, 0, 0.40 );
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-      backdrop-filter: blur( 11.0px );
-      -webkit-backdrop-filter: blur( 11.0px );
-      margin-bottom: 20px;
-  }
-  .heading{
-      margin:auto;
-      font-size: 35px;
+.container{
+  display:flex;
+  padding:24px;
+  justify-content:space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.content{
+  height:auto;
+  width:25vw;
+  transition: 0.3s;
+  border-radius: 17px;
+  background: rgba( 0, 128, 0, 0.40 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11.0px );
+  -webkit-backdrop-filter: blur( 11.0px );
+  margin-bottom: 20px;
+}
+.heading{
+  margin:auto;
+  font-size: 35px;
 
-      font-family: 'Chango', cursive;
-  }
-  .content:hover{
-      border:5px solid rgb(0, 128, 0);
-      box-shadow: 5px 5px 10px 0 rgb(170, 230, 175);
-      transform:scale(1.13);
-  }
-  .btn{
-    font-weight: bold;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius:23px;
-  }
-  .centerdiv {
-    font-size: larger;
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .centerdiv a{
-    height: 50px;
-    width: 50px;
-    background-color: rgb(240, 222, 222);
-    border-radius: 50px;
-    text-align: center;
-    line-height: 65px;
-    margin: 10px;
-    box-shadow: 1px 3px 2px 2px rgb(85, 86, 88);
-  }
-  .centerdiv a i{
-    transition: all 0.3s linear;
-  }
-  .centerdiv a:hover i{
-    transform: scale(1.2);
-  }
-  .fa-instagram{
-    color: #e84393;
-  }
-  .fa-facebook-f{
-    color: #474ae0;
-  }
-  .fa-twitter{
-    color: #3c92e2;
-  }
+  font-family: 'Chango', cursive;
+}
+.content:hover{
+  border:3px solid rgb(0, 128, 0);
+  box-shadow: 3px 3px 10px 0 rgb(170, 230, 175);
+  transform: scale(1.03);
+}
+.btn{
+font-weight: bold;
+border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius:23px;
+}
+.centerdiv {
+  font-size: larger;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerdiv a{
+  height: 50px;
+  width: 50px;
+  background-color: rgb(240, 222, 222);
+  border-radius: 50px;
+  text-align: center;
+  line-height: 65px;
+  margin: 10px;
+  box-shadow: 1px 3px 2px 2px rgb(85, 86, 88);
+}
+.centerdiv a i{
+  transition: all 0.3s linear;
+}
+.centerdiv a:hover i{
+  transform: scale(1.2);
+}
+.fa-instagram{
+  color: #e84393;
+}
+.fa-facebook-f{
+  color: #474ae0;
+}
+.fa-twitter{
+  color: #3c92e2;
+}
 
 
 #box-1{

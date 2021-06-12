@@ -11,19 +11,19 @@ body{
 
 .app{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    height: 98vh;
 }
 
 .header h1{
-    margin: 5px 0px 32px 0px;
+    /* margin: 5px 0px 32px 0px; */
     text-align: center;
     font-size: 3.5rem;
     letter-spacing: 0.25rem;
     font-weight: 900;
     color: green;
+    margin: 30px 0;
 }
 
 .header p{
@@ -33,23 +33,29 @@ body{
 }
 
 img{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin:30px 0 ;
+    width: 250px;
+    height: 180px;
 }
 
 .pads{
-    background: black;
     width: 90vw;
     display: flex;
     flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 
 .pads > div{
-    height: 230px;
-    width: 100px;
-    flex: 1;
+    height: 180px;
+    width: 190px;
     border-radius: 30px;
-    margin-right: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
 }
 
 .pad-1{
@@ -70,35 +76,16 @@ img{
 .pad-6{
     background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
 }
-.pad-1:hover{
+
+.pads > div:hover{
     cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
+    box-shadow: 4px 4px 12px #1511fd;
+    border: 2px solid yellow;
 }
-.pad-3:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
-}
-.pad-4:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
-}
-.pad-5:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
-}
-.pad-6:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
-}
-.pad-2:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
+
+.pads > div img{
+    height: 150px;
+    width: 150px;
 }
 
 .visual > div {
@@ -129,12 +116,6 @@ img{
 
 /* For Responsiveness */
 @media (min-width: 1020px) and (max-width:1190px){
-    .app{
-        height: 80vh;
-    }
-    .pads > div{
-        margin: 1.1rem;
-    }
     @keyframes jump{
         0%{
             left: 20%;
@@ -151,15 +132,7 @@ img{
     }
 }
 @media only screen and (min-width: 601px) {
-    .pads > div{
-        width: 10rem;
-        height: auto;
-        margin: 0.8rem;
-    }
-    .pads > div img{
-        width: 10rem;
-        height: auto;        
-    }
+    
 
 }
 @media only screen and (max-width:600px){
@@ -169,15 +142,15 @@ img{
         display: block;
         margin-left: auto;
         margin-right: auto; 
-      }
-      .pads > div{
-        width: 7rem;
-        height: auto;
-        margin: 0.8rem;
+    }
+    .pads{margin-top: 50px;}
+    .pads > div{
+        width: 130px;
+        height: 120px;
     }
     .pads > div img{
-        width: 7rem;
-        height: auto;        
+        width: 100px;
+        height: 100px;
     }
 }
 @media only screen and (max-width:330px){
@@ -200,4 +173,24 @@ img{
     .header p{
         font-size: 1rem;
     }
+}
+
+.home{
+    float: right;
+    margin: 20px;
+}
+
+.home a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 10px;
+    background: #e4bc0d;
+    transition: 0.3s;
+    border-radius: 10px;
+
+}
+.home a:hover{
+    color: white;
+    background: #EE570F;
 }
