@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/a0dbbe476a.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5f154924f.js" crossorigin="anonymous"></script>
+
     <!-- BOX ICONS -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
@@ -45,15 +48,23 @@
                 color: white;
                 cursor: pointer;
                 padding: 15px;
-                border-radius: 4px;
+                border-radius: 50%;
+          }
+          #myBtn .fas{
+              position: relative;
           }
 
          #myBtn:hover {
-         background-color: black;
+         background-color: rgb(39, 37, 37);
+         transition: 0.5s;
+         }
+         #myBtn:hover .fas{
+            transition: 0.5s;
+            bottom:5px;
          }
 
          /*For icon shaking*/
-                 
+
         @keyframes shakeit {
                 0% { -webkit-transform: translate(2px, 1px) rotate(0deg);}
                 10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
@@ -84,13 +95,15 @@
 
 <body>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
     <div class="nav">
 
         <div class="nav-header">
+
+            <img class="nav-img" src="music.png" alt="">
             <div class="nav-title">
-                &mu;SICOPHILIA
+                <span style="float: right;">&mu;<span style="color: white; ">SICOPHILIA</span></span>
             </div>
         </div>
         <div class="nav-btn">
@@ -101,12 +114,12 @@
             </label>
         </div>
 
-        <div class="nav-links">
-            <a href="#">Home</a>
+        <nav class="nav-links">
+            <a class="current" href="#">Home</a>
             <a href="#">About</a>
-            <a href="#">Contact Us</a>
+            <a href="Contact-Us/index.html">Contact Us</a>
 
-        </div>
+        </nav>
     </div>
     <div class="main">
         <div class="heading">Mindfull Music</div>
@@ -115,27 +128,36 @@
 
             <div class="content">
                 <h1>Music Box</h1>
-                <span style='font-size:80px;'><i class='bx bx-headphone bx-tada'></i></span>
+                <span ><i class='bx bx-headphone bx-tada'></i></span>
                 <h3>Solace in songs</h3>
                 <a href="musicBox/index.html"><button class="btn"  id="box-1">GO</button></a>
                 <br><br>
             </div>
             <div class="content" >
                 <h1>The Band</h1>
-                <span style='font-size:80px;'><i class='bx bx-tada bxs-playlist'></i></span>
+                <span ><i class='bx bx-tada bxs-playlist'></i></span>
                 <h3>Make your own beats</h3>
                 <a href="Band/index.html"><button class="btn" id="box-6">GO</button></a>
                 <br><br>
             </div>
             <div class="content" >
                 <h1>Piano</h1>
-                <span style='font-size:80px;'><i class='bx bx-tada bxs-piano'></i></span>
+                <span ><i class='bx bx-tada bxs-piano'></i></span>
                 <h3>Play your own notes</h3>
                 <a href="Piano/index.html"><button class="btn" id="box-2">GO</button></a>
                 <br><br>
             </div>
+            <div class="content">
+                <h1>Artist Details</h1>
+                <span style='font-size:80px;'><i class='bx bx-tada '>👨🏻‍🎤</i></span>
+                <h3>Meet the singers</h3>
+                <a href="artist/index.html"><button class="btn"  id="box-3">GO</button></a>
+                <br><br>
+            </div>
         </div>
     </div>
+
+    <hr>
 
     <div class="main">
         <div class="heading">Rollick Games</div>
@@ -143,14 +165,14 @@
 
             <div class="content">
                 <h1>Memory Game</h1>
-                <span style='font-size:80px;'><i class='bx bx-tada bxs-medal'></i></span>
+                <span ><i class='bx bx-tada bxs-medal'></i></span>
                 <h3>Test your memory by this music game</h3>
                 <a href="Memory-game/choose.html"><button class="btn"  id="box-3">GO</button></a>
                 <br><br>
             </div>
             <div class="content">
                 <h1>Music Quiz</h1>
-                <span style='font-size:80px;'><i class='bx bx-tada bxs-music'></i></span>
+                <span ><i class='bx bx-tada bxs-music'></i></span>
                 <h3>How much do you know your music industry?</h3>
                 <a href="Quiz/index.html"><button class="btn"  id="box-4">GO</button></a>
                 <br><br>
@@ -158,24 +180,33 @@
 
         </div>
     </div>
+    <hr>
     <div class="main">
         <div class="heading">Zestful Dance</div>
         <div class="container">
 
             <div class="content">
                 <h1>Lets Dance</h1>
-                <div style='font-size:80px;' class="girl">💃</div>
+                <span class="girl">💃</span>
                 <h3>Dance along with us</h3>
-                <a href="https://www.youtube.com/results?search_query=dances++of+world"><button class="btn" id="box-5">GO</button></a>
+                <a href="Dance/index.html"><button class="btn" id="box-5">GO</button></a>
                 <br><br>
             </div>
 
 
         </div>
     </div>
-    <br><br>
+    <br>
+    <div class="centerdiv">
+        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+    <br>
     <footer>
-          &copy; 2021 | Nilisha | All rights reserved.
+        <h2>&mu;SICOPHILIA</h2>
+        <p><em>Your Musical Getaway</em></p>
+        <h5>&copy; 2021 | Nilisha | All rights reserved.</h5>
     </footer>
 
     <!--The Below Script is written for Go to Top Button -->
