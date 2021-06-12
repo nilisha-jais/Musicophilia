@@ -119,7 +119,22 @@ git push -u origin <your_branch_name>
 ## 📌Till Then 
 <p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
 
-## ✨Our valuable Contributors👩‍💻👨‍💻 :
+
+
+### This project is a part of following Open Source Program
+<table style="width:80%;background-color:white;border-radius:30px;">
+    <tr>
+  <td>
+
+  ![Lets Grow More Summer of Code](https://user-images.githubusercontent.com/60106112/121303829-28c07900-c919-11eb-8cf2-afd39b5c54ab.png)
+  </td>
+  </tr>
+</table>
+
+
+## The geeks🤓 behind this initiative:
+
+#### Our valuable Contributors👩‍💻👨‍💻 :
 <a href="https://github.com/nilisha-jais/Musicophilia/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=nilisha-jais/Musicophilia" />
 </a>
@@ -130,6 +145,8 @@ git push -u origin <your_branch_name>
 ## License 
 <p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
 
+
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) 
+
