@@ -47,12 +47,12 @@
     display: inline;
     float: right;
     font-size: 18px;
-    padding-right: 30px;
+    padding-right: 20px;
   }
 
   .nav > .nav-links > a {
     display: inline-block;
-    margin-top: 7px;
+    margin-top: 4px;
     padding: 13px 20px 13px 20px;
     text-decoration: none;
     color: white;
@@ -62,6 +62,32 @@
     font-size: 20px;
     transition: 00.5s;
     border-bottom: solid 2px white;
+  }
+  .nav > .nav-links > .search-container {
+    float: right;
+    padding: 13px 20px 13px 20px;
+  }
+  
+  .nav > .nav-links  input[type=text] {
+    padding: 6px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 17px;
+    border: none;
+  }
+  .nav > .nav-links .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav > .nav-links .search-container button:hover {
+    background: #ccc;
   }
  .current{
    background-color: rgba(0, 0, 0, 0.247);
@@ -110,6 +136,20 @@
     .nav  .nav-links  a {
       display: block;
       width: 100%;
+    }
+    .nav  .nav-links .search-container {
+      float: none;
+    }
+    .nav  .nav-links input[type=text], .nav  .nav-links .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+    }
+    .nav  .nav-links input[type=text] {
+      border: 1px solid #ccc;  
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
