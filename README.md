@@ -32,125 +32,93 @@ The project is built using</br>
 - CSS
 - JavaScript
 
+</br>
+
 <!--Updated Readme file which helps beginners contribute to open source-->
+
+
+</br>
 
 # Contribute to Musicophilia
 
-Are You a newbie in the world of open source and want to Contribute to our Open Source Project ?
-Don't worry we got your back.
 
-Below are the steps to follow to contribute to this project 
 
-1. #### If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
+**1.**  Fork [this](https://github.com/nilisha-jais/Musicophilia) repository.
 
-2. ## Fork this repository
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/fork.png" alt="fork this repository" />
-Fork this repository by clicking on the fork button on the top of this page.
-This will create a copy of this repository in your account.
-
-3. ## Clone the repository
-
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/clone.png" alt="clone this repository" />
-
-Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
-
-Open a terminal and run the following git command:
+**2.**  Clone your forked copy of the project.
 
 ```
-git clone "url you just copied"
+git clone --depth 1 https://github.com/<your_name>/Musicophilia.git
 ```
 
-where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
-
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/copy-to-clipboard.png" alt="copy URL to clipboard" />
-
-For example:
-
-```
-git clone https://github.com/this-is-you/Musicophilia.git
-```
-
-where `this-is-you` is your GitHub username. Here you're copying the contents of the first-contributions repository on GitHub to your computer.
-
-4. ## Navigate to the project directory :file_folder: .
+**3.** Navigate to the project directory :file_folder: .
 
 ```
 cd Musicophilia
 ```
-5. ## Add a reference(remote) to the original repository.
+
+
+**4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/nilisha-jais/Musicophilia.git 
+git remote add upstream https://github.com/nilisha-jais/Musicophilia
 ```
-6. ## Check the remotes for this repository.
 
+**5.** Check the remotes for this repository.
 ```
 git remote -v
 ```
-7. ## Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository) this will avoid the merge conflicts.
+
+**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
 
 ```
-git pull upstream master
-```
-8. ## Create a branch
-Now create a branch using the `git checkout` command:
-
-```
-git checkout -b your-new-branch-name
+git pull upstream main
 ```
 
-For example:
+**7.** Create a new branch.
 
 ```
-git checkout -b add-issueno.x
-```
-(The name of the branch does not need to have the word _add_ in it, but it's a reasonable thing to include because the purpose of this branch is to add your solved issue to the project.)
-
-9. ## Make necessary changes and commit those changes
-
-Perform your desired changes to the code base.
-
-<p align="center"><img width=35% src="https://media2.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif?cid=ecf05e47pzi2rpig0vc8pjusra8hiai1b91zgiywvbubu9vu&rid=giphy.gif"></p>
-
-
-If you go to the project directory and execute the command `git status`, you'll see there are changes.
-
-Add those changes to the branch you just created using the `git add` command:
-
-```
-git add <file name>
+git checkout -b <your_branch_name>
 ```
 
-Now commit those changes using the `git commit` command:
+**8.** Perfom your desired changes to the code base.
+
+
+**9.** Track your changes:heavy_check_mark: .
 
 ```
-git commit -m "Add new feature <issue-no> to the main repo "
+git add . 
 ```
 
-replacing `<issue-no>` with the issue number you are assigned.
-
-10. ## Push changes to GitHub
-
-Push your changes using the command `git push`:
+**10.** Commit your changes .
 
 ```
-git push origin <add-your-branch-name>
+git commit -m "Relevant message"
 ```
 
-replacing `<add-your-branch-name>` with the name of the branch you created earlier.
+**11.** Push the committed changes in your feature branch to your remote repo.
+```
+git push -u origin <your_branch_name>
+```
 
-11. ## Submit your changes for review
+**12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
 
-If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
 
-<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/compare-and-pull.png" alt="create a pull request" />
+**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
 
-Now submit the pull request.
 
-<img style="float: right;" src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" alt="submit pull request" />
+**14.** Click on `Create Pull Request`.
 
-12. Hurray :exclamation: You have created a PR to the VCallZer :boom: . Sit back patiently and relax till then the project maintainers will review your PR. Please understand,  there will be some time taken to review a PR and can vary from a few hours to a few days too so be Patient and keep contributing.
 
-## Till Then 
-<p align="center"><img src="https://thumbs.dreamstime.com/b/keep-learning-word-written-wood-block-text-table-concept-175173431.jpg" width=50%></p>
+**15** *congrats*! You have made a PR to the Musicophilia project. Sit back patiently and relax while the your PR is reviewed. 
 
+ In case of any help, please free to contact me via mail jaiswal.nilisha05@gmail.com
+
+ <h1 align=center> Project Admin ❤️ </h1>
+<p align="center">
+  <a href="https://github.com/nilisha-jais"><img src="https://avatars.githubusercontent.com/u/73216246?v=4/u/67006255?s=400&u=c0e16c3bba31328a028cfcca4b1fa7599509f905&v=4" width=150px height=150px /></a> 
+    
+
+<p align="center">
+     <a target="_blank"href="https://twitter.com/jaiswal_nilu05"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="mailto:jaiswal.nilisha05@gmail.com,%20From%20Github"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
