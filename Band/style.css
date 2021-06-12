@@ -70,6 +70,36 @@ img{
 .pad-6{
     background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
 }
+.pad-1:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 22px 12px #1511fd;
+    border: 5px solid yellow;
+}
+.pad-3:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 22px 12px #1511fd;
+    border: 5px solid yellow;
+}
+.pad-4:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 22px 12px #1511fd;
+    border: 5px solid yellow;
+}
+.pad-5:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 22px 12px #1511fd;
+    border: 5px solid yellow;
+}
+.pad-6:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 22px 12px #1511fd;
+    border: 5px solid yellow;
+}
+.pad-2:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 22px 12px #1511fd;
+    border: 5px solid yellow;
+}
 
 .visual > div {
     position: absolute;
