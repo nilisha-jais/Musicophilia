@@ -7,103 +7,116 @@
 body{
     font-family: 'Space Grotesk', sans-serif;
     background-color: black;
-    background: url(https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1990&q=80) no-repeat center center fixed;
-    background-size: cover;
 }
 
 .app{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    height: 98vh;
 }
-.header{
-    margin: auto;
-}
-.head{
-      -webkit-text-stroke: 2px white;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    
-}
+
 .header h1{
-    /* margin: 5px 0px 32px 0px; */
+    margin: 5px 0px 32px 0px;
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     letter-spacing: 0.25rem;
     font-weight: 900;
-    color: green;
-    margin: 30px 0;
-
+    color: grey;
 }
 
 .header p{
     text-align: center;
-    font-size: 33px;
-    color: green;
-    
+    font-size: 19px;
+    color: grey;
 }
 
 img{
-    margin:30px 0 ;
-    width: 250px;
-    height: 180px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .pads{
-    background: transparent;
+    background: black;
     width: 90vw;
     display: flex;
     flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
 }
 
 .pads > div{
-    height: 180px;
-    width: 190px;
+    height: 230px;
+    width: 100px;
+    flex: 1;
     border-radius: 30px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
+    margin-right: 10px;
 }
 
 .pad-1{
     background-image: linear-gradient(to right,#20AAE5 ,#A722D6);
-    border: 3px solid white;
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-1:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-2{
     background-image: linear-gradient(180deg,#0fa5e6 ,#7b06f0);
-    border: 3px solid white;
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-2:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-3{
      background-image: linear-gradient(90deg, #1A0223,#DB26B6, #EE570F);
-     border: 3px solid white;
+     border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-3:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-4{
     background-image: linear-gradient(to right,#06425c ,#410955);
-    border: 3px solid white;
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-4:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-5{
     background-image: linear-gradient(180deg, #1A0223,#DB26B6, #EE570F);
-    border: 3px solid white;
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-5:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-6{
     background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
-    border: 3px solid white;
+    border: solid green 5px;
+    border-radius: 20px;
 }
-
-.pads > div:hover{
-    cursor: pointer;
-    box-shadow: 4px 4px 12px #1511fd;
-    border: 2px solid yellow;
-}
-
-.pads > div img{
-    height: 150px;
-    width: 150px;
+.pad-6:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 
 .visual > div {
@@ -134,6 +147,12 @@ img{
 
 /* For Responsiveness */
 @media (min-width: 1020px) and (max-width:1190px){
+    .app{
+        height: 80vh;
+    }
+    .pads > div{
+        margin: 1.1rem;
+    }
     @keyframes jump{
         0%{
             left: 20%;
@@ -150,7 +169,15 @@ img{
     }
 }
 @media only screen and (min-width: 601px) {
-    
+    .pads > div{
+        width: 10rem;
+        height: auto;
+        margin: 0.8rem;
+    }
+    .pads > div img{
+        width: 10rem;
+        height: auto;        
+    }
 
 }
 @media only screen and (max-width:600px){
@@ -160,15 +187,15 @@ img{
         display: block;
         margin-left: auto;
         margin-right: auto; 
-    }
-    .pads{margin-top: 50px;}
-    .pads > div{
-        width: 130px;
-        height: 120px;
+      }
+      .pads > div{
+        width: 7rem;
+        height: auto;
+        margin: 0.8rem;
     }
     .pads > div img{
-        width: 100px;
-        height: 100px;
+        width: 7rem;
+        height: auto;        
     }
 }
 @media only screen and (max-width:330px){
@@ -191,24 +218,4 @@ img{
     .header p{
         font-size: 1rem;
     }
-}
-
-.home{
-    float: right;
-    margin: 20px;
-}
-
-.home a{
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 14px 10px;
-    background: #e4bc0d;
-    transition: 0.3s;
-    border-radius: 10px;
-
-}
-.home a:hover{
-    color: white;
-    background: #EE570F;
 }
