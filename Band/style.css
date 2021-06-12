@@ -54,21 +54,69 @@ img{
 
 .pad-1{
     background-image: linear-gradient(to right,#20AAE5 ,#A722D6);
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-1:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-2{
     background-image: linear-gradient(180deg,#0fa5e6 ,#7b06f0);
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-2:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-3{
      background-image: linear-gradient(90deg, #1A0223,#DB26B6, #EE570F);
+     border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-3:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-4{
     background-image: linear-gradient(to right,#06425c ,#410955);
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-4:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-5{
     background-image: linear-gradient(180deg, #1A0223,#DB26B6, #EE570F);
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-5:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-6{
     background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-6:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 
 .visual > div {
