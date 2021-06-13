@@ -235,7 +235,7 @@ border-radius:23px;
 a:hover .fa-instagram{
   color:rgb(238, 27, 27);
   text-shadow:0 0 15px #EE570F;
-  transition: all 0.5s ease;
+ 
 }
 .fa-facebook-f{
   color: rgb(44, 62, 224);
@@ -245,11 +245,9 @@ a:hover .fa-instagram{
 a:hover .fa-facebook-f{
 color: #5276c4;
 text-shadow: 0 0 15px #3b5998;
-transition: all 0.5s ease;
+
 }
-.centerdiv a:hover .fa-facebook-f{
-  transition: all 0.5s ease;
-}
+
 .fa-twitter{
   color: rgb(35, 137, 255);
   transition: 0.4s;
@@ -257,7 +255,7 @@ transition: all 0.5s ease;
 a:hover .fa-twitter{
   color: #00bbff;
   text-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
+ 
 }
 
 
