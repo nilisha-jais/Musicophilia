@@ -1,0 +1,817 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 657px;
+    background-image: url("pictures/background2.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#intro {
+    width: 40%;
+    height: 80px;
+    background-color: transparent;
+    margin: auto;
+}
+
+#intro h1 {
+    color: white;
+    text-shadow: 2px 2px purple;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 50px;
+}
+
+.hints {
+    background-color: transparent;
+    width: 20%;
+    height: 101px;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+
+}
+
+.hints img {
+    width: 100%;
+    height: 101px;
+}
+
+.options {
+    width: 20%;
+    height: 300px;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    border-radius: 10px;
+    border-color: gray;
+    border-style: solid;
+}
+
+#option1 {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 20px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#option2 {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#option3 {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#option4 {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+p {
+    margin-left: 10px;
+    color: rgb(89, 0, 255);
+}
+
+#next_button {
+
+    position: absolute;
+    top: 86%;
+    left: 38%;
+    background-color: rgb(202, 7, 202);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 25px;
+    border-color: rgb(202, 7, 202);
+    border-style: solid;
+
+}
+
+#close_button {
+
+    position: absolute;
+    top: 86%;
+    left: 23%;
+    background-color: rgb(202, 7, 202);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 25px;
+    border-color: rgb(202, 7, 202);
+    border-style: solid;
+    display: none;
+
+}
+
+#industries {
+    width: 15%;
+    height: 430px;
+    background-color: transparent;
+    float: left;
+    margin-left: 10%;
+    margin-top: 4%;
+
+}
+
+#industries h3 {
+
+    color: white;
+    text-shadow: 2px 2px purple;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 25px;
+}
+
+#industry1 {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: white;
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+}
+
+#industry2 {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+}
+
+#industry3 {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+}
+
+#hints_punjabi {
+    background-color: transparent;
+    width: 20%;
+    height: 101px;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    display: none;
+}
+
+#hints_punjabi img {
+    width: 100%;
+    height: 101px;
+}
+
+#options_punjabi {
+    width: 20%;
+    height: 300px;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    border-radius: 10px;
+    border-color: gray;
+    border-style: solid;
+    display: none;
+}
+
+#next_button_punjabi {
+
+    position: absolute;
+    top: 86%;
+    left: 38%;
+    background-color: rgb(202, 7, 202);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 25px;
+    border-color: rgb(202, 7, 202);
+    border-style: solid;
+    display: none;
+
+}
+
+#close_button_punjabi {
+
+    position: absolute;
+    top: 86%;
+    left: 23%;
+    background-color: rgb(202, 7, 202);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 25px;
+    border-color: rgb(202, 7, 202);
+    border-style: solid;
+    display: none;
+
+}
+
+#option1Punjabi {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 20px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#option2Punjabi {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#option3Punjabi {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#option4Punjabi {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: white;
+}
+#hints_english {
+    background-color: transparent;
+    width: 20%;
+    height: 101px;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    display: none;
+
+}
+
+#hints_english img {
+    width: 100%;
+    height: 101px;
+}
+
+#options_english {
+    width: 20%;
+    height: 300px;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    border-radius: 10px;
+    border-color: gray;
+    border-style: solid;
+    display: none;
+}
+
+#option1English {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 20px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#option2English {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#option3English {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#option4English {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: white;
+}
+
+#next_button_english {
+
+    position: absolute;
+    top: 86%;
+    left: 38%;
+    background-color: rgb(202, 7, 202);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 25px;
+    border-color: rgb(202, 7, 202);
+    border-style: solid;
+    display: none;
+
+}
+
+#close_button_english {
+
+    position: absolute;
+    top: 86%;
+    left: 23%;
+    background-color: rgb(202, 7, 202);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 25px;
+    border-color: rgb(202, 7, 202);
+    border-style: solid;
+    display: none;
+
+}
+
+@media only screen and (max-width: 600px){
+
+    #intro {
+        width: 60%;
+        height: 80px;
+        background-color: transparent;
+        margin: auto;
+    }
+    
+    #intro h1 {
+        color: white;
+        text-shadow: 2px 2px purple;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .hints {
+        background-color: transparent;
+        width: 70%;
+        height: 101px;
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        border-radius: 10px;
+        border-color: white;
+        border-style: solid;
+    
+    }
+    
+    .hints img {
+        width: 100%;
+        height: 101px;
+    }
+    
+    .options {
+        width: 70%;
+        height: 300px;
+        background-color: antiquewhite;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        margin-top: 10px;
+        border-radius: 10px;
+        border-color: gray;
+        border-style: solid;
+    }
+    
+    #option1 {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 20px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    #option2 {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    #option3 {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    #option4 {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    p {
+        margin-left: 10px;
+        color: rgb(89, 0, 255);
+    }
+    
+    #next_button {
+    
+        position: absolute;
+        top: 86%;
+        left: 38%;
+        background-color: rgb(202, 7, 202);
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        border-radius: 25px;
+        border-color: rgb(202, 7, 202);
+        border-style: solid;
+    
+    }
+    
+    #close_button {
+    
+        position: absolute;
+        top: 86%;
+        left: 23%;
+        background-color: rgb(202, 7, 202);
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        border-radius: 25px;
+        border-color: rgb(202, 7, 202);
+        border-style: solid;
+        display: none;
+    
+    }
+    
+    #industries {
+        width: 85%;
+        height: 430px;
+        background-color: transparent;
+        position: absolute;
+        top: 70%;
+        left: 0;
+        margin-top: 40px;
+    
+    }
+    
+    #industries h3 {
+    
+        color: white;
+        text-shadow: 2px 2px purple;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    #industry1 {
+        width: 30%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: white;
+        border-style: solid;
+        position: absolute;
+        top: 15%;
+        left: -50px;
+        background-color: white;
+        background-color: transparent;
+        color: white;
+        font-weight: bolder;
+    }
+    
+    #industry2 {
+        width: 30%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: white;
+        border-style: solid;
+        position: absolute;
+        top: 15%;
+        left: 23%;
+        background-color: transparent;
+        color: white;
+        font-weight: bolder;
+    }
+    
+    #industry3 {
+        width: 30%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: white;
+        border-style: solid;
+        position: absolute;
+        top: 15%;
+        left: 61%;
+        background-color: transparent;
+        color: white;
+        font-weight: bolder;
+    }
+    
+    #hints_punjabi {
+        background-color: transparent;
+        width: 70%;
+        height: 101px;
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        border-radius: 10px;
+        border-color: white;
+        border-style: solid;
+        display: none;
+    }
+    
+    #hints_punjabi img {
+        width: 100%;
+        height: 101px;
+    }
+    
+    #options_punjabi {
+        width: 70%;
+        height: 300px;
+        background-color: antiquewhite;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        border-radius: 10px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        display: none;
+    }
+    
+    #next_button_punjabi {
+    
+        position: absolute;
+        top: 86%;
+        left: 38%;
+        background-color: rgb(202, 7, 202);
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        border-radius: 25px;
+        border-color: rgb(202, 7, 202);
+        border-style: solid;
+        display: none;
+    
+    }
+    
+    #close_button_punjabi {
+    
+        position: absolute;
+        top: 86%;
+        left: 23%;
+        background-color: rgb(202, 7, 202);
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        border-radius: 25px;
+        border-color: rgb(202, 7, 202);
+        border-style: solid;
+        display: none;
+    
+    }
+    
+    #option1Punjabi {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 20px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    #option2Punjabi {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    #option3Punjabi {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    #option4Punjabi {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    #hints_english {
+        background-color: transparent;
+        width: 70%;
+        height: 101px;
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        border-radius: 10px;
+        border-color: white;
+        border-style: solid;
+        display: none;
+    
+    }
+    
+    #hints_english img {
+        width: 100%;
+        height: 101px;
+    }
+    
+    #options_english {
+        width: 70%;
+        height: 300px;
+        background-color: antiquewhite;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        border-radius: 10px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        display: none;
+    }
+    
+    #option1English {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 20px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    #option2English {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    #option3English {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    #option4English {
+        width: 80%;
+        height: 50px;
+        border-radius: 20px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        margin-left: 10%;
+        background-color: white;
+    }
+    
+    #next_button_english {
+    
+        position: absolute;
+        top: 86%;
+        left: 38%;
+        background-color: rgb(202, 7, 202);
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        border-radius: 25px;
+        border-color: rgb(202, 7, 202);
+        border-style: solid;
+        display: none;
+    
+    }
+    
+    #close_button_english {
+    
+        position: absolute;
+        top: 86%;
+        left: 23%;
+        background-color: rgb(202, 7, 202);
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        border-radius: 25px;
+        border-color: rgb(202, 7, 202);
+        border-style: solid;
+        display: none;
+    
+    }
+
+
+}
