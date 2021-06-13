@@ -7,8 +7,6 @@
 body{
     font-family: 'Space Grotesk', sans-serif;
     background-color: black;
-    background: url(https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1990&q=80) no-repeat center center fixed;
-    background-size: cover;
 }
 
 .app{
@@ -18,39 +16,29 @@ body{
     flex-direction: column;
     height: 98vh;
 }
-.header{
-    margin: auto;
-}
-.head{
-      -webkit-text-stroke: 2px white;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    
-}
+
 .header h1{
     margin: 5px 0px 32px 0px;
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     letter-spacing: 0.25rem;
     font-weight: 900;
-    color: green;
-    
-    
+    color: grey;
 }
 
 .header p{
     text-align: center;
-    font-size: 33px;
-    color: green;
-    
+    font-size: 19px;
+    color: grey;
 }
 
 img{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .pads{
-    background: transparent;
+    background: black;
     width: 90vw;
     display: flex;
     flex-wrap:wrap;
@@ -66,57 +54,69 @@ img{
 
 .pad-1{
     background-image: linear-gradient(to right,#20AAE5 ,#A722D6);
-    border: 3px solid white;
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-1:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-2{
     background-image: linear-gradient(180deg,#0fa5e6 ,#7b06f0);
-    border: 3px solid white;
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-2:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-3{
      background-image: linear-gradient(90deg, #1A0223,#DB26B6, #EE570F);
-     border: 3px solid white;
+     border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-3:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-4{
     background-image: linear-gradient(to right,#06425c ,#410955);
-    border: 3px solid white;
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-4:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-5{
     background-image: linear-gradient(180deg, #1A0223,#DB26B6, #EE570F);
-    border: 3px solid white;
+    border: solid green 5px;
+    border-radius: 20px;
+}
+.pad-5:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 .pad-6{
     background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
-    border: 3px solid white;
+    border: solid green 5px;
+    border-radius: 20px;
 }
-.pad-1:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
-}
-.pad-3:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
-}
-.pad-4:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
-}
-.pad-5:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
-}
-.pad-6:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
-}
-.pad-2:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 22px 12px #1511fd;
-    border: 5px solid yellow;
+.pad-6:hover
+{
+    transform: scale(1.07);
+    border-color: rgb(72, 241, 72);
+    box-shadow: 0 5px 15px white;
 }
 
 .visual > div {

@@ -86,6 +86,8 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&type=multiple`)
                 <button onclick="location.reload()">Reload</button>
             `;
                 }
+            } else {
+                alert('Please choose an option before submitting..');
             }
         });
     });
