@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
-body{
+body
+{
     font-family: 'Space Grotesk', sans-serif;
     background-color: black;
 }
 
-.app{
+.app
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +19,8 @@ body{
     height: 98vh;
 }
 
-.header h1{
+.header h1
+{
     margin: 5px 0px 32px 0px;
     text-align: center;
     font-size: 3.5rem;
@@ -26,25 +29,29 @@ body{
     color: grey;
 }
 
-.header p{
+.header p
+{
     text-align: center;
     font-size: 19px;
     color: grey;
 }
 
-img{
+img
+{
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.pads{
+.pads
+{
     background: black;
     width: 90vw;
     display: flex;
     flex-wrap:wrap;
 }
 
-.pads > div{
+.pads > div
+{
     height: 230px;
     width: 100px;
     flex: 1;
@@ -52,7 +59,8 @@ img{
     margin-right: 10px;
 }
 
-.pad-1{
+.pad-1
+{
     background-image: linear-gradient(to right,#20AAE5 ,#A722D6);
     border: solid green 5px;
     border-radius: 20px;
@@ -63,7 +71,8 @@ img{
     border-color: rgb(72, 241, 72);
     box-shadow: 0 5px 15px white;
 }
-.pad-2{
+.pad-2
+{
     background-image: linear-gradient(180deg,#0fa5e6 ,#7b06f0);
     border: solid green 5px;
     border-radius: 20px;
@@ -74,7 +83,8 @@ img{
     border-color: rgb(72, 241, 72);
     box-shadow: 0 5px 15px white;
 }
-.pad-3{
+.pad-3
+{
      background-image: linear-gradient(90deg, #1A0223,#DB26B6, #EE570F);
      border: solid green 5px;
     border-radius: 20px;
@@ -85,7 +95,8 @@ img{
     border-color: rgb(72, 241, 72);
     box-shadow: 0 5px 15px white;
 }
-.pad-4{
+.pad-4
+{
     background-image: linear-gradient(to right,#06425c ,#410955);
     border: solid green 5px;
     border-radius: 20px;
@@ -119,7 +130,8 @@ img{
     box-shadow: 0 5px 15px white;
 }
 
-.visual > div {
+.visual > div 
+{
     position: absolute;
     width: 50px;
     height: 50px;
@@ -129,7 +141,8 @@ img{
     z-index: -1;
 }
 
-@keyframes jump{
+@keyframes jump
+{
     0%{
         left: 20%;
         bottom: 0px;
@@ -146,14 +159,18 @@ img{
 
 
 /* For Responsiveness */
-@media (min-width: 1020px) and (max-width:1190px){
-    .app{
+@media (min-width: 1020px) and (max-width:1190px)
+{
+    .app
+    {
         height: 80vh;
     }
-    .pads > div{
+    .pads > div
+    {
         margin: 1.1rem;
     }
-    @keyframes jump{
+    @keyframes jump
+    {
         0%{
             left: 20%;
             bottom: 0px;
@@ -168,54 +185,66 @@ img{
         }
     }
 }
-@media only screen and (min-width: 601px) {
-    .pads > div{
+@media only screen and (min-width: 601px) 
+{
+    .pads > div
+    {
         width: 10rem;
         height: auto;
         margin: 0.8rem;
     }
-    .pads > div img{
+    .pads > div img
+    {
         width: 10rem;
         height: auto;        
     }
 
 }
-@media only screen and (max-width:600px){
-    .header img{
+@media only screen and (max-width:600px)
+{
+    .header img
+    {
         width: auto;
         height: 15rem;
         display: block;
         margin-left: auto;
         margin-right: auto; 
       }
-      .pads > div{
+      .pads > div
+      {
         width: 7rem;
         height: auto;
         margin: 0.8rem;
     }
-    .pads > div img{
+    .pads > div img
+    {
         width: 7rem;
         height: auto;        
     }
 }
-@media only screen and (max-width:330px){
-    .header img{
+@media only screen and (max-width:330px)
+{
+    .header img
+    {
         width: auto;
         height: 12rem;
         display: block;
         margin-left: auto;
         margin-right: auto; 
       }
-      .pads > div{
+      .pads > div
+      {
         width: 6rem;
         height: auto;
         margin: 0.7rem;
     }
-    .pads > div img{
+    .pads > div img
+    {
         width: 6rem;
         height: auto;        
     }
-    .header p{
+    .header p
+    {
         font-size: 1rem;
     }
 }

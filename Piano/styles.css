@@ -1,8 +1,10 @@
-*, *::before, *::after {
+*, *::before, *::after 
+{
   box-sizing: border-box;
 }
 
-body {
+body 
+{
   background: url(https://images.unsplash.com/photo-1584882793511-33ac865aedb7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) no-repeat center center fixed;
   background-size: cover;
   margin: 0;
@@ -12,7 +14,8 @@ body {
   align-items: center;
 }
 
-.container{
+.container
+{
   border: 2px solid white;
   background-color:black;
   height:auto;
@@ -21,47 +24,57 @@ body {
   text-align: center;
   border-radius: 16px;
 }
-.container:hover {
+.container:hover
+{
   box-shadow: 2px 2px 40px #e4e3e3;
 }
-.bt{
+.bt
+{
   height: 30px;
   width: 30px;
   border-radius: 40px;
   margin: 0px 0px 25px 20px;
   border:none;
 }
-#btn1{
+#btn1
+{
   background-color:green ;
 }
-#btn2{
+#btn2
+{
   background-color:red ;
 }
-.piano {
+.piano 
+{
   display: flex;
   justify-content: center;
 }
 
-.key {
+.key 
+{
   height: calc(var(--width) * 4);
   width: var(--width);
 }
-.key:hover{
+.key:hover
+{
   cursor:pointer;
   box-shadow: 2px 2px 2px #00FFFF;
 }
 
-.white {
+.white 
+{
   --width: 100px;
   background-color: white;
   border: 1px solid #333;
 }
 
-.white.active {
+.white.active 
+{
   background-color: rgb(231, 231, 231);
 }
 
-.black {
+.black 
+{
   --width: 60px;
   background-color: black;
   margin-left: calc(var(--width) / -2);
@@ -69,14 +82,17 @@ body {
   z-index: 2;
 }
 
-.black.active {
+.black.active 
+{
   background-color: #333;
 }
-.key:focus-visible{
+.key:focus-visible
+{
   outline-offset: 1px;
     outline-color: #00FFFF;
     outline-width: 9px;
 }
-.key:active{
+.key:active
+{
   box-shadow:2px 2px 3px #00FFFF ;
 }
