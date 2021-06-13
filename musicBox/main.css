@@ -25,6 +25,7 @@ h1 {
 }
 
 .duration{
+    transition: .01s linear; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,9 +33,10 @@ h1 {
 }
 input[type="range"] {
 	-webkit-appearance: none;
+    /* border: 2px solid pink; */
 	width: 80%;
-	outline: none;
-	height: 2px;
+	outline:none;
+	height: 5px;
 	margin: 5 15px;
     
     background-color: #313131;

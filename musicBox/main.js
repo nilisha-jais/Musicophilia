@@ -230,6 +230,29 @@ window.onload = () => {
         }
     }
     
+    var timer;
+    var percent = 0;
+  //  var audio = document.getElementById("play-btn");
+    var audio=audio_player;
+    audio.addEventListener("play", function(_event) {
+    var duration = _event.target.duration;
+    advance(duration, audio);
+    });
+    audio.addEventListener("pause", function(_event) {
+    clearTimeout(timer);
+    });
+    var advance = function(duration, element) {
+    var progress = document.getElementById("duration");
+    increment = 10/duration
+    percent = Math.min(increment * element.currentTime * 10, 100);
+    duration_slider.value = percent
+    startTimer(duration, element);
+    }
+    var startTimer = function(duration, element){ 
+    if(percent < 100) {
+        timer = setTimeout(function (){advance(duration, element)}, 100);
+    }
+    }
     function ChangeSong (next = true) {
         if (next) {
             current_song_index++;
@@ -255,6 +278,8 @@ window.onload = () => {
 
         UpdatePlayer();
         TogglePlaySong();
+        
+        
     }
 
     function UpdatePlayer() {
