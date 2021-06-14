@@ -92,11 +92,13 @@ body
 {
   font-size: 20px;
   border-bottom: solid 2px white;
+  background-color:lightslategrey;
 }
  .current
 {
   background-color: rgba(0, 0, 0, 0.247);
   border-radius: 20px;
+  margin:5px;
   font-weight: bold;
   border: solid 2px black;
 }
