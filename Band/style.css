@@ -13,15 +13,17 @@ body
 .app
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    height: 98vh;
 }
 
-.header h1
-{
-    margin: 5px 0px 32px 0px;
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.header h1{
     text-align: center;
     font-size: 3.5rem;
     letter-spacing: 0.25rem;
@@ -36,98 +38,76 @@ body
     color: grey;
 }
 
-img
-{
-    margin-top: 30px;
-    margin-bottom: 30px;
+.header .backbutton{
+    width: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-.pads
-{
-    background: black;
+
+img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 180px;
+    width: 250px;
+
+}
+
+.pads{
     width: 90vw;
     display: flex;
     flex-wrap:wrap;
+    justify-content: center;
 }
 
-.pads > div
-{
-    height: 230px;
-    width: 100px;
-    flex: 1;
+.pads > div{
+    height: 150px;
+    width: 170px;
     border-radius: 30px;
-    margin-right: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    border: solid green 5px;
+    border-radius: 20px;
+}
+
+.pads > div img{
+    width: 120px;
+    height: 120px;
 }
 
 .pad-1
 {
     background-image: linear-gradient(to right,#20AAE5 ,#A722D6);
-    border: solid green 5px;
-    border-radius: 20px;
-}
-.pad-1:hover
-{
-    transform: scale(1.07);
-    border-color: rgb(72, 241, 72);
-    box-shadow: 0 5px 15px white;
 }
 .pad-2
 {
     background-image: linear-gradient(180deg,#0fa5e6 ,#7b06f0);
-    border: solid green 5px;
-    border-radius: 20px;
 }
-.pad-2:hover
-{
-    transform: scale(1.07);
-    border-color: rgb(72, 241, 72);
-    box-shadow: 0 5px 15px white;
-}
-.pad-3
-{
+
+.pad-3{
      background-image: linear-gradient(90deg, #1A0223,#DB26B6, #EE570F);
-     border: solid green 5px;
-    border-radius: 20px;
 }
-.pad-3:hover
-{
-    transform: scale(1.07);
-    border-color: rgb(72, 241, 72);
-    box-shadow: 0 5px 15px white;
-}
-.pad-4
-{
+
+.pad-4{
     background-image: linear-gradient(to right,#06425c ,#410955);
-    border: solid green 5px;
-    border-radius: 20px;
 }
-.pad-4:hover
-{
-    transform: scale(1.07);
-    border-color: rgb(72, 241, 72);
-    box-shadow: 0 5px 15px white;
-}
+
 .pad-5{
     background-image: linear-gradient(180deg, #1A0223,#DB26B6, #EE570F);
-    border: solid green 5px;
-    border-radius: 20px;
-}
-.pad-5:hover
-{
-    transform: scale(1.07);
-    border-color: rgb(72, 241, 72);
-    box-shadow: 0 5px 15px white;
 }
 .pad-6{
     background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
-    border: solid green 5px;
-    border-radius: 20px;
 }
-.pad-6:hover
-{
-    transform: scale(1.07);
-    border-color: rgb(72, 241, 72);
-    box-shadow: 0 5px 15px white;
+
+
+.pads > div:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 12px white;
+    border: 2px solid rgb(72, 241, 72);
+    transform: scale(1.02);
 }
 
 .visual > div 
@@ -139,7 +119,7 @@ img
     bottom: 0%;
     left: 20%;
     z-index: -1;
-}
+} 
 
 @keyframes jump
 {
@@ -159,15 +139,10 @@ img
 
 
 /* For Responsiveness */
-@media (min-width: 1020px) and (max-width:1190px)
-{
-    .app
-    {
-        height: 80vh;
-    }
-    .pads > div
-    {
-        margin: 1.1rem;
+
+@media (min-width: 1020px) and (max-width:1190px){
+    .pads > div{
+        margin: 0.5rem;
     }
     @keyframes jump
     {
@@ -185,41 +160,28 @@ img
         }
     }
 }
-@media only screen and (min-width: 601px) 
-{
-    .pads > div
-    {
-        width: 10rem;
-        height: auto;
-        margin: 0.8rem;
-    }
-    .pads > div img
-    {
-        width: 10rem;
-        height: auto;        
-    }
 
-}
-@media only screen and (max-width:600px)
-{
-    .header img
-    {
-        width: auto;
-        height: 15rem;
+@media only screen and (max-width:600px){
+    .header img{
+        width: 200;
+        height: 150px;
         display: block;
         margin-left: auto;
         margin-right: auto; 
       }
-      .pads > div
-      {
-        width: 7rem;
-        height: auto;
+      .pads > div{
+        width: 150px;
+        height: 130px;
         margin: 0.8rem;
     }
-    .pads > div img
-    {
-        width: 7rem;
-        height: auto;        
+    .pads > div img{
+        width: 100px;
+        height: 100px;        
+    }
+
+    .header .backbutton{
+        display: flex;
+        justify-content: center;
     }
 }
 @media only screen and (max-width:330px)

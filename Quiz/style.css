@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-body 
-{
-    background-color: black;
+
+body {
+    background-color:rgb(107, 105, 109);
+    background-image: url("background_img.png");
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
