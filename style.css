@@ -1,4 +1,7 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 body
 {
   color: white ;
@@ -26,74 +29,52 @@ body
 	background-image: -webkit-gradient(linear,40% 0%,75% 84%,from(#4D9C41),to(#19911D),color-stop(.6,#54DE5D))
 }
 
-.nav 
-{
-  height: 70px;
-  width: 100%;
-  background-color:green;
-  margin-top:0px;
-  position:sticky;
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+  padding: 0px !important;
+}
+.navbar-light .navbar-toggler{
+  margin: 4px;
 }
 
-.sticky
-{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 20;
+
+.navbar-brand {
+  margin-right: 0px;
 }
+.navbar-toggler{
+  padding: 6px !important;
+  font-size: 1rem !important;
+}
+
+.navbar{
+  background-color:green !important;
+
+}
+
 
 .nav-img
 {
   height: 50px;
-  width: 80px;
+  width: 70px;
   margin-top: 0px;
   display: inline-block;
-  margin-left: 20px;
-}
-.nav  .nav-header 
-{
-  display: inline;
 }
 
-  .nav  .nav-header  .nav-title 
-{
+#webTitle  {
   display: inline-block;
   font-size: 25px;
   color:rgb(17, 17, 17);
-  padding: 18px 10px 10px 10px;
   font-weight:bold;
 }
 
-  .nav > .nav-btn
-{
-  display: none;
+
+.nav-link{
+  color: white !important;
+  font-size: 18px !important;
+  padding: 13px 20px 13px 20px !important;
+  
 }
 
-  .nav > .nav-links
-{
-  display: inline;
-  float: right;
-  font-size: 18px;
-  padding-right: 30px;
-}
-
-  .nav > .nav-links > a
-{
-  display: inline-block;
-  margin-top: 7px;
-  padding: 13px 20px 13px 20px;
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
-
-  .nav > .nav-links > a:hover 
-{
-  font-size: 20px;
-  border-bottom: solid 2px white;
-  background-color:lightslategrey;
-}
  .current
 {
   background-color: rgba(0, 0, 0, 0.247);
@@ -104,69 +85,21 @@ body
 }
  .current:hover
 {
+  transition: 0.3s !important;
+  font-size: 20px !important;
+  background-color:lightslategrey !important;
   border: solid 2px black !important;
   font-size: 18px !important;
 }
 
-  @media (max-width:600px) 
+
+hr
 {
-  .nav > .nav-btn
-  {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-    .nav > .nav-btn > label
-  {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label
-  {
-    background-color:  grey;
-  }
-    .nav > .nav-btn > label > span 
-  {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-    .nav > .nav-links 
-  {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-    .nav  .nav-links  a 
-  {
-    display: block;
-    width: 100%;
-  }
-    .nav > #nav-check:not(:checked) ~ .nav-links
-  {
-    height: 0px;
-  }
-    .nav > #nav-check:checked ~ .nav-links
-  {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
-}
-  hr
-{
-  border-width: 0px 0px 0px 0px;
-  height: 6px;
-  background-image: linear-gradient(to right, rgba(0, 128, 0, 0.1), rgba(0, 128, 0, 0.85), rgba(0, 128, 0, 0.1)) ;
+  border-width: 0px 0px 0px 0px !important;
+  height: 6px !important;
+  background-image: linear-gradient(to right, rgba(0, 128, 0, 0.1), rgba(0, 128, 0, 0.85), rgba(0, 128, 0, 0.1));
+   margin: 0 !important; 
+  opacity: 0.51;
 }
 
 .main
@@ -191,6 +124,7 @@ body
 }
 .content
 {
+  padding: 1rem 0px;
   height:auto;
   width:350px;
   transition: 0.3s;
@@ -203,7 +137,7 @@ body
 }
 .heading
 {
-  margin:auto;
+  margin: 14px auto;
   font-size: 35px;
   font-family: 'Chango', cursive;
 }
@@ -313,7 +247,6 @@ a:hover .fa-twitter{
 {
   background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
 }
-
 #box-7
 {
   background-image: linear-gradient(to right,#20AAE5 ,#A722D6);
@@ -323,7 +256,6 @@ a:hover .fa-twitter{
   background-color: red;
   color: black;
 }
-
 .btn:active {
   transition-duration: 0s;
   box-shadow: inset 5px 5px 5px rgb(68, 67, 67, 0.8),
