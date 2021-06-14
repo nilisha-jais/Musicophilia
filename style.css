@@ -1,180 +1,138 @@
-
-  body {
-    color:white;
-    margin: 0px;
-    font-family: 'segoe ui';
-    background:url('https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg') no-repeat center center fixed ;
-    background-size: cover;
-  }
-  
-  .nav {
-    height: 50px;
-    width: 100%;
-    background-color:green;
-    margin-top:0px;
-    position:sticky;
-  }
-  
-  .nav  .nav-header {
-    display: inline;
-  }
-  
-  .nav  .nav-header  .nav-title {
-    display: inline-block;
-    font-size: 25px;
-    color:rgb(17, 17, 17);
-    padding: 10px 10px 10px 10px;
-    font-weight:bold;
-  }
-  
-  .nav > .nav-btn {
-    display: none;
-  }
-  
-  .nav > .nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
-  }
-  
-  .nav > .nav-links > a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
-    color: #efefef;
-  }
-  
-  .nav > .nav-links > a:hover {
-    background-color:rgb(34, 33, 33);
-  }
-  
-  .nav > #nav-check {
-    display: none;
-  }
-  
-  @media (max-width:600px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color:  grey;
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-    }
-    .nav  .nav-links  a {
-      display: block;
-      width: 100%;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
-  }
-.main{
-    padding:24px;
-    margin-top: 40px;
-    border:6px  solid green;
-    border-radius: 17px;
-      padding:24px;
-      height: auto;
-      text-align: center;
-      box-shadow: 5px 5px 3px green;
+body {
+  color:white;
+  margin: 0px;
+  font-family: 'segoe ui';
+  background:url('image.jpg') no-repeat center center fixed ;
+  background-size: cover;
 }
-  .container{
-      display:flex;
-      /*border:2px  solid red;*/
-      padding:24px;
-      justify-content:space-evenly;
-      flex-direction: row;
-      flex-wrap: wrap;
-     margin-top: 30px;
-  }
-  .content{
-      height:auto;
-      width:25vw;
-      
-      border:5px solid rgb(15, 15, 15);
-      transition:all 0.5s;
-      border-radius: 17px;
-  }
-  .heading{
-      margin:auto;
-      font-size: 35px;
-     
-      font-family: 'Chango', cursive;
-  }
-  .content:hover{
-      transform:scale(1.13);
-  }
-  .btn{
-    font-weight: bold;
-    border: none;
-    color: white;
-    padding: 16px 32px;
+
+
+/* <nav bar> */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+nav{
+    background-color: #a55c1b;
+    background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%); 
+    /* background-color: #f6f0c4;
+background-image: linear-gradient(315deg, #f6f0c4 0%, #d99ec9 74%); */
+}
+
+
+.nav-link{
+  margin-right: 15px;
+  color:#a6c7f1;
+  letter-spacing: 0.5px;
+  transition: 0.5s;
+}
+.navbar-brand{
+  color: #4C4B4B;
+  letter-spacing: 0.5px;
+}
+
+
+.main{
+  padding:24px;
+  margin-top: 40px;
+  border:6px  solid#a55c1b;
+  border-radius: 17px;
+    height: auto;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius:23px;
-  }
+    box-shadow: 5px 5px 3px #a55c1b;
+}
+
+
+.card{
+    display:flex;
+    padding:24px;
+    justify-content:space-between;
+    flex-direction: row;
+   margin-top: 100px;
+   background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
   
-  
+} 
+ .card:hover{
+    transform:scale(1.13);
+}
+
+/* .content{
+    height:auto;
+    width:25vw;
+    border:5px solid rgb(0,100,0);
+    transition:all 0.5s;
+    border-radius: 17px;
+ 
+
+} 
+ */
+.heading{
+    margin:auto;
+    font-size: 35px;
+   
+    font-family: 'Chango', cursive;
+}
+
+.button{
+  font-weight: bold;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius:23px;
+}
+.button:hover {
+  background-color: #3e8e41;
+}  
+
 #box-1{
-    background-image: linear-gradient(to right,#20AAE5 ,#A722D6);
+  background-color: blanchedalmond;
 }
 #box-2{
-    background-image: linear-gradient(180deg,#0fa5e6 ,#7b06f0);
+
+background-color: blanchedalmond;
 }
 #box-3{
-     background-image: linear-gradient(90deg, #1A0223,#DB26B6, #EE570F);
+ 
+background-color: blanchedalmond;
 }
 #box-4{
-    background-image: linear-gradient(to right,#06425c ,#410955);
+  
+background-color: blanchedalmond;
 }
 #box-5{
-    background-image: linear-gradient(180deg, #1A0223,#DB26B6, #EE570F);
+  
+background-color: blanchedalmond;
 }
 #box-6{
-     background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
+   
+  background-color: blanchedalmond;
 }
 
-.btn:hover {
-   background-color: red;
-    color: black;
-  }
-  footer{
-      height:30px;
-      background-color:green;
-      text-align: center
-     
-  }
+
+footer{
+    height:30%;
+    background-color:#e0d4ae;
+    text-align: center;
+    font-size: 40px;
+    padding:10px 40px 10px 10px;
+   width:100%;
+}
+
+.container-fluid{
+  padding: 7% 15%;
+}
+.white-section {
+  background-color: #DEB887;
+}
+
+
+
+
+
+
+
