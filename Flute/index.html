@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Flute </title>
+
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="..\favicon.png" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+    <h1>🎧 FLUTE WORLD 🎧</h1>
+
+    <div class="backbutton" align="left">
+        <a href="..\index.html"><button type="button" style="background-color : #FD3656 ;">Back</button></a>
+    </div>
+
+    <div class="app-wrapper">
+        <div class="player">
+            <audio id="music-player"></audio>
+            <div id="song-image" class="song-img"></div>
+            <div class="song-details">
+                <h2 id="song-title"></h2>
+                <h3 id="song-artist"></h3>
+            </div>
+            <div class="player-controls">
+                <button id="prev-btn" class="skip-btn"><i class="fas fa-backward fa-lg"></i></button>
+                <button id="play-btn" class="play"><i class="fas fa-play play-icon fa-2x"></i></i></button>
+                <button id="next-btn" class="skip-btn"><i class="fas fa-forward fa-lg"></i></button>
+            </div>
+            <div class="next-up">
+                <p>Next up: <span id="song-next-up"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
