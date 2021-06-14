@@ -11,15 +11,26 @@
 </p>
 <center>
 
-<!-- TABLE OF CONTENTS -->
+<div align="center">
 
-## Table of Contents
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/nilisha-jais/Musicophilia)&nbsp;
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/nilisha-jais/Musicophilia)&nbsp;
+![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=brightgreen&style=flat&logo=github)&nbsp;
+[![web](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?color=blue)](https://musicophilia.netlify.app/)&nbsp;
+<a href="https://app.slack.com/client/T022A4RL16V/C02435ZJUCV">
+ <img src="https://img.shields.io/badge/Join community%20-Slack-4A154B.svg?&logo=slack" alt="Join Slack Community" />
+</a>
 
-- [About the Project](#about-the-project)
-  - [Built With](#built-with)
+[![GitHub stars](https://img.shields.io/github/stars/nilisha-jais/Musicophilia)](https://github.com/nilisha-jais/Musicophilia/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/nilisha-jais/Musicophilia)](https://github.com/nilisha-jais/Musicophilia/network/members)
+[![GitHub Contributers](https://img.shields.io/github/contributors/nilisha-jais/Musicophilia)](https://github.com/nilisha-jais/Musicophilia/graphs/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/nilisha-jais/Musicophilia)](https://github.com/nilisha-jais/Musicophilia/issues)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/nilisha-jais/Musicophilia)](https://github.com/nilisha-jais/Musicophilia/pulls)
+[![GitHub closed-issues](https://img.shields.io/github/issues-closed-raw/nilisha-jais/Musicophilia)](https://github.com/nilisha-jais/Musicophilia/pulls)
+[![GitHub closed-prs](https://img.shields.io/github/issues-pr-closed-raw/nilisha-jais/Musicophilia)](https://github.com/nilisha-jais/Musicophilia/pulls)
 
-<!-- ABOUT THE PROJECT -->
-
+</div>
+    
 ## About The Project
 
 A platform for <strong>Music Lovers </strong>
@@ -110,14 +121,18 @@ git push -u origin <your_branch_name>
 **14.** Click on `Create Pull Request`.
 
 
-**15** *congrats*! You have made a PR to the Musicophilia project. Sit back patiently and relax while the your PR is reviewed. 
+## Code of Conduct
+<p align="center"><a href="https://github.com/nilisha-jais/Musicophilia/blob/main/CODE_OF_CONDUCT.md"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></a></p>
 
- In case of any help, please free to contact me via mail jaiswal.nilisha05@gmail.com
+## License 
+<p align="center"><a href="https://github.com/nilisha-jais/Musicophilia/blob/main/LICENSE"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></a></p>
+<div align="center">
 
  <h1 align=center> Project Admin ❤️ </h1>
 <p align="center">
   <a href="https://github.com/nilisha-jais"><img src="https://avatars.githubusercontent.com/u/73216246?v=4/u/67006255?s=400&u=c0e16c3bba31328a028cfcca4b1fa7599509f905&v=4" width=150px height=150px /></a> 
     
+
 
 <p align="center">
      <a target="_blank"href="https://twitter.com/jaiswal_nilu05"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;

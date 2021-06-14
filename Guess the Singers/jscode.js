@@ -46,7 +46,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 1) {
+    }
+    else if (counter == 1) {
         option1.style.backgroundColor = "red";
         option1.style.color = "white";
         option2.style.backgroundColor = "green";
@@ -60,7 +61,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 2) {
+    }
+    else if (counter == 2) {
         option1.style.backgroundColor = "red";
         option1.style.color = "white";
         option2.style.backgroundColor = "red";
@@ -74,7 +76,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 3) {
+    }
+    else if (counter == 3) {
         option1.style.backgroundColor = "red";
         option1.style.color = "white";
         option2.style.backgroundColor = "red";
@@ -88,7 +91,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 4) {
+    }
+    else if (counter == 4) {
         option1.style.backgroundColor = "green";
         option1.style.color = "white";
         option2.style.backgroundColor = "red";
@@ -130,7 +134,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 7) {
+    }
+    else if (counter == 7) {
         option1.style.backgroundColor = "red";
         option1.style.color = "white";
         option2.style.backgroundColor = "green";
@@ -158,7 +163,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 9) {
+    }
+    else if (counter == 9) {
         option1.style.backgroundColor = "red";
         option1.style.color = "white";
         option2.style.backgroundColor = "green";
@@ -335,7 +341,7 @@ function punjabi() {
     let options = document.getElementById("options_punjabi")
     options.style.display = "block";
     document.getElementById("next_button_punjabi").style.display = "block";
-    counter=0;
+    counter = 0;
 
 }
 
@@ -666,7 +672,7 @@ function hollywood() {
     let options = document.getElementById("options_english")
     options.style.display = "block";
     document.getElementById("next_button_english").style.display = "block";
-    counter=0;
+    counter = 0;
 
 }
 
@@ -844,7 +850,7 @@ function changeColorEnglish() {
 
 }
 /*let singersEnglish = new Array("ed.png", "bruno.png", "justin.png", "eminem.png", "zyan.png", "selena.png", "ariana.png", "beyonce.png", "rihanna.png", "billie.png");
-3 1 2 4*/ 
+3 1 2 4*/
 function nextQuestionEnglish() {
 
     if (counter == 1) {
