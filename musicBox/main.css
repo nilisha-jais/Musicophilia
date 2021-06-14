@@ -195,7 +195,6 @@ h1
         border-radius: 0px;
         width: 100vw;
         padding-bottom: 0px;
-        padding-top: 15px;
         justify-content: center;
         align-items: center;
     }
@@ -205,6 +204,41 @@ h1
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
+    }
+    .song-details
+    {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        border-radius: 23px;
+    }
+}
+@media (min-width: 660px) and (max-width : 1000px)
+{
+    .app-wrapper
+    {
+        min-height: 70vh;
+    }
+    h1 {
+      margin-bottom: 2px;
+      font-size: 30px;
+    }
+    .player
+    {
+        margin-bottom: 0px;
+        min-height: 80vh;
+        padding-bottom: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .player-controls
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
     }
     .song-details
     {
