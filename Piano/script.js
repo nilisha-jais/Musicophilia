@@ -19,7 +19,8 @@ document.addEventListener('keydown', e => {
   if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
 })
 
-function playNote(key) {
+function playNote(key) 
+{
   const noteAudio = document.getElementById(key.dataset.note)
   noteAudio.currentTime = 0
   noteAudio.play()
