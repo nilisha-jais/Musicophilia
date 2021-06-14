@@ -319,6 +319,13 @@ a:hover .fa-twitter{
   background-color: red;
   color: black;
 }
+
+.btn:active {
+  transition-duration: 0s;
+  box-shadow: inset 5px 5px 5px rgb(68, 67, 67, 0.8),
+    inset -5px -5px 5px rgb(230, 227, 227, 0.6);
+  font-size: 15px;
+}
 footer
 {
   background-color:green;
