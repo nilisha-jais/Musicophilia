@@ -1,12 +1,14 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0px;
     box-sizing: border-box;
 }
 
 body{
     font-family: 'Space Grotesk', sans-serif;
-    background-color: black;
+    padding-top:50px;
+    /* background-color: black; */
+
 }
 
 .app{
@@ -23,16 +25,19 @@ body{
 
 .header h1{
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4rem;
     letter-spacing: 0.25rem;
     font-weight: 900;
-    color: grey;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.header p{
+.band-tagline{
     text-align: center;
-    font-size: 19px;
+    font-size: 25px;
     color: grey;
+    margin-top:10px;
+    font-family:cursive;
 }
 
 .header .backbutton{
@@ -42,23 +47,25 @@ body{
 }
 
 
-img{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    height: 180px;
-    width: 250px;
 
+.keyboard-keys{
+    font-size:3rem;
+    position:relative;
+    top:-25px;
+    font-family:cursive;
+    color:white;
+    text-shadow:2px 2px 2px grey;
 }
-
 .pads{
     width: 90vw;
     display: flex;
     flex-wrap:wrap;
+    box-sizing:border-box;
     justify-content: center;
 }
 
 .pads > div{
-    height: 150px;
+    height: 170px;
     width: 170px;
     border-radius: 30px;
     margin: 10px;
@@ -66,13 +73,15 @@ img{
     align-items: center;
     justify-content: center;
     transition: 0.2s;
-    border: solid green 5px;
+    /* border: solid green 5px; */
     border-radius: 20px;
 }
 
 .pads > div img{
     width: 120px;
     height: 120px;
+    margin-bottom:15px;
+    padding-top:15px;
 }
 
 .pad-1{
@@ -196,3 +205,109 @@ img{
         font-size: 1rem;
     }
 }
+
+/*****Footer****/
+.footer{
+    background-color: green;
+    box-sizing: border-box;
+    margin-top:50px;
+    width: 100%;
+    padding:10px 30px;
+  }
+  
+  .footer-content{
+    display:flex;
+    justify-content:space-between;
+  }
+  
+  .footer-heading{
+    color:white;
+    margin-bottom:15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .footer-left, .footer-right, .footer-middle{
+    text-align:center;
+  }
+  .footer-links{
+    font-size:30px;
+    margin:5px;
+  }
+  .footer-left a:hover{
+  background-color:white;
+  padding:10px;
+  border-radius:50px;
+  color:red;
+  }
+  .footer-middle-list-item{
+    list-style:none;
+    font-size:16px;
+    margin:10px;
+    text-align:left;
+  }
+  .footer-middle-list-item a{
+    text-decoration:none;
+    color:white;
+  }
+  .footer-middle-list-item a:hover{
+    color:red;
+  }
+  .footer-contact-button{
+    font-size:20px;
+    background-color:red;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    text-decoration:none;
+  }
+  .footer-contact-button:hover{
+    background-color:white;
+    color:red;
+  }
+  .footer-contact-tagline{
+  color:white;
+  font-size:18px;
+  margin-bottom:25px;
+  }
+  /* #footer-hr{
+    width:100%;
+    height:0px;
+    background-color:red;
+  } */
+  .footer-copyright{
+    text-align:center;
+    color:white;
+    margin-top:20px;
+    font-size:18px;
+  }
+  
+  /* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
+  
+  /***************** Media Queries *********************/
+  
+  @media (max-width: 600px) {
+    .footer-content{ 
+       display:block;
+       text-align:center;
+    }
+    .footer-middle-list-item{
+      text-align:left;
+      margin-left:45px;
+    }
+  
+    .footer-left, .footer-middle, .footer-right{
+      margin-top:50px;
+    }
+  
+  } 
+  
+  #waterdrop {
+      height: 30px;
+  }
+  
+  #waterdrop canvas {
+      bottom: -70px !important;
+  }
+  
+  

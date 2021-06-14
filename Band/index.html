@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="button.css">
     <link rel="icon" href="..\favicon.png" type="image/gif" sizes="16x16">
+
+    <!---Fontawsome link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 
 <body>
     <div class="app">
         <div class="header">
             <h1>Band</h1>
-            <p>Make beautiful  with a single tap</p>
-            <center><div class="backbutton">
-                <a href="../index.html"><button type="button" style="background-color : #FD3656 ;">Back</button></a>
-            </div></center>
+            <p class="band-tagline">Make beautiful notes with a single tap</p>
+           
             <center><img src="https://i.gifer.com/J3MN.gif"></center>
         </div>    
 
@@ -25,32 +27,91 @@
         
         <div class="pads">
             <div class="pad-1">
-               <center> <img src="images\closed-hihat.png"></center>
+               <center> 
+                   <img src="images\closed-hihat.png"> 
+                <p class="keyboard-keys">A</p>
+            </center>
+            
                 <audio class="sound" src="sounds\sound1.mp3"></audio>
             </div>
             <div class="pad-3">
-               <center><img src="images\kick.png"></center>
+               <center>
+                   <img src="images\kick.png">
+                   <p class="keyboard-keys">S</p>
+            </center>
                 <audio class="sound" src="sounds\sound3.mp3"></audio>
             </div>
             <div class="pad-4">
-                <center><img src="images\clap.png"></center>
+                <center>
+                    <img src="images\clap.png">
+                    <p class="keyboard-keys">D</p>
+                </center>
                 <audio class="sound" src="sounds\sound4.mp3"></audio>
             </div>
             <div class="pad-5">
-                <center><img src="images\open-hihat.png"></center>
+                <center>
+                    <img src="images\open-hihat.png">
+                    <p class="keyboard-keys">J</p>
+                </center>
                 <audio class="sound" src="sounds\sound5.mp3"></audio>
             </div>
             <div class="pad-6">
-                <center> <img src="images\snare.png"></center>
+                <center> 
+                    <img src="images\snare.png">
+                    <p class="keyboard-keys">K</p>
+                </center>
                 <audio class="sound" src="sounds\sound6.mp3"></audio>
             </div>
             <div class="pad-2">
-               <center> <img src="images\crash.png"></center>
+               <center>
+                    <img src="images\crash.png">
+                    <p class="keyboard-keys">L</p>
+                </center>
                 <audio class="sound" src="sounds\sound2.mp3"></audio>
             </div>
         </div>
     </div>
 
+    <!----Footer-->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2 class="footer-heading">Musicophilia</h2>
+                <a class="footer-links" href="#" style="color:#1DA1F2"><i class="fab fa-facebook-f facebook"></i></a>
+                <a class="footer-links" href="#"><i class="fab fa-twitter twitter" style="color:#1DA1F2"></i></a>
+                <a class="footer-links" href="#"><i class="fab fa-telegram telegram" style="color:#0088CC"></i></a>
+                <a class="footer-links" href="#"><i class="fab fa-instagram instagram" style="color:#8a3ab9"></i></a>
+                <a class="footer-links" href="#" style="color:black"><i class="fab fa-github github"></i></a>
+            </div>
+            <div class="footer-middle">
+            <h2 class="footer-heading">Services</h2>
+            <ul class="footer-middle-list">
+                <li class="footer-middle-list-item"><a href="../musicBox/index.html">Enjoy Latest Music</a> </li>
+                <li class="footer-middle-list-item"><a href="/index.html">Play Instruments</a> </li>
+                <li class="footer-middle-list-item"><a href="../Memory-game/index.html">Play Music Games</a> </li>
+                <li class="footer-middle-list-item"><a href="">Learn to Dance</a> </li>
+                <li class="footer-middle-list-item"><a href="">Artist Details</a> </li>
+            </ul>
+            </div>
+            <div class="footer-right">
+                <p class="footer-links">
+                    <h2 class="footer-heading">Contact Us</h2>
+                    <p class="footer-contact-tagline">Feel free to contact us.</p>
+                    <a class="footer-contact-button" href="#">Contact</a>
+                </p>
+            </div>
+        </div>
+        <hr id="footer-hr">
+        <div class="footer-copyright" >
+            <span  >Copyright &copy; Musicophilia
+                <div >
+                    <a href="../index.html"><button type="button">Back</button></a>
+                   </div>
+            </span>
+        </div>
+    </footer>
+        
     <script src="app.js"></script>
 </body>
 
