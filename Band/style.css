@@ -10,6 +10,14 @@ body
     background-color: black;
 }
 
+body
+{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: black;
+
+
+}
+
 .app
 {
     display: flex;
