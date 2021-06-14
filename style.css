@@ -163,10 +163,10 @@ body {
 }
 .content{
   height:auto;
-  width:25vw;
+  width:350px;
   transition: 0.3s;
   border-radius: 17px;
-  background: rgba( 0, 128, 0, 0.40 );
+  background: rgba( 0, 128, 0, 0.35 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 11.0px );
   -webkit-backdrop-filter: blur( 11.0px );
