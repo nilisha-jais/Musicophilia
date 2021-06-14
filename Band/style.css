@@ -8,7 +8,7 @@ body
 {
     font-family: 'Space Grotesk', sans-serif;
     padding-top:50px;
-    /* background-color: black; */
+    background-color: black;
 
 }
 
@@ -30,9 +30,10 @@ body
     font-size: 4rem;
     letter-spacing: 0.25rem;
     font-weight: 900;
-    color: black;
+    color: green;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 .band-tagline{
     text-align: center;
@@ -40,6 +41,10 @@ body
     color: grey;
     margin-top:10px;
     font-family:cursive;
+}
+
+.main-img{
+    margin:40px 0px;
 }
 
 .header .backbutton{
@@ -149,6 +154,7 @@ body
 /* For Responsiveness */
 
 @media (min-width: 1020px) and (max-width:1190px){
+
     .pads > div{
         margin: 0.5rem;
     }
@@ -170,48 +176,52 @@ body
 }
 
 @media only screen and (max-width:600px){
+
     .header img{
-        width: 200;
-        height: 150px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto; 
+        width: 400px;
+        height: 250px;
+        margin:30px auto; 
       }
       .pads > div{
         width: 150px;
-        height: 130px;
+        height: 150px;
         margin: 0.8rem;
     }
     .pads > div img{
         width: 100px;
         height: 100px;        
     }
-
-    .header .backbutton{
+    .keyboard-keys{
+        font-size:2rem;
+        top:-20px;
+    }
+        
+    .header{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }
-@media only screen and (max-width:330px)
+@media only screen and (max-width:440px)
 {
-    .header img
-    {
-        width: auto;
-        height: 12rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto; 
+    .header img{
+        width: 250px;
+        height: 200px;
+        margin: 30px auto;
       }
       .pads > div
       {
-        width: 6rem;
-        height: auto;
+        width:100px;;
+       height:100px;
         margin: 0.7rem;
     }
     .pads > div img
     {
-        width: 6rem;
-        height: auto;        
+        width: 80px;
+        height: 80px;        
+    }
+    .keyboard-keys{
+        font-size:1.5rem;
+        top:-20px;
     }
     .header p
     {
@@ -223,71 +233,42 @@ body
 .footer{
     background-color: green;
     box-sizing: border-box;
-    margin-top:50px;
+    margin-top:6rem;
     width: 100%;
     padding:10px 30px;
   }
   
   .footer-content{
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
   }
   
   .footer-heading{
     color:white;
-    margin-bottom:15px;
+    margin-bottom:20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+  .footer-left{
+      text-align:center;
+  }
   
-  .footer-left, .footer-right, .footer-middle{
-    text-align:center;
-  }
-  .footer-links{
+  .footer-links i{
+      width:50px;
+      height:50px;
     font-size:30px;
-    margin:5px;
+    padding-top:10px;
   }
-  .footer-left a:hover{
-  background-color:white;
-  padding:10px;
-  border-radius:50px;
-  color:red;
+  .footer-links i:hover{
+      background-color:white;
+      border-radius:50px;
+      background-color:white;
   }
-  .footer-middle-list-item{
-    list-style:none;
-    font-size:16px;
-    margin:10px;
-    text-align:left;
-  }
-  .footer-middle-list-item a{
-    text-decoration:none;
-    color:white;
-  }
-  .footer-middle-list-item a:hover{
-    color:red;
-  }
-  .footer-contact-button{
-    font-size:20px;
-    background-color:red;
-    color:white;
-    padding:10px;
-    border:none;
-    border-radius:10px;
-    text-decoration:none;
-  }
-  .footer-contact-button:hover{
-    background-color:white;
-    color:red;
-  }
-  .footer-contact-tagline{
-  color:white;
-  font-size:18px;
-  margin-bottom:25px;
-  }
-  /* #footer-hr{
+
+  #footer-hr{
     width:100%;
     height:0px;
-    background-color:red;
-  } */
+    margin:20px 0px;
+  }
   .footer-copyright{
     text-align:center;
     color:white;
@@ -295,32 +276,15 @@ body
     font-size:18px;
   }
   
-  /* .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);} */
   
-  /***************** Media Queries *********************/
+  /***************** Media Queries for footer *********************/
   
   @media (max-width: 600px) {
     .footer-content{ 
        display:block;
        text-align:center;
     }
-    .footer-middle-list-item{
-      text-align:left;
-      margin-left:45px;
-    }
-  
-    .footer-left, .footer-middle, .footer-right{
-      margin-top:50px;
-    }
-  
-  } 
-  
-  #waterdrop {
-      height: 30px;
-  }
-  
-  #waterdrop canvas {
-      bottom: -70px !important;
-  }
-  
+}
+
+
   

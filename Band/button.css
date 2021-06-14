@@ -9,6 +9,9 @@
       border:none;
       border-radius:10px;
       text-decoration:none;
+      position:absolute;
+      top:10%;
+      left:15%;
     }
    button:hover{
       background-color:white;
@@ -18,7 +21,14 @@
       transform: scale(1.1);
    
     }
+
   
   
-  
+      /******responsiveness for mobile view*****/
+@media screen and (max-width:830px){
+ button{
+   left:1%;
+   top:1%;
+ }
+}
    
