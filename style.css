@@ -314,6 +314,10 @@ a:hover .fa-twitter{
   background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
 }
 
+#box-7
+{
+  background-image: linear-gradient(to right,#20AAE5 ,#A722D6);
+}
 .btn:hover 
 {
   background-color: red;
