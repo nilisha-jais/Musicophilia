@@ -8,6 +8,8 @@
   </p>
 </p>
 
+<div align="center">
+
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/nilisha-jais/Musicophilia)&nbsp;
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/nilisha-jais/Musicophilia)&nbsp;
 ![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=brightgreen&style=flat&logo=github)&nbsp;
@@ -24,6 +26,8 @@
 [![GitHub closed-issues](https://img.shields.io/github/issues-closed-raw/nilisha-jais/Musicophilia)](https://github.com/nilisha-jais/Musicophilia/pulls)
 [![GitHub closed-prs](https://img.shields.io/github/issues-pr-closed-raw/nilisha-jais/Musicophilia)](https://github.com/nilisha-jais/Musicophilia/pulls)
 
+</div>
+    
 ## About The Project
 
 A platform for <strong>Music Lovers </strong>
@@ -140,13 +144,14 @@ git push -u origin <your_branch_name>
 </a>
 
 ## Code of Conduct
-<p align="center"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></p>
+<p align="center"><a href="https://github.com/nilisha-jais/Musicophilia/blob/main/CODE_OF_CONDUCT.md"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></a></p>
 
 ## License 
-<p align="center"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></p>
-
+<p align="center"><a href="https://github.com/nilisha-jais/Musicophilia/blob/main/LICENSE"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></a></p>
+<div align="center">
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) 
 
+</div>

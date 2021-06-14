@@ -20,7 +20,8 @@ window.addEventListener('load', ()=>{
     });
 
     //the drum can be played with the keys A.S,D,J,K,L
-    document.addEventListener('keypress', function(event) {
+    document.addEventListener('keypress', function(event) 
+    {
         var keyPressed = event.key;
         switch(keyPressed){
             case 'a':
@@ -48,7 +49,7 @@ window.addEventListener('load', ()=>{
                crash.play();  
                break;
         }
-     })
+    })
 
     const createBubbles = (index) =>{
         const bubble = document.createElement('div');
