@@ -73,7 +73,7 @@ where `your_user_name` is your GitHub username. Here you're copying the contents
 
 **3.** Navigate to the project directory :file_folder: .
 ```
-cd VCallZer
+cd Musicophilia
 ```
 **4.** Add a reference(remote) to the original repository.
 ```
