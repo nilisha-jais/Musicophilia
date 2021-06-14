@@ -25,7 +25,8 @@
     </head>
 
     <body>
-
+        <div id="loader"></div>
+        
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
         <div class="nav">
@@ -148,6 +149,29 @@
 
         <!--The Below Script is written for Go to Top Button -->
         <script>
+            var loader;
+
+            function loadNow(opacity) {
+                if (opacity <= 0) {
+                    displayContent();
+                } else {
+                    loader.style.opacity = opacity;
+                    window.setTimeout(function() {
+                        loadNow(opacity - 0.05);
+                    }, 1000);
+                }
+            }
+
+            function displayContent() {
+                loader.style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                loader = document.getElementById('loader');
+                loadNow(1);
+            });
+    
             //Get the button
             var mybutton = document.getElementById("myBtn");
 

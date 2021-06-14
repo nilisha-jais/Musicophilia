@@ -421,3 +421,14 @@ html
  animation-timing-function: linear;
 -webkit-animation-timing-function: linear;
 }
+
+/* CSS for Pre-loader */
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: visible;
+    background: #1B4203 url('gif1.gif') no-repeat center center;
+}
