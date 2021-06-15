@@ -25,7 +25,13 @@
     </head>
 
     <body>
-        <div id="loader"></div>
+        <div id="preloader">
+            <div class="preloader-div">
+              <div class="rotator"></div>
+            <img class="preloader-img" src="gif1.gif"  alt="">
+        
+          </div>
+          </div>
         
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
@@ -149,18 +155,13 @@
 
         <!--The Below Script is written for Go to Top Button -->
         <script>
-            var loader;
+            window.onload=function(){
+            var preloader=document.getElementById("preloader");
+            setTimeout(function(){
+            preloader.style.display='none';
 
-            function loadNow(opacity) {
-                if (opacity <= 0) {
-                    displayContent();
-                } else {
-                    loader.style.opacity = opacity;
-                    window.setTimeout(function() {
-                        loadNow(opacity - 0.05);
-                    }, 1000);
-                }
-            }
+            },1000)
+        }
 
             function displayContent() {
                 loader.style.display = 'none';
