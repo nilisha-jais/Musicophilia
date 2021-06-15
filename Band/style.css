@@ -7,7 +7,10 @@
 body
 {
     font-family: 'Space Grotesk', sans-serif;
-    background-color: black;
+    background-color:rgb(107, 105, 109);
+    background-image: url("images/band.jpg");
+    background-size: cover;
+
 }
 
 .app
