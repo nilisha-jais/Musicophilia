@@ -41,6 +41,20 @@ body {
     height: 101px;
 }
 
+/* For score feature */
+.score{
+    position: absolute;
+    top:27%;
+    right:10%;
+    height: 50px;
+    width: 170px;
+    color: white;
+    text-shadow: 2px 2px purple;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 25px;
+}
+
 .options {
     width: 20%;
     height: 300px;
@@ -409,7 +423,7 @@ p {
 @media only screen and (max-width: 600px){
 
     #intro {
-        width: 60%;
+        width: 80%;
         height: 80px;
         background-color: transparent;
         margin: auto;
@@ -441,6 +455,14 @@ p {
         height: 101px;
     }
     
+    .score{
+        font-size: 1.1rem;
+        position: absolute;
+        top:6%;
+        left:15%;
+        width: 70%;
+        height: auto;
+    }
     .options {
         width: 70%;
         height: 300px;
