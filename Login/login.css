@@ -1,0 +1,134 @@
+body{
+    background:black;
+}
+  
+.login{
+    margin-left: 400px;
+    margin-top: 100px;
+    float: center;
+    padding: 20px 20px 20px;
+    width: 300px;
+    background: white;
+    border-radius: 3px; 
+}
+.login{
+    font-size: 12px;
+    cursor: pointer;
+    color: #777;
+} 
+.login .create_account{
+    text-align: center;
+}  
+
+.login h1{
+    margin: -20px -20px 21px;
+    line-height: 45px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    background: green;
+    border-radius: 3px;
+    
+}
+  
+.login p{
+    margin: 20px 0 0;
+}
+  
+  .login p:first-child {
+    margin-top: 0;
+  }
+  
+.login input[type=text], .login input[type=password]{
+    width: 278px;
+}
+.login p.remember_me{
+    float: left;
+    line-height: 31px;
+}
+  
+.login p.remember_me label{
+    font-size: 12px;
+    color: #777;
+    cursor: pointer;
+}
+  
+.login p.remember_me input{
+    position: relative;
+    bottom: 1px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+  
+.login p.submit{
+    text-align: right;
+}
+  
+.login-help{
+    margin: 20px 0;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+}
+  
+.login-help a{
+    color: #cce7fa;
+    text-decoration: none;
+}
+  
+.login-help a:hover{
+    text-decoration: underline;
+}
+  
+:-moz-placeholder{
+    color: #c9c9c9 !important;
+    font-size: 13px;
+}
+  
+::-webkit-input-placeholder{
+    color: #ccc;
+    font-size: 13px;
+}
+  
+input[type=text], input[type=password]{
+    margin: 5px;
+    padding: 0 10px;
+    width: 200px;
+    height: 34px;
+    color: #404040;
+    background: white;
+    border: 1px solid;
+    border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+    border-radius: 2px;
+    outline: 5px solid #eff4f7;
+}
+  
+input[type=text]:focus, input[type=password]:focus{
+    border-color: #7dc9e2;
+    outline-color: #dceefc;
+    outline-offset: 0;
+}
+  
+input[type=submit]{
+    padding: 0 18px;
+    height: 29px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #010800;
+    background: green;
+    border: 1px solid;
+    border-color: green;
+    border-radius: 16px;
+}
+  
+input[type=submit]:active{
+    background: green;
+    border-color: green;
+
+}
+  
+.lt-ie9 input[type=text], .lt-ie9 input[type=password]{
+    line-height: 34px;
+}
+
