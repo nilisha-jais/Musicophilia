@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <link href="contact.css" rel="stylesheet"> 
-  <div class="container">
-    <div style="text-align:center">
-      <h2>Contact Us</h2>
-      <p>Leave us a message:</p>
+
+<head>
+    <link href="contact.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Leave us a message:</p>
+        </div>
+        <div class="row">
+            <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" accept-charset="UTF-8">
+                <label for="fname">First Name <span>*</span></label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                <label for="lname">Last Name <span>*</span></label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                <label for="country">Country <span>*</span></label>
+                <input type="text" id="country" name="Country" placeholder="Enter your country" required>
+                <label for="subject">Subject <span>*</span></label>
+                <textarea id="subject" name="subject" placeholder="Write your msg" style="height:170px" required></textarea>
+                <input onclick="JSalert()" type="submit" value="Submit">
+            </form>
+        </div>
     </div>
-    <div class="row">
-        <form action="/action_page.php">
-          <label for="fname">First Name <span>*</span></label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-          <label for="lname">Last Name <span>*</span></label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-          <label for="country">Country <span>*</span></label>
-          <input type="text" id="country" name="Country" placeholder="Enter your country" required>
-          <label for="subject">Subject <span>*</span></label>
-          <textarea id="subject" name="subject" placeholder="Write your msg" style="height:170px" required></textarea>
-          <input type="submit" value="Submit">
-        </form>
-    </div>
-  </div>
-  
+
+    <script type="text/javascript">
+        function JSalert() {
+            swal("Congrats!", "Message was delivered successfully!", "success");
+        }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</body>
+
 </html>
