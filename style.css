@@ -239,10 +239,9 @@ border-radius:23px;
 {
   height: 50px;
   width: 50px;
-  background: color whitesmoke;
-  background-color: color #474e53;
+  background-color: black;
   border-radius: 50%;
-  border: 5px solid #444c47;
+  border: 5px solid #19911D;
   margin: 0 10px;
   text-align: center;
   cursor: pointer;
@@ -250,6 +249,7 @@ border-radius:23px;
   transition: all 0.5s ease;
 
 }
+
 .centerdiv a i{
   margin-top:5px;
   transition: all 0.5s ease;
