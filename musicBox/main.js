@@ -3,6 +3,7 @@ window.onload = () => {
     const song_title_el = document.querySelector('#song-title');
     const song_artist_el = document.querySelector('#song-artist');
     const song_next_up_el = document.querySelector('#song-next-up');
+    const artist_next_up_el = document.querySelector('#artist-next-up');
 
     const play_btn = document.querySelector('#play-btn');
     const play_btn_icon = document.querySelector('#play-btn .play-icon');
@@ -264,7 +265,8 @@ window.onload = () => {
         song_title_el.innerText = song.title;
         song_artist_el.innerText = song.artist;
 
-        song_next_up_el.innerText = songs[next_song_index].title + " by " + songs[next_song_index].artist;
+        song_next_up_el.innerText = songs[next_song_index].title;
+        artist_next_up_el.innerText = "by " + songs[next_song_index].artist;
 
         audio_player.src = song.song_path;
     }
