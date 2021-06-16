@@ -3,7 +3,7 @@ body
   color: white ;
   margin: 0px;
   font-family: 'segoe ui';
-  background:url('https://media.istockphoto.com/vectors/new-age-rock-band-music-vector-id594920678?k=6&m=594920678&s=612x612&w=0&h=2IRLHn75T7Q8DJjgWG47tptt1SvzKgc1ml4Vqhtnvp0=') no-repeat center center fixed ;
+  background-color:white ;
   background-size: cover;
 }
 .switch {
