@@ -1,57 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Music Quiz</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
-        <link rel="icon" href="..\favicon.png" type="image/gif" sizes="16x16">
-    </head>
-    <body>
-        <div class="quiz-container" id="quiz">
-            <div class="quiz-header">
-                <h2 id="question">Question text</h2>
-                <ul>
-                    <li>
-                        <input
-                            type="radio"
-                            id="a"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="a_text" for="a">Question</label>
-                    </li>
-                    <li>
-                        <input
-                            type="radio"
-                            id="b"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="b_text" for="b">Question</label>
-                    </li>
-                    <li>
-                        <input
-                            type="radio"
-                            id="c"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="c_text" for="c">Question</label>
-                    </li>
-                    <li>
-                        <input
-                            type="radio"
-                            id="d"
-                            name="answer"
-                            class="answer"
-                        />
-                        <label id="d_text" for="d">Question</label>
-                    </li>
-                </ul>
-            </div>
-            <button id="submit">Submit</button>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="button.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="..\favicon.png" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+    <div class="backbutton" align="left">
+        <a style="text-decoration:none" href="../index.html"><button type="button" style="background-color : #FD3656 ;">Back</button></a>
+    </div>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question"></h2>
+            <ul>
+                <li>
+                    <input type="radio" id="1" name="answer" class="answer" />
+                    <label id="a_text" for="1"></label>
+                </li>
+                <li>
+                    <input type="radio" id="2" name="answer" class="answer" />
+                    <label id="b_text" for="2"></label>
+                </li>
+                <li>
+                    <input type="radio" id="3" name="answer" class="answer" />
+                    <label id="c_text" for="3"></label>
+                </li>
+                <li>
+                    <input type="radio" id="4" name="answer" class="answer" />
+                    <label id="d_text" for="4"></label>
+                </li>
+            </ul>
         </div>
-    </body>
+        <button id="submit">Submit</button>
+    </div>
+</body>
+
 </html>

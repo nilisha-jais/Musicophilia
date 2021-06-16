@@ -1,0 +1,198 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+
+
+.artist-page-section{
+position:relative;
+padding-top:70px;
+}
+
+.artist-page-section .artist-block{
+margin-bottom:60px;
+}
+
+
+
+
+.artist-section{
+position:relative;
+padding:80px 0px 60px;
+}
+
+.artist-section.style-two .pattern-layer{
+position:absolute;
+left:0px;
+top:0px;
+right:0px;
+bottom:0px;
+background-position:center center;
+background-repeat:no-repeat;
+}
+
+.artist-section .title-box{
+position:relative;
+text-align:center;
+}
+
+.artist-section .title-box h2{
+position: relative;
+color: #222222;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.3em;
+margin-bottom: 50px;
+}
+
+.artist-section .title-box h2 span{
+color: #ff9600;
+}
+
+.artist-block{
+position:relative;
+}
+
+.artist-block .inner-box{
+position:relative;
+padding:40px 70px 28px 0px;
+}
+
+.artist-block .inner-box:before{
+position:absolute;
+content:'';
+right:0px;
+top:0px;
+left:70px;
+bottom:0px;
+border-radius:10px;
+background-color:#f5f5f5;
+-webkit-transition:all 600ms ease;
+-moz-transition:all 600ms ease;
+-ms-transition:all 600ms ease;
+-o-transition:all 600ms ease;
+transition:all 600ms ease;
+}
+
+.artist-block .inner-box::after{
+position:absolute;
+content:'';
+top:0px;
+left:70px;
+bottom:0px;
+width:0%;
+border-radius:10px;
+-webkit-transition:all 600ms ease;
+-moz-transition:all 600ms ease;
+-ms-transition:all 600ms ease;
+-o-transition:all 600ms ease;
+transition:all 600ms ease;
+background-image: -ms-linear-gradient(top, #ffca08 0%, #f70067 100%);
+background-image: -moz-linear-gradient(top, #ffca08 0%, #f70067 100%);
+background-image: -o-linear-gradient(top, #ffca08 0%, #f70067 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffca08), color-stop(100, #f70067));
+background-image: -webkit-linear-gradient(top, #ffca08 0%, #f70067 100%);
+background-image: linear-gradient(to bottom, #ffca08 0%, #f70067 100%);
+}
+
+.artist-block .inner-box:hover::after{
+width:81%;
+}
+
+.artist-block .inner-box .social-icons{
+position:absolute;
+right:25px;
+top:100px;
+z-index:1;
+}
+
+.artist-block .inner-box .social-icons li{
+position:relative;
+margin-bottom:20px;
+}
+
+.artist-block .inner-box .social-icons li a{
+position:relative;
+color:#e40000;
+font-size:18px;
+-webkit-transition: all 0.4s;
+-moz-transition: all 0.4s;
+-o-transition: all 0.4s;
+transition: all 0.4s;
+}
+
+.artist-block .inner-box:hover .lower-content h3 a,
+.artist-block .inner-box:hover .social-icons li a,
+.artist-block .inner-box:hover .lower-content .origin{
+color:#ffffff;
+}
+
+.artist-block .inner-box .image{
+position:relative;
+z-index:1;
+border-radius:10px;
+background-color:#ffffff;
+box-shadow:inset 0px 0px 35px rgba(0,0,0,0.20);
+}
+
+.artist-block .inner-box .image img{
+position:relative;
+width:300px;
+height:300px;
+display:block;
+}
+
+.artist-block .inner-box .lower-content{
+position:relative;
+text-align:left;
+z-index:1;
+padding:30px 15px 0px 110px;
+}
+
+.artist-block .inner-box .lower-content h3{
+position:relative;
+color:#bd0000;
+font-size:18px;
+font-weight:700;
+line-height:1.3em;
+}
+
+.artist-block .inner-box .lower-content h3 a{
+position:relative;
+color:#bd0000;
+-webkit-transition: all 0.4s;
+-moz-transition: all 0.4s;
+-o-transition: all 0.4s;
+transition: all 0.4s;
+}
+
+.artist-block .inner-box .lower-content .origin{
+position:relative;
+margin-top:5px;
+color:#777777;
+font-size:14px;
+}
+
+.artist-block.style-two .inner-box .lower-content h3 a,
+.artist-block.style-two .inner-box .social-icons li a{
+color:#ff9600;
+}
+
+.artist-block.style-two .inner-box:hover .lower-content h3 a,
+.artist-block.style-two .inner-box:hover .social-icons li a{
+color:#ffffff;
+}
+
+.artist-block.style-two .inner-box::after{
+background-image: -ms-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
+background-image: -moz-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
+background-image: -o-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFEB3C), color-stop(100, #ff9600));
+background-image: -webkit-linear-gradient(top, #FFEB3C 0%, #ff9600 100%);
+background-image: linear-gradient(to bottom, #FFEB3C 0%, #ff9600 100%);
+}

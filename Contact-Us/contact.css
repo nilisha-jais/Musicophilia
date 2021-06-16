@@ -1,0 +1,178 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white ;
+  font-family: 'segoe ui';
+
+
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+  margin-left: 30px;
+}
+  .nav {
+    height: 70px;
+    width: 100%;
+    /* background-color:green; */
+    margin-top:0px;
+    position:sticky;
+  }
+  .sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+.nav-img{
+  height: 50px;
+  width: 80px;
+  margin-top: 0px;
+  display: inline-block;
+  margin-left: 20px;
+  
+}
+
+.nav-title {
+  cursor: pointer;
+}
+  .nav  .nav-header {
+    display: inline;
+  }
+
+  .nav  .nav-header  .nav-title {
+    display: inline-block;
+    font-size: 25px;
+    /* color:rgb(17, 17, 17);
+     */
+    color: green;
+     padding: 18px 10px 10px 10px;
+    font-weight:bold;
+  }
+
+  .nav > .nav-btn {
+    display: none;
+  }
+
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    padding-right: 30px;
+  }
+
+  .nav > .nav-links > a {
+    display: inline-block;
+    margin-top: 7px;
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    /* color: white; */
+
+    
+     color: rgb(61, 173, 61);
+    transition: 0.3s;
+  }
+
+  .nav > .nav-links > a:hover {
+    font-size: 20px;
+    /* border-bottom: solid 2px white; */
+    border-bottom: solid 2px green;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .red {
+    color: rgb(241, 129, 129);
+  }
+  .contact-form {
+    padding: 20px 10px;
+    padding-bottom: 7px;
+    background-color: green;
+    border-radius: 7px;
+    opacity: 0.6;
+    width: 85vw;
+    margin: 50px auto;
+  }
+
+  .button {
+    color: green;
+    background-color: #fff;
+    border: none;
+    padding: 6px 12px;
+    margin: 8px 0;
+  }
+
+  .button:hover {
+    background-color: rgb(4, 26, 10);
+    color: #fff;
+  }
+
+  input, textarea {
+    width: 98%;
+    border-radius: 1px;
+    padding: 7px 11px;
+    border: none;
+  }
+
+  input,
+  textarea {
+    color: grey;
+    font-size: 12px;
+  }
+  
+
+  input, 
+  textarea:focus {
+    outline: none;
+  }
+
+  .label {
+    margin: 10px 0;
+  }
+
+  header {
+    height: 100vh;
+    background:url('https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg') no-repeat center center fixed ;
+    background-size: cover;
+    padding-bottom: 40px;
+  }
+
+  footer{
+    opacity: 0.9;
+    background-color:green;
+    text-align: center;
+}
+
+@media (max-width: 1074px) {
+  input, textarea {
+    width: 97%;
+  }
+}
+@media (max-width: 788px) {
+  input, textarea {
+    width: 96%;
+  }
+}
+
+
+  @media (max-width:470px) {
+    footer > h2,p{
+      margin: 7px;
+    }
+    footer h5{
+      margin-bottom: 0;
+      padding-bottom: 10px;
+    }
+    footer {
+      margin-top: -8px;
+    }
+    input, textarea {
+      width: 92%;
+    }
+  }
+
+
