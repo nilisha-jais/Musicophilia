@@ -39,12 +39,12 @@ Below you will find the process and workflow used to review and merge your chang
 ### Step 1 : Fork the Project 🍴
 - Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. Keep a reference to the original project in `upstream` remote.
 ```
-$ git clone https://github.com/<your-username>/CollegeAada
+$ git clone https://github.com/<your-username>/Musicophilia
 # Navigate to the project directory.
-$ cd CollegeAada
-$ git remote add upstream https://github.com/Tejas1510/CollegeAada
+$ cd Musicophilia
+$ git remote add upstream https://github.com/nilisha-jais/Musicophilia
 ```
-![fork]<img src="./images/fork.png" alt="issue">
+![fork]<img src="./images/fork.png" alt="fork">
 - If you have already forked the project, update your copy before working.
 ```
 $ git remote update
@@ -89,11 +89,11 @@ $ git commit -m "message"
 $ git push -u origin Branch_Name
 ```
 - Here is how your branch will look.
-![br]<img src="./images/branch.png" alt="issue">
+![br]<img src="./images/branch.png" alt="branch">
 
 ### Step 6 : Pull Request  🎣
 - Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
-![pullrequest]<img src="./images/pullrequest.png" alt="issue">
+![pullrequest]<img src="./images/pullrequest.png" alt="pullrequest">
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
 ## Need more help?🤔
