@@ -200,6 +200,7 @@ body
   backdrop-filter: blur( 11.0px );
   -webkit-backdrop-filter: blur( 11.0px );
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 .heading
 {
