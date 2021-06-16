@@ -135,17 +135,11 @@ git push -u origin <your_branch_name>
   </tr>
 </table>
 <br>
-<h1 align=center> project Admins ❤️ </h1>
-
-
+<h1 align=center> Project Admin ❤️ </h1>
   
-<table>
+<table align=center>
 <tr>
 <td align="center"><a href="https://github.com/nilisha-jais"><img src="https://avatars.githubusercontent.com/u/73216246?v=4/u/67006255?s=400&u=c0e16c3bba31328a028cfcca4b1fa7599509f905&v=4" width=150px height=150px /></a></br> <h4 style="color:red;">nilisha jais</h4>
-
-     
-
-<td align="center" ><a href="https://github.com/niloysikdar"><img src="https://avatars.githubusercontent.com/u/58071992?v=4" width=150px height=150px /></a></br> <h4 style="color:red;">Niloy sikdar</h4>
 </tr>
 </table>
 <br>
