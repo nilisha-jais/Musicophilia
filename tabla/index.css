@@ -1,14 +1,13 @@
-*{
+* {
     padding: 10px;
     margin: 10px;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Space Grotesk', sans-serif;
     background-color: black;
 }
-
 
 #title {
     margin: 5px 0px 32px 0px;
@@ -18,24 +17,27 @@ body{
     font-weight: 900;
     color: white;
 }
-.set{
+
+.set {
     margin: 5% auto;
     margin-left: 28%
 }
-.t{
-  background-image: url("img/tap1.png");
+
+.t {
+    background-image: url("img/tap1.png");
 }
 
-.d{
-  background-image: url("img/tap2.png");
+.d {
+    background-image: url("img/tap2.png");
 }
+
 .tabla {
-  display: inline-block;
-  width: 270px;
-  height: 250px;
-  align-self: center;
-  box-shadow: none;
-  background-color: black;
-  background-repeat: no-repeat;
-  border: none;
+    display: inline-block;
+    width: 270px;
+    height: 250px;
+    align-self: center;
+    box-shadow: none;
+    background-color: black;
+    background-repeat: no-repeat;
+    border: none;
 }

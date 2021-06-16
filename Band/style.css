@@ -9,7 +9,6 @@ body
     font-family: 'Space Grotesk', sans-serif;
     padding-top:50px;
     background-color: black;
-
 }
 
 .app
@@ -102,8 +101,8 @@ body
 }
 
 .pads > div img{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     margin-bottom:15px;
     padding-top:15px;
 }
@@ -233,8 +232,8 @@ body
     }
     .pads > div img
     {
-        width: 80px;
-        height: 80px;        
+        width: 70px;
+        height: 70px;        
     }
     .keyboard-keys{
         font-size:1.5rem;
@@ -246,27 +245,23 @@ body
     }
 }
 
-/*****Footer****/
-.footer{
-    background-color: green;
-    box-sizing: border-box;
-    margin-top:6rem;
-    width: 100%;
-    padding:10px 30px;
-  }
+/***************************Footer*************************/
   
+footer
+{
+  background-color:green;
+  text-align: center;
+ color:white;
+ margin-top:50px;
+}
+.content span 
+{
+  font-size: 6rem;
+}
+
   .footer-content{
     display:flex;
     justify-content:center;
-  }
-  
-  .footer-heading{
-    color:white;
-    margin-bottom:20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .footer-left{
-      text-align:center;
   }
   
   .footer-links i{
@@ -281,27 +276,68 @@ body
       background-color:white;
   }
 
-  #footer-hr{
-    width:100%;
-    height:0px;
-    margin:20px 0px;
+  @media (max-width:470px) 
+{
+  .content 
+  {
+    font-size: .8rem;
+    overflow: auto;
   }
-  .footer-copyright{
-    text-align:center;
-    color:white;
-    margin-top:20px;
-    font-size:18px;
+  .content span 
+  {
+    font-size: 3rem;
   }
-  
-  
-  /***************** Media Queries for footer *********************/
-  
-  @media (max-width: 600px) {
-    .footer-content{ 
-       display:block;
-       text-align:center;
-    }
+
+  .btn 
+  {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+footer > h2,p
+{
+  margin: 7px;
+}
+footer h5
+{
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+/* Below styling is for go to the top button */
+html
+{
+  scroll-behavior: smooth;
 }
 
-
-  
+#myBtn
+{
+    width:40px;
+    height:40px;
+  display: none;
+  position: fixed;
+  top:90%;
+  left: 95%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+#myBtn .fas
+{
+  position: relative;
+}
+ #myBtn:hover 
+{
+  background-color: rgb(39, 37, 37);
+  transition: 0.5s;
+}
+#myBtn:hover .fas
+{
+  transition: 0.5s;
+  bottom:5px; 
+}

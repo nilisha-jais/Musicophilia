@@ -239,10 +239,9 @@ border-radius:23px;
 {
   height: 50px;
   width: 50px;
-  background: color whitesmoke;
-  background-color: color #474e53;
+  background-color: black;
   border-radius: 50%;
-  border: 5px solid #444c47;
+  border: 5px solid #19911D;
   margin: 0 10px;
   text-align: center;
   cursor: pointer;
@@ -250,6 +249,7 @@ border-radius:23px;
   transition: all 0.5s ease;
 
 }
+
 .centerdiv a i{
   margin-top:5px;
   transition: all 0.5s ease;
@@ -431,4 +431,48 @@ html
  -webkit-animation-iteration-count: infinite;
  animation-timing-function: linear;
 -webkit-animation-timing-function: linear;
+}
+
+/* CSS for Pre-loader */
+
+#preloader{
+  width: 100%;
+  height: 100vh;
+  background-color: #1B4203;
+  display: grid;
+  align-items: center;
+  place-items: center;
+  position: fixed;
+  z-index: 9999;
+}
+.preloader-div{
+  width: 30rem;
+  height: 30rem;
+  position: relative;
+}
+.rotator{
+  width: 30rem;
+  height:30rem;
+  border-radius: 50%;
+  animation: rotator 1s linear infinite;
+  border-right:3px solid #fff;
+}
+.preloader-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%,-50%);
+  width:400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@keyframes rotator{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
 }
