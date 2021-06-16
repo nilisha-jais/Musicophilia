@@ -18,7 +18,9 @@ function decode(html) {
     return text.value;
 }
 
+
 fetch(`https://opentdb.com/api.php?amount=10&category=12&type=multiple`)
+
     .then((res) => res.json())
     .then(data => {
         quizData = data.results.map((ques) => {
@@ -49,6 +51,19 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&type=multiple`)
         c_text.innerText = currentQuizData.answerChoices[2];
         d_text.innerText = currentQuizData.answerChoices[3];
         }
+
+        var sec = 150;
+        var time = setInterval(myTimer, 1000);
+
+        function myTimer() {
+            document.getElementById('timer').innerHTML = sec + "sec left";
+            sec--;
+            if (sec == -1) {
+            clearInterval(time);
+            alert("Time out!! :(");
+        
+        }
+}
 
         function getSelected() {
             let answer = undefined;
