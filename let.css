@@ -47,7 +47,7 @@ float: right;  }
   }
 
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #000000;
   }
 
   input:focus + .slider {
