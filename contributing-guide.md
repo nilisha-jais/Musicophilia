@@ -44,7 +44,9 @@ $ git clone https://github.com/<your-username>/Musicophilia
 $ cd Musicophilia
 $ git remote add upstream https://github.com/nilisha-jais/Musicophilia
 ```
-![fork]<img src="./images/fork.png" alt="fork">
+This is how you can fork the repository.
+<img src="./images/fork.png" alt="fork">
+
 - If you have already forked the project, update your copy before working.
 ```
 $ git remote update
@@ -89,11 +91,11 @@ $ git commit -m "message"
 $ git push -u origin Branch_Name
 ```
 - Here is how your branch will look.
-![br]<img src="./images/branch.png" alt="branch">
+<img src="./images/branch.png" alt="branch">
 
 ### Step 6 : Pull Request  🎣
 - Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
-![pullrequest]<img src="./images/pullrequest.png" alt="pullrequest">
+<img src="./images/pullrequest.png" alt="pullrequest">
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
 ## Need more help?🤔
