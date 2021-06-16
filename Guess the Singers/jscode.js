@@ -3,6 +3,9 @@ let singersPunjabi = new Array("pictures/ammy.png", "pictures/diljit.png", "pict
 let singersEnglish = new Array("pictures/ed.png", "pictures/bruno.png", "pictures/justin.png", "pictures/eminem.png", "pictures/zyan.png", "pictures/selena.png", "pictures/ariana.png", "pictures/beyonce.png", "pictures/rihanna.png", "pictures/billie.png");
 
 let counter = 0;
+let score = 0;
+let tot = 0;
+let scoreText = document.getElementById("scores");
 
 let option1 = document.getElementById("option1");
 let option2 = document.getElementById("option2");
@@ -23,6 +26,18 @@ let image = document.getElementById("singer_image");
 let imagePunjabi = document.getElementById("singer_image_punjabi");
 let imageEnglish = document.getElementById("singer_image_english");
 
+option1.addEventListener("click",updateScoreHindi);
+option2.addEventListener("click",updateScoreHindi);
+option3.addEventListener("click",updateScoreHindi);
+option4.addEventListener("click",updateScoreHindi);
+option1English.addEventListener("click",updateScoreEnglish);
+option2English.addEventListener("click",updateScoreEnglish);
+option3English.addEventListener("click",updateScoreEnglish);
+option4English.addEventListener("click",updateScoreEnglish);
+option1Punjabi.addEventListener("click",updateScorePunjabi);
+option2Punjabi.addEventListener("click",updateScorePunjabi);
+option3Punjabi.addEventListener("click",updateScorePunjabi);
+option4Punjabi.addEventListener("click",updateScorePunjabi);
 
 
 function startAgain() {
@@ -46,7 +61,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 1) {
+    }
+    else if (counter == 1) {
         option1.style.backgroundColor = "red";
         option1.style.color = "white";
         option2.style.backgroundColor = "green";
@@ -60,7 +76,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 2) {
+    }
+    else if (counter == 2) {
         option1.style.backgroundColor = "red";
         option1.style.color = "white";
         option2.style.backgroundColor = "red";
@@ -74,7 +91,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 3) {
+    }
+    else if (counter == 3) {
         option1.style.backgroundColor = "red";
         option1.style.color = "white";
         option2.style.backgroundColor = "red";
@@ -88,7 +106,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 4) {
+    }
+    else if (counter == 4) {
         option1.style.backgroundColor = "green";
         option1.style.color = "white";
         option2.style.backgroundColor = "red";
@@ -130,7 +149,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 7) {
+    }
+    else if (counter == 7) {
         option1.style.backgroundColor = "red";
         option1.style.color = "white";
         option2.style.backgroundColor = "green";
@@ -158,7 +178,8 @@ function checkAnswer() {
         option3.disabled = true;
         option4.disabled = true;
         counter += 1;
-    } else if (counter == 9) {
+    }
+    else if (counter == 9) {
         option1.style.backgroundColor = "red";
         option1.style.color = "white";
         option2.style.backgroundColor = "green";
@@ -172,7 +193,7 @@ function checkAnswer() {
         option2.disabled = true;
         option3.disabled = true;
         option4.disabled = true;
-        counter = 0;
+        counter += 1;
         document.getElementById("close_button").style.display = "block";
     }
 }
@@ -335,8 +356,10 @@ function punjabi() {
     let options = document.getElementById("options_punjabi")
     options.style.display = "block";
     document.getElementById("next_button_punjabi").style.display = "block";
-    counter=0;
-
+    counter = 0;
+    score = 0;
+    tot = 0;
+    scoreText.innerHTML='Score: 0/0';
 }
 
 function startAgainPunjabi() {
@@ -493,7 +516,7 @@ function checkAnswerPunjabi() {
         option2Punjabi.disabled = true;
         option3Punjabi.disabled = true;
         option4Punjabi.disabled = true;
-        counter = 0;
+        counter += 1;
         document.getElementById("close_button_punjabi").style.display = "block";
     }
 }
@@ -666,8 +689,10 @@ function hollywood() {
     let options = document.getElementById("options_english")
     options.style.display = "block";
     document.getElementById("next_button_english").style.display = "block";
-    counter=0;
-
+    counter = 0;
+    score = 0;
+    tot = 0;
+    scoreText.innerHTML='Score: 0/0';
 }
 
 function startAgainEnglish() {
@@ -824,7 +849,7 @@ function checkAnswerEnglish() {
         option2English.disabled = true;
         option3English.disabled = true;
         option4English.disabled = true;
-        counter = 0;
+        counter += 1;
         document.getElementById("close_button_english").style.display = "block";
     }
 }
@@ -844,7 +869,7 @@ function changeColorEnglish() {
 
 }
 /*let singersEnglish = new Array("ed.png", "bruno.png", "justin.png", "eminem.png", "zyan.png", "selena.png", "ariana.png", "beyonce.png", "rihanna.png", "billie.png");
-3 1 2 4*/ 
+3 1 2 4*/
 function nextQuestionEnglish() {
 
     if (counter == 1) {
@@ -983,3 +1008,45 @@ function nextQuestionEnglish() {
     }
 }
 
+// Score Feature - updating the values
+
+function updateScoreEnglish(e) {
+    const ansKeyEng = [1,2,1,2,4,4,4,1,3,4]
+    let option = 'option' + `${ansKeyEng[counter-1]}` + 'English';
+    if(e.target.id == option){
+        score += 1;
+        tot += 1;
+        scoreText.innerHTML = `Score: ${score}/${tot}`;
+    }
+    else{
+        tot += 1;
+        scoreText.innerHTML = `Score: ${score}/${tot}`;
+    }
+}
+function updateScoreHindi(e) {
+    const ansKeyEng = [1,2,4,3,1,3,1,2,4,2]
+    let option = 'option' + `${ansKeyEng[counter-1]}`;
+    console.log(e.target.id, option);
+    if(e.target.id == option){
+        score += 1;
+        tot += 1;
+        scoreText.innerHTML = `Score: ${score}/${tot}`;
+    }
+    else{
+        tot += 1;
+        scoreText.innerHTML = `Score: ${score}/${tot}`;
+    }
+}
+function updateScorePunjabi(e) {
+    const ansKeyEng = [1,1,3,1,2,3,1,2,4,2]
+    let option = 'option' + `${ansKeyEng[counter-1]}` + 'Punjabi';
+    if(e.target.id == option){
+        score += 1;
+        tot += 1;
+        scoreText.innerHTML = `Score: ${score}/${tot}`;
+    }
+    else{
+        tot += 1;
+        scoreText.innerHTML = `Score: ${score}/${tot}`;
+    }
+}

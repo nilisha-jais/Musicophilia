@@ -1,33 +1,35 @@
-body{
-    background-color:rgb(107, 105, 109);
-    background-image: url("images/background.jpg");
-    background-size: cover;
-  }
-a {
-    background-color: rgb(16, 19, 16);
-    color: rgb(245, 244, 253);
-    padding: 1em 1em;
-    text-decoration: none;
-    
-    
-  }
+body
+{
+  background-image: url("images/2014-july-30-net-art-history-2.gif");
+  background-size:auto;
+}
+a
+{
+  background-color: rgb(16, 19, 16);
+  color: rgb(245, 244, 253);
+  padding: 1em 1em;
+  text-decoration: none;
+}  
+a:hover 
+{
+  background-color:rgb(142, 145, 151);
+}
   
-  a:hover {
-    background-color:rgb(142, 145, 151);
-  }
+a:active 
+{
+  background-color:rgb(142, 145, 151);
+}
   
-  a:active {
-    background-color:rgb(142, 145, 151);
-  }
-  
-  a:visited {
-    background-color:rgb(16, 19, 16)k;
-  }
+a:visited 
+{
+  background-color:rgb(16, 19, 16)k;
+}
   
 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+body 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

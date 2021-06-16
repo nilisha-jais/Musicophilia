@@ -39,15 +39,15 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&type=multiple`)
         loadQuiz();
 
         function loadQuiz() {
-            deselectAnswers();
+        deselectAnswers();
 
-            const currentQuizData = quizData[currentQuiz];
+        const currentQuizData = quizData[currentQuiz];
 
-            questionEl.innerText = currentQuizData.questions.question;
-            a_text.innerText = currentQuizData.answerChoices[0];
-            b_text.innerText = currentQuizData.answerChoices[1];
-            c_text.innerText = currentQuizData.answerChoices[2];
-            d_text.innerText = currentQuizData.answerChoices[3];
+        questionEl.innerText = currentQuizData.questions.question;
+        a_text.innerText = currentQuizData.answerChoices[0];
+        b_text.innerText = currentQuizData.answerChoices[1];
+        c_text.innerText = currentQuizData.answerChoices[2];
+        d_text.innerText = currentQuizData.answerChoices[3];
         }
 
         function getSelected() {
