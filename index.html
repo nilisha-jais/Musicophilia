@@ -25,14 +25,7 @@
     </head>
 
     <body>
-        <div id="preloader">
-            <div class="preloader-div">
-              <div class="rotator"></div>
-            <img class="preloader-img" src="gif1.gif"  alt="">
-        
-          </div>
-          </div>
-        
+
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 
         <div class="nav">
@@ -53,8 +46,8 @@
 
             <nav class="nav-links">
                 <a class="current" href="#">Home</a>
-                <a class ="current" href="About/index.html">About</a>
-                <a class ="current" href="Contact-Us/index.html">Contact Us</a>
+                <a class ="current" href="#">About</a>
+                <a class ="current" href="Contact-Us/contact.html">Contact Us</a>
             </nav>
         </div>
         <div class="main">
@@ -86,13 +79,6 @@
                     <span style='font-size:80px;'><i class='bx bx-tada '>🎸</i></span>
                     <h3>First love was the sound of guitar, Play it!</h3>
                     <a href="Guitar/index.html"><button class="btn" id="box-4">GO</button></a>
-                    <br><br>
-                </div>
-                <div class="content" >
-                    <h1>Tabla</h1>
-                    <span ><i class='bx bx-tada bxs-tabla'></i></span>
-                    <h3>Lets go traditional</h3>
-                    <a href="tabla/index.html"><button class="btn" id="box-7">GO</button></a>
                     <br><br>
                 </div>
                 <div class="content">
@@ -162,24 +148,6 @@
 
         <!--The Below Script is written for Go to Top Button -->
         <script>
-            window.onload=function(){
-            var preloader=document.getElementById("preloader");
-            setTimeout(function(){
-            preloader.style.display='none';
-
-            },1000)
-        }
-
-            function displayContent() {
-                loader.style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-            }
-
-            document.addEventListener("DOMContentLoaded", function() {
-                loader = document.getElementById('loader');
-                loadNow(1);
-            });
-    
             //Get the button
             var mybutton = document.getElementById("myBtn");
 
