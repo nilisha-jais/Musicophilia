@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   color: white;
   margin: 0px;
@@ -31,6 +32,7 @@ body {
     to(#19911d),
     color-stop(0.6, #54de5d)
   );
+
 }
 
 .container,
@@ -56,6 +58,7 @@ body {
 
 .navbar {
   background-color: green !important;
+
 }
 
 .nav-img {
@@ -63,6 +66,7 @@ body {
   width: 70px;
   margin-top: 0px;
   display: inline-block;
+
 }
 
 #webTitle {
@@ -78,6 +82,7 @@ body {
   padding: 13px 20px 13px 20px !important;
 }
 
+
 .current {
   background-color: rgba(0, 0, 0, 0.247);
   border-radius: 20px;
@@ -86,24 +91,30 @@ body {
   border: solid 2px black;
 }
 .current:hover {
+
   transition: 0.3s !important;
   font-size: 20px !important;
   background-color: lightslategrey !important;
+
   border: solid 2px black !important;
   font-size: 18px !important;
 }
 
+
 hr {
   border-width: 0px 0px 0px 0px !important;
   height: 6px !important;
+
   background-image: linear-gradient(
     to right,
     rgba(0, 128, 0, 0.1),
     rgba(0, 128, 0, 0.85),
     rgba(0, 128, 0, 0.1)
   );
+
   margin: 0 !important;
   opacity: 0.51;
+
 }
 
 .main {
@@ -125,7 +136,9 @@ hr {
   margin-top: 30px;
 }
 .content {
+
   padding: 1rem 0px;
+
   height: auto;
   width: 350px;
   transition: 0.3s;
@@ -138,7 +151,9 @@ hr {
   /* margin-right: 20px; */
 }
 .heading {
+
   margin: 14px auto;
+
   font-size: 35px;
   font-family: "Chango", cursive;
 }
@@ -181,6 +196,8 @@ hr {
   float: left;
   transition: all 0.5s ease;
 }
+
+
 
 .centerdiv a i {
   margin-top: 5px;
@@ -240,10 +257,16 @@ a:hover .fa-twitter {
 #box-7 {
   background-image: linear-gradient(to right, #20aae5, #a722d6);
 }
+
+#box-10 {
+  background-image: linear-gradient(to right, #85e942, #f1753c);
+}
+
 .btn:hover {
   background-color: red;
   color: black;
 }
+
 
 .btn:active {
   transition-duration: 0s;
@@ -251,8 +274,10 @@ a:hover .fa-twitter {
     inset -5px -5px 5px rgb(230, 227, 227, 0.6);
   font-size: 15px;
 }
+
 footer {
   background-color: green;
+
   text-align: center;
 }
 .content span {
@@ -359,6 +384,7 @@ html {
   -webkit-animation-iteration-count: infinite;
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
+
 }
 
 /* CSS for Pre-loader */
@@ -403,4 +429,5 @@ html {
   100% {
     transform: rotate(360deg);
   }
+
 }
