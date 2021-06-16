@@ -23,7 +23,7 @@ We are happy to welcome all the contributions from anyone willing to improve/add
 
 ## Code of Conduct
 This project and everyone participating in it is governed by the Contributor Covenant, version 1.4, available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html.<br>
-Make sure to read it here: [CODE_OF_CONDUCT.md](https://github.com/Tejas1510/CollegeAada/blob/main/CODE_OF_CONDUCT.md)
+Make sure to read it here: [CODE_OF_CONDUCT.md](https://github.com/nilisha-jais/Musicophilia/blob/2fe7b62e8357f07b54e45b011130b1cd7641808e/CODE_OF_CONDUCT.md)
 
 By participating, you are expected to uphold this code. For answers to common questions about this code of conduct, see https://www.contributor-covenant.org/faq
 
@@ -44,7 +44,7 @@ $ git clone https://github.com/<your-username>/CollegeAada
 $ cd CollegeAada
 $ git remote add upstream https://github.com/Tejas1510/CollegeAada
 ```
-![fork](https://github.com/nilisha-jais/CollegeAada/blob/main/Images/fork.png)
+![fork]<img src="./images/fork.png" alt="issue">
 - If you have already forked the project, update your copy before working.
 ```
 $ git remote update
@@ -89,11 +89,11 @@ $ git commit -m "message"
 $ git push -u origin Branch_Name
 ```
 - Here is how your branch will look.
-![br](https://github.com/nilisha-jais/CollegeAada/blob/main/Images/branch.png)
+![br]<img src="./images/branch.png" alt="issue">
 
 ### Step 6 : Pull Request  🎣
 - Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
-![pullrequest](https://github.com/nilisha-jais/CollegeAada/blob/main/Images/pull_request.png)
+![pullrequest]<img src="./images/pullrequest.png" alt="issue">
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
 ## Need more help?🤔
