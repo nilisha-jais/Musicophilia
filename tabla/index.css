@@ -10,12 +10,18 @@ body {
 }
 
 #title {
-    margin: 5px 0px 32px 0px;
+    margin: 5px 0px 0px 0px;
     text-align: center;
     font-size: 3.5rem;
     letter-spacing: 0.25rem;
     font-weight: 900;
     color: white;
+}
+p{
+    margin-top: 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #67db39
 }
 
 .set {
@@ -41,3 +47,4 @@ body {
     background-repeat: no-repeat;
     border: black;
 }
+o
