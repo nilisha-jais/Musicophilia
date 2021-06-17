@@ -1,5 +1,8 @@
 body{
     background:black;
+    background: url("https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg")
+     no-repeat center center fixed;
+    background-size: cover;
 }
   
 .login{
