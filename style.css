@@ -17,7 +17,7 @@ html {
   display: grid;
   --bg-background: url("https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg")
     no-repeat center center fixed;
-  --bg-panel: #ebebeb;
+ --bg-panel: #0f0e0e;
   --color-headings: #0077ff;
   --color-text: #333333;
 }
