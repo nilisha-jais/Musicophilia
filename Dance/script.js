@@ -17,6 +17,7 @@ $(document).ready(function () {
     function loadVids(q) {
         
         options.q = q;
+        $('main').html(``);
 
         $.getJSON(URL,options, function (data) {
             var id = data.items[0].id.videoId;
@@ -29,7 +30,6 @@ $(document).ready(function () {
         $('#video').html(`
 					<iframe  src="https://www.youtube.com/embed/${id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				`);
-        $('main').html(``);
     }
 
 		
