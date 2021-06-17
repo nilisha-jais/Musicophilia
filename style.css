@@ -282,37 +282,38 @@ a:hover .fa-twitter {
   background-image: linear-gradient(to right, #85e942, #f1753c);
 }
  #box-1:hover {
+   transition: all 2500ms ease;
     background-image: linear-gradient(to right, #85e942, green);
   }
  
   #box-2:hover {
-    
+    transition: all 2500ms ease;
     background-image: linear-gradient(to right, #85e942, green);
   }
   #box-3:hover {
-    
+    transition: all 2500ms ease;
     background-image: linear-gradient(to right, #85e942, green);
   }
   #box-4:hover {
-    
+    transition: all 2500ms ease;
     background-image: linear-gradient(to right, #85e942, green);
   }
   #box-5:hover {
-    
+    transition: all 2500ms ease;
     background-image: linear-gradient(to right, #85e942, green);
   }
   #box-6:hover {
-    
+    transition: all 2500ms ease;
     background-image: linear-gradient(to right, #85e942, green);
   }
   
   #box-7:hover {
-    
+    transition: all 2500ms ease;
     background-image: linear-gradient(to right, #85e942, green);
   }
   
   #box-10:hover {
-    
+    transition: all 2500ms ease;
     background-image: linear-gradient(to right, #85e942, green);
   }
 
