@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -99,20 +98,23 @@
               <a class="nav-link current" href="./About/index.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link current" href="./Contact-Us/contact.html">Contact Us</a>
+              <a class="nav-link current" href="./Contact-Us/contact.html"
+                >Contact Us</a
+              >
             </li>
             <li class="nav-item">
-                <a class="nav-link current" href="login/login.html">Login</a>
-              </li>
+              <a class="nav-link current" href="login/login.html">Login</a>
+            </li>
           </ul>
         </div>
       </div>
+      <div>
+        <input type="checkbox" id="switch" name="theme" /><label for="switch"
+          >Toggle</label
+        >
+      </div>
     </nav>
-  <div>
-      <input type="checkbox" id="switch" name="theme" /><label for="switch"
-        >Toggle</label
-      >
-    </div>
+
     <div class="main">
       <div class="heading">Mindfull Music</div>
       <div class="container">
@@ -124,9 +126,7 @@
             ><button class="btn" id="box-1">GO</button></a
           >
           <br /><br />
-
         </div>
-
 
         <div class="content">
           <h1>The Band</h1>
@@ -136,7 +136,6 @@
             ><button class="btn" id="box-6">GO</button></a
           >
           <br /><br />
-
         </div>
         <div class="content">
           <h1>Piano</h1>
@@ -148,13 +147,15 @@
           <br /><br />
         </div>
         <div class="content">
-                    <h1>The Flute</h1>
-                    <box-icon name='spotify' type='logo' animation='tada'></box-icon>
-                    <span><i class='bx bxl-spotify bx-tada'></i></span>
-                    <h3>Straight from God's hand !</h3>
-                    <a href="Flute/index.html"><button class="btn" id="box-10">GO</button></a>
-                    <br><br>
-                </div>
+          <h1>The Flute</h1>
+          <box-icon name="spotify" type="logo" animation="tada"></box-icon>
+          <span><i class="bx bxl-spotify bx-tada"></i></span>
+          <h3>Straight from God's hand !</h3>
+          <a href="Flute/index.html"
+            ><button class="btn" id="box-10">GO</button></a
+          >
+          <br /><br />
+        </div>
         <div class="content">
           <h1>Drum Kit</h1>
           <span style="font-size: 80px"><i class="bx bx-tada">🥁</i></span>
@@ -253,23 +254,21 @@
       </div>
     </div>
 
-    <br>
-   
-    <br>
+    <br />
+
+    <br />
     <footer>
-         <div class="centerdiv">
+      <br />
+      <div class="centerdiv">
         <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
         <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
         <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-    </div>
-        <h2>&mu;SICOPHILIA</h2>
-        <p><em>Your Musical Getaway</em></p>
-        <h5>&copy; 2021 | Nilisha | All rights reserved.</h5>
+      </div>
+      <h2>&mu;SICOPHILIA</h2>
+      <p><em>Your Musical Getaway</em></p>
+      <h5>&copy; 2021 | Nilisha | All rights reserved.</h5>
 
-    <br />
-    
-   
-
+      <br />
     </footer>
 
     <!--The Below Script is written for Go to Top Button -->
@@ -316,22 +315,42 @@
       }
       var checkbox = document.querySelector("input[name=theme]");
 
-checkbox.addEventListener("change", function () {
-  if (this.checked) {
-    trans();
-    document.documentElement.setAttribute("data-theme", "dark");
-  } else {
-    trans();
-    document.documentElement.setAttribute("data-theme", "light");
-  }
-});
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          trans();
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          trans();
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      });
 
-let trans = () => {
-  document.documentElement.classList.add("transition");
-  window.setTimeout(() => {
-    document.documentElement.classList.remove("transition");
-  }, 1000);
-};
+      let trans = () => {
+        document.documentElement.classList.add("transition");
+        window.setTimeout(() => {
+          document.documentElement.classList.remove("transition");
+        }, 1000);
+      };
+    </script>
+    <script>
+      var checkbox = document.querySelector("input[name=theme]");
+
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          trans();
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          trans();
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      });
+
+      let trans = () => {
+        document.documentElement.classList.add("transition");
+        window.setTimeout(() => {
+          document.documentElement.classList.remove("transition");
+        }, 1000);
+      };
     </script>
     <script>
       var toggleBtn = document.getElementById("myToggleBtn");
@@ -348,6 +367,5 @@ let trans = () => {
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <script>
   </body>
 </html>
