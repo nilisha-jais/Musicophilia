@@ -314,6 +314,24 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+      var checkbox = document.querySelector("input[name=theme]");
+
+checkbox.addEventListener("change", function () {
+  if (this.checked) {
+    trans();
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    trans();
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+});
+
+let trans = () => {
+  document.documentElement.classList.add("transition");
+  window.setTimeout(() => {
+    document.documentElement.classList.remove("transition");
+  }, 1000);
+};
     </script>
     <script>
       var toggleBtn = document.getElementById("myToggleBtn");
@@ -330,5 +348,6 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script>
   </body>
 </html>
