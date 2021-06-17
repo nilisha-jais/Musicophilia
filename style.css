@@ -252,11 +252,13 @@ hr {
   font-size: 10px;
   background-color: black;
   border-radius: 50%;
-  /*border: 5px solid #19911d;*/
+
+ /*border: 5px solid #19911d;*/
   margin: 0 8px;
   text-align: center;
   cursor: pointer;
-  /* float: left;*/
+ /* float: left;*/
+
   transition: all 0.5s ease;
 }
 
@@ -277,10 +279,12 @@ hr {
 }
 a:hover .fa-instagram {
   color: black;
-  /* text-shadow: 0 0 15px #ee570f;*/
+
+ /* text-shadow: 0 0 15px #ee570f;*/
 }
 .fa-facebook-f {
-  color: white;
+  color: white;;
+
   transition: 0.4s;
 }
 
@@ -295,11 +299,14 @@ a:hover .fa-facebook-f {
 }
 a:hover .fa-twitter {
   color: black;
-  /*text-shadow: 0 0 15px #00aced;*/
+
+ /*text-shadow: 0 0 15px #00aced;*/
 }
-.centerdiv a:hover {
-  background-color: white;
-}
+ .centerdiv a:hover {
+      background-color: white;
+    
+  }
+
 #box-1 {
   background-image: linear-gradient(to right, #20aae5, #a722d6);
 }
