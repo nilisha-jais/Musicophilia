@@ -8,6 +8,7 @@
 
 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="button.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -18,7 +19,13 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="backbutton">
+        <a href="..\index.html"><button type="button" style="background-color : #FD3656 ;">Back</button></a>
+    </div>
     <h1>🎤🎧 MUSIC BOX 🎤🎧</h1>
+  </div>
+  <div class="container">
     <div class="app-wrapper">
         <div class="player">
             <audio id="music-player"></audio>
@@ -33,10 +40,11 @@
                 <button id="next-btn" class="skip-btn"><i class="fas fa-forward fa-lg"></i></button>
             </div>
             <div class="next-up">
-                <p>Next up: <span id="song-next-up"></span></p>
+                <p>Next up: <span id="song-next-up"></span><br><span id="artist-next-up"></span></p>
             </div>
         </div>
     </div>
+  </div>
     <script src="main.js"></script>
 </body>
 

@@ -1,220 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <script src="https://kit.fontawesome.com/a0dbbe476a.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musicophilia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
-    <!-- BOX ICONS -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
-    <script href="app.js"></script>
-    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
-    <meta
-      name="Musicophilia"
-      content="A platform for Music Lovers "
+    <!-- botstrap css Cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
     />
-    <meta property="og:title" content="Musicophilia - A platform for Music Lovers " />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d5f154924f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a0dbbe476a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script href="app.js"></script>
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16" />
+    <meta name="Musicophilia" content="A platform for Music Lovers " />
+    <meta
+      property="og:title"
+      content="Musicophilia - A platform for Music Lovers "
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://musicophilia.netlify.app/" />
-    <meta name="keywords" content="Music, Music lover, Quiz,HTML, CSS, JavaScript">
-    <meta name="description" content="You can listen your favourite musicheadphones ,try your hands on the band and the pianomusical_keyboard, play music related games and dance on the music beatswoman_dancing.">
-    <meta name="author" content=" Nilisha Jais">
+    <meta
+      name="keywords"
+      content="Music, Music lover, Quiz,HTML, CSS, JavaScript"
+    />
+    <meta
+      name="description"
+      content="You can listen your favourite musicheadphones ,try your hands on the band and the pianomusical_keyboard, play music related games and dance on the music beatswoman_dancing."
+    />
+    <meta name="author" content=" Nilisha Jais" />
+  </head>
 
-    <!--Below styling is for go to the top button-->
-    <style>
-
-        html{
-            scroll-behavior: smooth;
-        }
-
-         #myBtn {
-                display: none;
-                position: fixed;
-                bottom: 20px;
-                right: 30px;
-                z-index: 99;
-                font-size: 18px;
-                border: none;
-                outline: none;
-                background-color: green;
-                color: white;
-                cursor: pointer;
-                padding: 15px;
-                border-radius: 4px;
-          }
-
-         #myBtn:hover {
-         background-color: black;
-         }
-
-         /*For icon shaking*/
-                 
-        @keyframes shakeit {
-                0% { -webkit-transform: translate(2px, 1px) rotate(0deg);}
-                10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-                20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-                30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-                40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-                50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-                60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-                70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-                80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-                90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-                100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
-        }
-        .girl {
-            animation-name: shakeit;
-            -webkit-animation-name: shakeit;
-            animation-duration: 1.2s;
-            -webkit-animation-duration: 1.2s;
-            transform-origin:50% 50%;
-            -webkit-transform-origin:50% 50%;
-            animation-iteration-count: infinite;
-            -webkit-animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            -webkit-animation-timing-function: linear;
-        }
-     </style>
-</head>
-
-<body>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
-
-    <div class="nav">
-
-        <div class="nav-header">
-            <div class="nav-title">
-                &mu;SICOPHILIA
-            </div>
-        </div>
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="Contact-Us/index.html">Contact Us</a>
-
-        </div>
+  <body>
+    <div id="preloader">
+      <div class="preloader-div">
+        <div class="rotator"></div>
+        <img class="preloader-img" src="gif1.gif" alt="" />
+      </div>
     </div>
-    <div class="main">
-        <div class="heading">Mindfull Music</div>
-        <div class="container">
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
 
-            <div class="content">
-                <h1>Music Box</h1>
-                <span ><i class='bx bx-headphone bx-tada'></i></span>
-                <h3>Solace in songs</h3>
-                <a href="musicBox/index.html"><button class="btn"  id="box-1">GO</button></a>
-                <br><br>
-            </div>
-            <div class="content" >
-                <h1>The Band</h1>
-                <span ><i class='bx bx-tada bxs-playlist'></i></span>
-                <h3>Make your own beats</h3>
-                <a href="Band/index.html"><button class="btn" id="box-6">GO</button></a>
-                <br><br>
-            </div>
-            <div class="content" >
-                <h1>Piano</h1>
-                <span ><i class='bx bx-tada bxs-piano'></i></span>
-                <h3>Play your own notes</h3>
-                <a href="Piano/index.html"><button class="btn" id="box-2">GO</button></a>
-                <br><br>
-            </div>
-            <div class="content">
-                <h1>Artist Details</h1>
-                <span style='font-size:80px;'><i class='bx bx-tada '>👨🏻‍🎤</i></span>
-                <h3>Meet the singers</h3>
-                <a href="artist/index.html"><button class="btn"  id="box-3">GO</button></a>
-                <br><br>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="nav-img" src="music.png" alt="Musicophilia Logo" />
+          <span id="webTitle"
+            >&mu;<span style="color: white">SICOPHILIA</span></span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          id="myToggleBtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="justify-content: flex-end"
+        >
+          <ul class="navbar-nav">
+            <!--  me-auto mb-2 mb-lg-0 -->
+            <li class="nav-item">
+              <a class="nav-link current" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="./About/index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="./Contact-Us/contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link current" href="login/login.html">Login</a>
+              </li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </nav>
 
     <div class="main">
-        <div class="heading">Rollick Games</div>
-        <div class="container">
+      <div class="heading">Mindfull Music</div>
+      <div class="container">
+        <div class="content">
+          <h1>Music Box</h1>
+          <span><i class="bx bx-headphone bx-tada"></i></span>
+          <h3>Solace in songs</h3>
+          <a href="musicBox/index.html"
+            ><button class="btn" id="box-1"><p class="q">GO</p></button></a
+          >
+          <br /><br />
+        </div>
 
-            <div class="content">
-                <h1>Memory Game</h1>
-                <span ><i class='bx bx-tada bxs-medal'></i></span>
-                <h3>Test your memory by this music game</h3>
-                <a href="Memory-game/choose.html"><button class="btn"  id="box-3">GO</button></a>
-                <br><br>
-            </div>
-            <div class="content">
-                <h1>Music Quiz</h1>
-                <span ><i class='bx bx-tada bxs-music'></i></span>
-                <h3>How much do you know your music industry?</h3>
-                <a href="Quiz/index.html"><button class="btn"  id="box-4">GO</button></a>
-                <br><br>
-            </div>
+
+        <div class="content">
+          <h1>The Band</h1>
+          <span><i class="bx bx-tada bxs-playlist"></i></span>
+          <h3>Make your own beats</h3>
+          <a href="Band/index.html"
+            ><button class="btn" id="box-6"><p class="q">GO</p></button></a
+          >
+          <br /><br />
 
         </div>
+        <div class="content">
+          <h1>Piano</h1>
+          <span><i class="bx bx-tada bxs-piano"></i></span>
+          <h3>Play your own notes</h3>
+          <a href="Piano/index.html"
+            ><button class="btn" id="box-2"><p class="q">GO</p></button></a
+          >
+          <br /><br />
+        </div>
+        <div class="content">
+                    <h1>The Flute</h1>
+                    <box-icon name='spotify' type='logo' animation='tada'></box-icon>
+                    <span><i class='bx bxl-spotify bx-tada'></i></span>
+                    <h3>Straight from God's hand !</h3>
+                    <a href="Flute/index.html"><button class="btn" id="box-10"><p class="q">GO</p></button></a>
+                    <br><br>
+                </div>
+        <div class="content">
+          <h1>Drum Kit</h1>
+          <span style="font-size: 80px"><i class="bx bx-tada">🥁</i></span>
+          <h3>Play your own beat</h3>
+          <a href="drum/index.html"
+            ><button class="btn" id="box-2"><p class="q">GO</p></button></a
+          >
+          <br /><br />
+        </div>
+        <div class="content">
+          <h1>Guitar</h1>
+          <span style="font-size: 80px"><i class="bx bx-tada">🎸</i></span>
+          <h3>First love was the sound of guitar, Play it!</h3>
+          <a href="Guitar/index.html"
+            ><button class="btn" id="box-4"><p class="q">GO</p></button></a
+          >
+          <br /><br />
+        </div>
+        <div class="content">
+          <h1>Tabla</h1>
+          <span style="font-size: 80px"><i class="bx bx-tada">🥁</i></span>
+          <h3>Let's go traditional</h3>
+          <a href="tabla/index.html"
+            ><button class="btn" id="box-4"><p class="q">GO</p></button></a
+          >
+          <br /><br />
+        </div>
+        <div class="content">
+          <h1>Artist Details</h1>
+          <span style="font-size: 80px"><i class="bx bx-tada">👨🏻‍🎤</i></span>
+          <h3>Meet the singers</h3>
+          <a href="artist/index.html"
+            ><button class="btn" id="box-3"><p class="q">GO</p></button></a
+          >
+          <br /><br />
+        </div>
+        <div class="content">
+          <h1>Metronome</h1>
+          <span style="font-size: 80px"><i class="bx bx-tada">⌛</i></span>
+          <h3>Get a clear sense of timing and tempo</h3>
+          <a href="Metronome/index.html"
+            ><button class="btn" id="box-7"><p class="q">GO</p></button></a
+          >
+          <br /><br />
+        </div>
+      </div>
     </div>
+
+    <hr />
+
     <div class="main">
-        <div class="heading">Zestful Dance</div>
-        <div class="container">
-
-            <div class="content">
-                <h1>Lets Dance</h1>
-                <span class="girl">💃</span>
-                <h3>Dance along with us</h3>
-                <a href="https://www.youtube.com/results?search_query=dances++of+world"><button class="btn" id="box-5">GO</button></a>
-                <br><br>
-            </div>
-
-
+      <div class="heading">Rollick Games</div>
+      <div class="container">
+        <div class="content">
+          <h1>Memory Game</h1>
+          <span><i class="bx bx-tada bxs-medal"></i></span>
+          <h3>Test your memory by this music game</h3>
+          <a href="Memory-game/choose.html"
+            ><button class="btn" id="box-3"><p class="q">GO</p></button></a
+          >
+          <br /><br />
         </div>
+        <div class="content">
+          <h1>Music Quiz</h1>
+          <span><i class="bx bx-tada bxs-music"></i></span>
+          <h3>How much do you know your music industry?</h3>
+          <a href="Quiz/index.html"
+            ><button class="btn" id="box-4"><p class="q">GO</p></button></a
+          >
+          <br /><br />
+        </div>
+        <div class="content">
+          <h1>Guess The Singer</h1>
+          <span><i class="bx bx-tada bxs-music"></i></span>
+          <h3>Can You Recognise Your Favourite Singer?</h3>
+          <a href="Guess the Singers/index.html"
+            ><button class="btn" id="box-4"><p class="q">GO</p></button></a
+          >
+          <br /><br />
+        </div>
+      </div>
     </div>
+    <hr />
+    <div class="main">
+      <div class="heading">Zestful Dance</div>
+      <div class="container">
+        <div class="content">
+          <h1>Lets Dance</h1>
+          <span class="girl">💃</span>
+          <h3>Dance along with us</h3>
+          <a href="Dance/index.html"
+            ><button class="btn" id="box-5"><p class="q">GO</p></button></a
+          >
+          <br /><br />
+        </div>
+      </div>
+    </div>
+
     <br>
-    <div class="centerdiv">
-        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
-        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>     
-    </div>
+   
     <br>
     <footer>
-        &copy; 2021 | Nilisha | All rights reserved.
+      <br>
+         <div class="centerdiv">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/login" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+        <h2>&mu;SICOPHILIA</h2>
+        <p><em>Your Musical Getaway</em></p>
+        <h5>&copy; 2021 | Nilisha | All rights reserved.</h5>
+
+    <br />
+    
+   
+
     </footer>
 
     <!--The Below Script is written for Go to Top Button -->
     <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
+      //Get the button
+      window.onload = function () {
+        var preloader = document.getElementById("preloader");
+        setTimeout(function () {
+          preloader.style.display = "none";
+        }, 1000);
+      };
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
+      function displayContent() {
+        loader.style.display = "none";
+        document.getElementById("content").style.display = "block";
+      }
 
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
+      document.addEventListener("DOMContentLoaded", function () {
+        loader = document.getElementById("loader");
+        loadNow(1);
+      });
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
         }
+      }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        </script>
-
-</body>
-
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script>
+      var toggleBtn = document.getElementById("myToggleBtn");
+      toggleBtn.addEventListener("click", () => {
+        var myLinks = document.querySelector(".navbar-nav");
+        myLinks.style.textAlign = "center";
+        myLinks.style.float = "right";
+        // myLinks.style.display = "inline-block";
+      });
+    </script>
+    <!-- bootsdtrap js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

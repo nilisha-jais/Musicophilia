@@ -1,37 +1,4 @@
-const quizData = [
-    {
-        question: "Ringo Starr was not the original drummer for the Beatles – but who was?",
-        a: "Jimmie Nicol",
-        b: "John Lennon",
-        c: "Andy White",
-        d: "Pete Best",
-        correct: "d",
-    },
-    {
-        question: "What was the name of Madonna’s first studio album, released in 1983?",
-        a: "Florin Pop",
-        b: "Donald Trump",
-        c: "Madonna",
-        d: "Mihai Andrei",
-        correct: "c",
-    },
-    {
-        question: "One Direction is known for being the runners-up in The X Factor in 2010, but who came first?",
-        a: "Matt Cardle",
-        b: "Steve Brookstein",
-        c: "Sharon Osbourne",
-        d: "Leon Jackson",
-        correct: "a",
-    },
-    {
-        question: "Which famous rapper married reality TV star Kim Kardashian in 2014?",
-        a: "Tupac Amaru Shakur",
-        b: "Kanye West",
-        c: "Juice Wrld",
-        d: "none of the above",
-        correct: "b",
-    },
-];
+let quizData = {}, questions = {}, question = "", answerChoices = [];
 
 const quiz = document.getElementById("quiz");
 const answerEls = document.querySelectorAll(".answer");
@@ -45,56 +12,98 @@ const submitBtn = document.getElementById("submit");
 let currentQuiz = 0;
 let score = 0;
 
-loadQuiz();
-
-function loadQuiz() {
-    deselectAnswers();
-
-    const currentQuizData = quizData[currentQuiz];
-
-    questionEl.innerText = currentQuizData.question;
-    a_text.innerText = currentQuizData.a;
-    b_text.innerText = currentQuizData.b;
-    c_text.innerText = currentQuizData.c;
-    d_text.innerText = currentQuizData.d;
+function decode(html) {
+    var text = document.createElement("textarea");
+    text.innerHTML = html;
+    return text.value;
 }
 
-function getSelected() {
-    let answer = undefined;
 
-    answerEls.forEach((answerEl) => {
-        if (answerEl.checked) {
-            answer = answerEl.id;
+fetch(`https://opentdb.com/api.php?amount=10&category=12&type=multiple`)
+
+    .then((res) => res.json())
+    .then(data => {
+        quizData = data.results.map((ques) => {
+            questions = {
+                question: decode(ques.question)
+            }
+            ques.incorrect_answers = ques.incorrect_answers.map((ans) => decode(ans));
+            answerChoices = [...ques.incorrect_answers];
+            questions.correct = Math.floor(Math.random() * 4) + 1;
+            answerChoices.splice(
+                questions.correct - 1,
+                0,
+                decode(ques.correct_answer)
+            );
+            return { questions, answerChoices };
+        });
+
+        loadQuiz();
+
+        function loadQuiz() {
+        deselectAnswers();
+
+        const currentQuizData = quizData[currentQuiz];
+
+        questionEl.innerText = currentQuizData.questions.question;
+        a_text.innerText = currentQuizData.answerChoices[0];
+        b_text.innerText = currentQuizData.answerChoices[1];
+        c_text.innerText = currentQuizData.answerChoices[2];
+        d_text.innerText = currentQuizData.answerChoices[3];
         }
-    });
 
-    return answer;
+        var sec = 150;
+        var time = setInterval(myTimer, 1000);
+
+        function myTimer() {
+            document.getElementById('timer').innerHTML = sec + "sec left";
+            sec--;
+            if (sec == -1) {
+            clearInterval(time);
+            alert("Time out!! :(");
+        
+        }
 }
 
-function deselectAnswers() {
-    answerEls.forEach((answerEl) => {
-        answerEl.checked = false;
-    });
-}
+        function getSelected() {
+            let answer = undefined;
 
-submitBtn.addEventListener("click", () => {
-    // check to see the answer
-    const answer = getSelected();
+            answerEls.forEach((answerEl) => {
+                if (answerEl.checked) {
+                    answer = answerEl.id;
+                }
+            });
 
-    if (answer) {
-        if (answer === quizData[currentQuiz].correct) {
-            score++;
+            return answer;
         }
 
-        currentQuiz++;
-        if (currentQuiz < quizData.length) {
-            loadQuiz();
-        } else {
-            quiz.innerHTML = `
+        function deselectAnswers() {
+            answerEls.forEach((answerEl) => {
+                answerEl.checked = false;
+            });
+        }
+        submitBtn.addEventListener("click", () => {
+            // check to see the answer
+            const answer = getSelected();
+
+            if (answer) {
+                if (answer == quizData[currentQuiz].questions.correct) {
+                    score++;
+                }
+
+                currentQuiz++;
+                if (currentQuiz < quizData.length) {
+                    loadQuiz();
+                } else {
+                    quiz.innerHTML = `
                 <h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
-                
+
                 <button onclick="location.reload()">Reload</button>
             `;
-        }
-    }
-});
+                }
+            } else {
+                alert('Please choose an option before submitting..');
+            }
+        });
+    });
+
