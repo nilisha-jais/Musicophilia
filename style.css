@@ -1,11 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: white;
   margin: 0px;
   font-family: "segoe ui";
   background: var(--bg-background);
+
   background-size: cover;
 }
 html {
+  height: 100%;
+  scroll-behavior: smooth;
+  display: grid;
   --bg-background: url("https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg")
     no-repeat center center fixed;
   --bg-panel: #ebebeb;
@@ -14,9 +23,10 @@ html {
 }
 
 html[data-theme="dark"] {
-  --bg-background: white;
+  --bg-background: url("https://cdn.pixabay.com/photo/2021/04/07/12/49/musical-notes-6159013__480.png")
+    no-repeat center center fixed;
   --bg-panel: #434343;
-  --color-headings: #3694ff;
+  --color-headings: #58ff36;
   --color-text: #b5b5b5;
 }
 
@@ -24,6 +34,7 @@ input[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: hidden;
+  z-index: 1;
 }
 
 label {
@@ -69,6 +80,13 @@ html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
 }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
+  background-color: #1d1c1c;
+  border-radius: 10px;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #1d1c1c;
@@ -84,7 +102,6 @@ html.transition *:after {
     to(#19911d),
     color-stop(0.6, #54de5d)
   );
-
 }
 
 .container,
@@ -110,7 +127,6 @@ html.transition *:after {
 
 .navbar {
   background-color: green !important;
-
 }
 
 .nav-img {
@@ -118,7 +134,6 @@ html.transition *:after {
   width: 70px;
   margin-top: 0px;
   display: inline-block;
-
 }
 
 #webTitle {
@@ -134,7 +149,6 @@ html.transition *:after {
   padding: 13px 20px 13px 20px !important;
 }
 
-
 .current {
   background-color: rgba(0, 0, 0, 0.247);
   border-radius: 20px;
@@ -143,7 +157,6 @@ html.transition *:after {
   border: solid 2px black;
 }
 .current:hover {
-
   transition: 0.3s !important;
   font-size: 20px !important;
   background-color: lightslategrey !important;
@@ -151,7 +164,6 @@ html.transition *:after {
   border: solid 2px black !important;
   font-size: 18px !important;
 }
-
 
 hr {
   border-width: 0px 0px 0px 0px !important;
@@ -166,7 +178,6 @@ hr {
 
   margin: 0 !important;
   opacity: 0.51;
-
 }
 
 .main {
@@ -188,7 +199,6 @@ hr {
   margin-top: 30px;
 }
 .content {
-
   padding: 1rem 0px;
 
   height: auto;
@@ -203,7 +213,6 @@ hr {
   /* margin-right: 20px; */
 }
 .heading {
-
   margin: 14px auto;
 
   font-size: 35px;
@@ -237,56 +246,60 @@ hr {
   align-items: center;
 }
 .centerdiv a {
+  padding: 15px;
   height: 50px;
   width: 50px;
+  font-size: 10px;
   background-color: black;
   border-radius: 50%;
-  border: 5px solid #19911d;
-  margin: 0 10px;
+  /*border: 5px solid #19911d;*/
+  margin: 0 8px;
   text-align: center;
   cursor: pointer;
-  float: left;
+  /* float: left;*/
   transition: all 0.5s ease;
 }
 
-
-
 .centerdiv a i {
-  margin-top: 5px;
+  /*margin-top: 5px;*/
+  size: 20px;
+  text-align: center;
   transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .centerdiv a:hover i {
   transition: all 0.5s ease;
-  transform: scale(1.2);
+  transform: scale(1.8);
 }
 .fa-instagram {
-  color: rgb(238, 0, 0);
+  color: white;
   transition: 0.4s;
 }
 a:hover .fa-instagram {
-  color: rgb(238, 27, 27);
-  text-shadow: 0 0 15px #ee570f;
+  color: black;
+  /* text-shadow: 0 0 15px #ee570f;*/
 }
 .fa-facebook-f {
-  color: rgb(44, 62, 224);
+  color: white;
   transition: 0.4s;
 }
 
 a:hover .fa-facebook-f {
-  color: #5276c4;
-  text-shadow: 0 0 15px #3b5998;
+  color: black;
+  /*text-shadow: 0 0 15px #3b5998;*/
 }
 
 .fa-twitter {
-  color: rgb(35, 137, 255);
+  color: white;
   transition: 0.4s;
 }
 a:hover .fa-twitter {
-  color: #00bbff;
-  text-shadow: 0 0 15px #00aced;
+  color: black;
+  /*text-shadow: 0 0 15px #00aced;*/
 }
-
+.centerdiv a:hover {
+  background-color: white;
+}
 #box-1 {
   background-image: linear-gradient(to right, #20aae5, #a722d6);
 }
@@ -318,7 +331,6 @@ a:hover .fa-twitter {
   background-color: red;
   color: black;
 }
-
 
 .btn:active {
   transition-duration: 0s;
@@ -359,9 +371,6 @@ footer h5 {
   padding-bottom: 10px;
 }
 /* Below styling is for go to the top button */
-html {
-  scroll-behavior: smooth;
-}
 
 #myBtn {
   display: none;
@@ -436,7 +445,6 @@ html {
   -webkit-animation-iteration-count: infinite;
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
-
 }
 
 /* CSS for Pre-loader */
@@ -481,6 +489,4 @@ html {
   100% {
     transform: rotate(360deg);
   }
-
 }
-
