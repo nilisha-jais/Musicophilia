@@ -23,7 +23,7 @@ html {
 }
 
 html[data-theme="dark"] {
-  --bg-background: url("https://cdn.pixabay.com/photo/2021/04/07/12/49/musical-notes-6159013__480.png")
+  --bg-background: url("https://cdn.pixabay.com/photo/2017/04/19/10/24/vinyl-2241789__480.png")
     no-repeat center center fixed;
   --bg-panel: #434343;
   --color-headings: #58ff36;
