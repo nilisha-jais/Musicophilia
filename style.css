@@ -42,7 +42,7 @@ label {
   text-indent: -9999px;
   width: 52px;
   height: 27px;
-  background: grey;
+  background: rgb(255, 255, 255);
   float: right;
   border-radius: 100px;
   position: relative;
@@ -55,7 +55,7 @@ label:after {
   left: 3px;
   width: 20px;
   height: 20px;
-  background: #fff;
+    background: rgb(12, 12, 12);
   border-radius: 90px;
   transition: 0.3s;
 }
