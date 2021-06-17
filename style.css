@@ -163,19 +163,32 @@ hr {
   transform: scale(1.03);
 }
 .btn {
+ 
   font-weight: bold;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 16px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin: 4px 2px;
+  margin: 3px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 23px;
+    height: 70px;
+    width: 100px;
 }
+
+.q{
+    text-align: center;
+}
+
+.q:hover {
+transform: scale(1.8);
+}
+
+
 /*Social Media*/
 .centerdiv {
   font-size: larger;
@@ -268,6 +281,41 @@ a:hover .fa-twitter {
 #box-10 {
   background-image: linear-gradient(to right, #85e942, #f1753c);
 }
+ #box-1:hover {
+   transition: all 2500ms ease;
+    background-image: linear-gradient(to right, #85e942, green);
+  }
+ 
+  #box-2:hover {
+    transition: all 2500ms ease;
+    background-image: linear-gradient(to right, #85e942, green);
+  }
+  #box-3:hover {
+    transition: all 2500ms ease;
+    background-image: linear-gradient(to right, #85e942, green);
+  }
+  #box-4:hover {
+    transition: all 2500ms ease;
+    background-image: linear-gradient(to right, #85e942, green);
+  }
+  #box-5:hover {
+    transition: all 2500ms ease;
+    background-image: linear-gradient(to right, #85e942, green);
+  }
+  #box-6:hover {
+    transition: all 2500ms ease;
+    background-image: linear-gradient(to right, #85e942, green);
+  }
+  
+  #box-7:hover {
+    transition: all 2500ms ease;
+    background-image: linear-gradient(to right, #85e942, green);
+  }
+  
+  #box-10:hover {
+    transition: all 2500ms ease;
+    background-image: linear-gradient(to right, #85e942, green);
+  }
 
 .btn:hover {
   background-color: red;
