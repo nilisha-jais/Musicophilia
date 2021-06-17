@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+body {
+  background: #121214;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+   margin-top:50px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  height: 360px;
+  background: linear-gradient(45deg, #ffcc00 0%, #ff0058 100%);
+  margin: 40px 30px;
+  padding: 5px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: translatey(-20px);
+}
+
+.card::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  top: 0;
+  left: 0;
+  filter: blur(30px);
+}
+
+.card:nth-child(1)::before,
+.card:nth-child(1) {
+  background: linear-gradient(45deg, #ffcc00 0%, #ff0058 100%);
+}
+
+.card:nth-child(2)::before,
+.card:nth-child(2) {
+  background: linear-gradient(315deg, #03a9f4 0%, #ff0058 100%);
+}
+
+.card:nth-child(3)::before,
+.card:nth-child(3) {
+  background: linear-gradient(315deg, #4dff03 0%, #00d0ff 100%);
+}
+.card:nth-child(4)::before,
+.card:nth-child(4) {
+  background: linear-gradient(315deg, #4f03ff 0%, #eb0c0c 100%);
+}
+.card:nth-child(5)::before,
+.card:nth-child(5) {
+  background: linear-gradient(315deg, #18ff03 0%, #eb0ca1 100%);
+}
+
+.card span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.content {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(0, 0, 0, 0.05) 50%
+  );
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+.content a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background: #fff;
+  color: #121214;
+  padding: 10px 5px;
+  font-weight: 600;
+}
