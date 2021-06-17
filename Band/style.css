@@ -1,16 +1,14 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0px;
     box-sizing: border-box;
 }
 
 body
 {
     font-family: 'Space Grotesk', sans-serif;
-    background-color:rgb(107, 105, 109);
-    background-image: url("images/band.jpg");
-    background-size: cover;
-
+    padding-top:50px;
+    background-color: black;
 }
 
 .app
@@ -28,17 +26,24 @@ body
 
 .header h1{
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4rem;
     letter-spacing: 0.25rem;
     font-weight: 900;
-    color: grey;
+    color: green;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.header p
-{
+
+.band-tagline{
     text-align: center;
-    font-size: 19px;
+    font-size: 25px;
     color: grey;
+    margin-top:10px;
+    font-family:cursive;
+}
+
+.main-img{
+    margin:40px 0px;
 }
 
 .header .backbutton{
@@ -65,23 +70,25 @@ body
     }
   }
 
-img{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    height: 180px;
-    width: 250px;
 
+.keyboard-keys{
+    font-size:3rem;
+    position:relative;
+    top:-25px;
+    font-family:cursive;
+    color:white;
+    text-shadow:2px 2px 2px grey;
 }
-
 .pads{
     width: 90vw;
     display: flex;
     flex-wrap:wrap;
+    box-sizing:border-box;
     justify-content: center;
 }
 
 .pads > div{
-    height: 150px;
+    height: 170px;
     width: 170px;
     border-radius: 30px;
     margin: 10px;
@@ -89,13 +96,15 @@ img{
     align-items: center;
     justify-content: center;
     transition: 0.2s;
-    border: solid green 5px;
+    /* border: solid green 5px; */
     border-radius: 20px;
 }
 
 .pads > div img{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
+    margin-bottom:15px;
+    padding-top:15px;
 }
 
 .pad-1
@@ -161,6 +170,7 @@ img{
 /* For Responsiveness */
 
 @media (min-width: 1020px) and (max-width:1190px){
+
     .pads > div{
         margin: 0.5rem;
     }
@@ -182,51 +192,152 @@ img{
 }
 
 @media only screen and (max-width:600px){
+
     .header img{
-        width: 200;
-        height: 150px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto; 
+        width: 400px;
+        height: 250px;
+        margin:30px auto; 
       }
       .pads > div{
         width: 150px;
-        height: 130px;
+        height: 150px;
         margin: 0.8rem;
     }
     .pads > div img{
         width: 100px;
         height: 100px;        
     }
-
-    .header .backbutton{
+    .keyboard-keys{
+        font-size:2rem;
+        top:-20px;
+    }
+        
+    .header{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }
-@media only screen and (max-width:330px)
+@media only screen and (max-width:440px)
 {
-    .header img
-    {
-        width: auto;
-        height: 12rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto; 
+    .header img{
+        width: 250px;
+        height: 200px;
+        margin: 30px auto;
       }
       .pads > div
       {
-        width: 6rem;
-        height: auto;
+        width:100px;;
+       height:100px;
         margin: 0.7rem;
     }
     .pads > div img
     {
-        width: 6rem;
-        height: auto;        
+        width: 70px;
+        height: 70px;        
+    }
+    .keyboard-keys{
+        font-size:1.5rem;
+        top:-20px;
     }
     .header p
     {
         font-size: 1rem;
     }
+}
+
+/***************************Footer*************************/
+  
+footer
+{
+  background-color:green;
+  text-align: center;
+ color:white;
+ margin-top:50px;
+}
+.content span 
+{
+  font-size: 6rem;
+}
+
+  .footer-content{
+    display:flex;
+    justify-content:center;
+  }
+  
+  .footer-links i{
+      width:50px;
+      height:50px;
+    font-size:30px;
+    padding-top:10px;
+  }
+  .footer-links i:hover{
+      background-color:white;
+      border-radius:50px;
+      background-color:white;
+  }
+
+  @media (max-width:470px) 
+{
+  .content 
+  {
+    font-size: .8rem;
+    overflow: auto;
+  }
+  .content span 
+  {
+    font-size: 3rem;
+  }
+
+  .btn 
+  {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+footer > h2,p
+{
+  margin: 7px;
+}
+footer h5
+{
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+/* Below styling is for go to the top button */
+html
+{
+  scroll-behavior: smooth;
+}
+
+#myBtn
+{
+    width:40px;
+    height:40px;
+  display: none;
+  position: fixed;
+  top:90%;
+  left: 95%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+#myBtn .fas
+{
+  position: relative;
+}
+ #myBtn:hover 
+{
+  background-color: rgb(39, 37, 37);
+  transition: 0.5s;
+}
+#myBtn:hover .fas
+{
+  transition: 0.5s;
+  bottom:5px; 
 }

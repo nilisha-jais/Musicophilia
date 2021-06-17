@@ -19,8 +19,8 @@ body {
 }
 
 .set {
-    margin: 5% auto;
-    margin-left: 28%
+    margin-top: 0%;
+    margin-left: 30%;
 }
 
 .t {
@@ -39,5 +39,5 @@ body {
     box-shadow: none;
     background-color: black;
     background-repeat: no-repeat;
-    border: none;
+    border: black;
 }
