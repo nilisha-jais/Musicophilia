@@ -9,11 +9,13 @@
     margin-left: -10%;
     color: white;
     margin: 0px 0px 0px 0px;
+    
 }
 
 button {
     border: none;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 #btn {
