@@ -185,56 +185,63 @@ hr {
   align-items: center;
 }
 .centerdiv a {
+  padding: 15px;
   height: 50px;
   width: 50px;
+  font-size: 10px;
   background-color: black;
   border-radius: 50%;
-  border: 5px solid #19911d;
-  margin: 0 10px;
+ /*border: 5px solid #19911d;*/
+  margin: 0 8px;
   text-align: center;
   cursor: pointer;
-  float: left;
+ /* float: left;*/
   transition: all 0.5s ease;
 }
 
 
 
 .centerdiv a i {
-  margin-top: 5px;
+  /*margin-top: 5px;*/
+  size: 20px;
+  text-align: center;
   transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .centerdiv a:hover i {
   transition: all 0.5s ease;
-  transform: scale(1.2);
+  transform: scale(1.8);
 }
 .fa-instagram {
-  color: rgb(238, 0, 0);
+  color: white;
   transition: 0.4s;
 }
 a:hover .fa-instagram {
-  color: rgb(238, 27, 27);
-  text-shadow: 0 0 15px #ee570f;
+  color: black;
+ /* text-shadow: 0 0 15px #ee570f;*/
 }
 .fa-facebook-f {
-  color: rgb(44, 62, 224);
+  color: white;;
   transition: 0.4s;
 }
 
 a:hover .fa-facebook-f {
-  color: #5276c4;
-  text-shadow: 0 0 15px #3b5998;
+  color: black;
+  /*text-shadow: 0 0 15px #3b5998;*/
 }
 
 .fa-twitter {
-  color: rgb(35, 137, 255);
+  color: white;
   transition: 0.4s;
 }
 a:hover .fa-twitter {
-  color: #00bbff;
-  text-shadow: 0 0 15px #00aced;
+  color: black;
+ /*text-shadow: 0 0 15px #00aced;*/
 }
-
+ .centerdiv a:hover {
+      background-color: white;
+    
+  }
 #box-1 {
   background-image: linear-gradient(to right, #20aae5, #a722d6);
 }
