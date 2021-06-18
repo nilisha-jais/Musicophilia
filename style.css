@@ -7,10 +7,80 @@ body {
   color: white;
   margin: 0px;
   font-family: "segoe ui";
-  background: url("https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg")
-    no-repeat center center fixed;
+  background: var(--bg-background);
+
   background-size: cover;
 }
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  display: grid;
+  --bg-background: url("https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg")
+    no-repeat center center fixed;
+ --bg-panel: #0f0e0e;
+  --color-headings: #0077ff;
+  --color-text: #333333;
+}
+
+html[data-theme="dark"] {
+  --bg-background: url("https://cdn.pixabay.com/photo/2017/04/19/10/24/vinyl-2241789__480.png")
+    no-repeat center center fixed;
+  --bg-panel: #434343;
+  --color-headings: #58ff36;
+  --color-text: #b5b5b5;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: rgb(255, 255, 255);
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+    background: rgb(12, 12, 12);
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: var(--color-headings);
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
   background-color: #1d1c1c;
@@ -32,7 +102,6 @@ body {
     to(#19911d),
     color-stop(0.6, #54de5d)
   );
-
 }
 
 .container,
@@ -58,7 +127,6 @@ body {
 
 .navbar {
   background-color: green !important;
-
 }
 
 .nav-img {
@@ -66,7 +134,6 @@ body {
   width: 70px;
   margin-top: 0px;
   display: inline-block;
-
 }
 
 #webTitle {
@@ -82,7 +149,6 @@ body {
   padding: 13px 20px 13px 20px !important;
 }
 
-
 .current {
   background-color: rgba(0, 0, 0, 0.247);
   border-radius: 20px;
@@ -91,7 +157,6 @@ body {
   border: solid 2px black;
 }
 .current:hover {
-
   transition: 0.3s !important;
   font-size: 20px !important;
   background-color: lightslategrey !important;
@@ -99,7 +164,6 @@ body {
   border: solid 2px black !important;
   font-size: 18px !important;
 }
-
 
 hr {
   border-width: 0px 0px 0px 0px !important;
@@ -114,7 +178,6 @@ hr {
 
   margin: 0 !important;
   opacity: 0.51;
-
 }
 
 .main {
@@ -136,7 +199,6 @@ hr {
   margin-top: 30px;
 }
 .content {
-
   padding: 1rem 0px;
 
   height: auto;
@@ -151,7 +213,6 @@ hr {
   /* margin-right: 20px; */
 }
 .heading {
-
   margin: 14px auto;
 
   font-size: 35px;
@@ -204,15 +265,15 @@ transform: scale(1.8);
   font-size: 10px;
   background-color: black;
   border-radius: 50%;
+
  /*border: 5px solid #19911d;*/
   margin: 0 8px;
   text-align: center;
   cursor: pointer;
  /* float: left;*/
+
   transition: all 0.5s ease;
 }
-
-
 
 .centerdiv a i {
   /*margin-top: 5px;*/
@@ -231,10 +292,12 @@ transform: scale(1.8);
 }
 a:hover .fa-instagram {
   color: black;
+
  /* text-shadow: 0 0 15px #ee570f;*/
 }
 .fa-facebook-f {
   color: white;;
+
   transition: 0.4s;
 }
 
@@ -249,12 +312,14 @@ a:hover .fa-facebook-f {
 }
 a:hover .fa-twitter {
   color: black;
+
  /*text-shadow: 0 0 15px #00aced;*/
 }
  .centerdiv a:hover {
       background-color: white;
     
   }
+
 #box-1 {
   background-image: linear-gradient(to right, #20aae5, #a722d6);
 }
@@ -322,7 +387,6 @@ a:hover .fa-twitter {
   color: black;
 }
 
-
 .btn:active {
   transition-duration: 0s;
   box-shadow: inset 5px 5px 5px rgb(68, 67, 67, 0.8),
@@ -362,9 +426,6 @@ footer h5 {
   padding-bottom: 10px;
 }
 /* Below styling is for go to the top button */
-html {
-  scroll-behavior: smooth;
-}
 
 #myBtn {
   display: none;
@@ -439,7 +500,6 @@ html {
   -webkit-animation-iteration-count: infinite;
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
-
 }
 
 /* CSS for Pre-loader */
@@ -484,5 +544,4 @@ html {
   100% {
     transform: rotate(360deg);
   }
-
 }
