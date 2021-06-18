@@ -5,51 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="login.css">
    
 </head>
 <body>
-    <div class="login">
-        <h1>Login</h1>
-        <form method="post" action="">
-        <p>
-            <input type="text" name="login" value="" placeholder="Username or Email">
-        </p>
-        <p>
-            <input type="password" name="password" value="" placeholder="Password" id="myInput">
-            <label>
-            <input type="checkbox" onclick="myFunction()">show password
-            </label>
-            <script>
-                function myFunction(){
-                    var x = document.getElementById("myInput");
-                    if (x.type === "password") {
-                    x.type = "text";
-                    } else {
-                    x.type = "password";
-                    }
-                }
-            </script>
-        </p>
-        <p class="remember_me">
-             <label>
-            <input type="checkbox" name="remember_me" id="remember_me">
-            Remember me
-        </label>
-        </p>
-        <p class="submit"><input type="submit" name="commit" value="Login"></p>
-        <br>
-        <div class="create_account">
-        <p>New to Musicophilia?</p>
-        <p class="click"><input type="submit" name="commit" value="Create your musicophilia account"></p>
-        </div>
-        </form>
+    
+   <div class="container" id="container">
+  <div class="form-container sign-up-container">
+    <form action="#">
+      <h1>Create Account</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social"><i class="fab fa-twitter"></i></a>
       </div>
-      
-      <div class="login-help">
-        <p>Forgot your password? 
-        <a href="#">Click here.</a>..</p>
+      <span>or use your email for registration</span>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>Sign Up</button>
+    </form>
+  </div>
+  <div class="form-container sign-in-container">
+    <form action="#">
+      <h1>Sign in</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social"><i class="fab fa-twitter"></i></a>
       </div>
+      <span>or use your account</span>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <a href="#" class="forgot-password">Forgot your password?</a>
+      <button>Sign In</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left" >
+       <h1>Welcome Back!</h1>
+        <p>To keep connected with us please login with your personal info</p>
+        <button class="ghost" id="signIn">Sign In</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Hello, Friend!</h1>
+        <p>Enter your details and start journey with us</p>
+        <button class="ghost" id="signUp">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
+signUpButton.addEventListener('click', () => container.classList.add('right-panel-active'));
+
+signInButton.addEventListener('click', () => container.classList.remove('right-panel-active'));
+</script>
 </body>
 </html>
