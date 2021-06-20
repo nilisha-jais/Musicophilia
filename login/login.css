@@ -2,6 +2,8 @@
 
 * {
 	box-sizing: border-box;
+	margin: 0;
+  	padding: 0;
 }
 
 body {
@@ -11,7 +13,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Ubuntu', sans-serif;
-	height: 100vh;
+	height: 100%;
 	margin: -20px 0 50px;
 }
 
@@ -84,7 +86,66 @@ input {
 	margin: 8px 0;
 	outline: none;
 	width: 100%;
+	transition:  all 0.5s;
 }
+
+input:focus{
+	border-color:#97E5D7;
+	box-shadow:inset 0 0 5px #2fd072;
+  }
+
+.navbar-light .navbar-toggler {
+	margin: 4px;
+  }
+  
+  .navbar-brand {
+	margin-right: 0px;
+  }
+  .navbar-toggler {
+	padding: 6px !important;
+	font-size: 1rem !important;
+  }
+  
+  .navbar {
+	background-color: green !important;
+	margin:0px;
+	padding: 0px;
+  }
+  
+  .nav-img {
+	height: 50px;
+	width: 70px;
+	margin-top: 0px;
+	display: inline-block;
+  }
+  
+  #webTitle {
+	display: inline-block;
+	font-size: 25px;
+	color: rgb(17, 17, 17);
+	font-weight: bold;
+  }
+  
+  .nav-link {
+	color: white !important;
+	font-size: 18px !important;
+	padding: 13px 20px 13px 20px !important;
+  }
+  
+  .current {
+	background-color: rgba(0, 0, 0, 0.247);
+	border-radius: 20px;
+	margin: 5px;
+	font-weight: bold;
+	border: solid 2px black;
+  }
+  .current:hover {
+	transition: 0.3s !important;
+	font-size: 20px !important;
+	background-color: lightslategrey !important;
+	border: solid 2px black !important;
+	font-size: 18px !important;
+  }
 
 .container {
 	background-color: #fff;
@@ -96,6 +157,7 @@ input {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
+	margin-top: 130px;
 }
 
 .form-container {
@@ -229,4 +291,12 @@ input {
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
+}
+
+a.social{
+	transition: all 0.5s;
+}
+
+a.social:hover{
+	transform: scale(1.2);
 }

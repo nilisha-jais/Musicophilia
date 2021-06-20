@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- botstrap css Cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
+    <link rel="icon" href="../favicon.png" type="image/gif" sizes="16x16" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
     <link rel="stylesheet" href="contact.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="nav-img" src="music.png" alt="Musicophilia Logo" />
-            <span id="webTitle"
-              >&mu;<span style="color: white">SICOPHILIA</span></span
-            >
-          </a>
-          <button
-            class="navbar-toggler"
-            id="myToggleBtn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="nav-img" src="music.png" alt="Musicophilia Logo" />
+                    <span id="webTitle">&mu;<span style="color: white">SICOPHILIA</span></span>
+                </a>
+                <button class="navbar-toggler" id="myToggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div
             class="collapse navbar-collapse"
             id="navbarSupportedContent"
@@ -44,17 +32,17 @@
               <!--  me-auto mb-2 mb-lg-0 -->
               <li class="nav-item">
                 <a
-                  class="nav-link current"
+                  class="nav-link"
                   aria-current="page"
                   href="../index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link current" href="../About/index.html">About</a>
+                <a class="nav-link" href="../About/index.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link current" href="#">Contact Us</a>
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -70,59 +58,88 @@
           <div class="fname">
             <div class="label">
               <label for="fname">First Name <span class="red">*</span></label>
-            </div>
-            <input type="text" placeholder="Your name.." required />
-          </div>
-          <div class="lname">
-            <div class="label">
-              <label for="lname">Last Name <span class="red">*</span></label>
-            </div>
-            <input type="text" placeholder="Your last name.." required />
-          </div>
-          <div class="country">
-            <div class="label">
-              <label for="lname">Country <span class="red">*</span></label>
-            </div>
-            <input type="text" placeholder="Enter your country" required />
-          </div>
-          <div class="subject">
-            <div class="label">
-              <label for="lname">Subject <span class="red">*</span></label>
-            </div>
-            <textarea
-              name="text"
-              id="text"
-              cols="150"
-              rows="7"
-              placeholder="Write your msg"
-              required
-            ></textarea>
-          </div>
 
-          <button type="submit" class="button">Submit</button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: flex-end">
+                    <ul class="navbar-nav">
+                        <!--  me-auto mb-2 mb-lg-0 -->
+                        <li class="nav-item">
+                            <a class="nav-link current" aria-current="page" href="../index.html">Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current" href="../About/index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link current" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="contact-form" style="padding: 30px;margin-top: 80px;">
+            <div class="center">
+                <h1>Contact Us</h1>
+                <p>Leave us a message:</p>
+            </div>
+            <div class="form">
+                <form action="https://formcarry.com/s/S1peCWurw0C" method="POST" accept-charset="UTF-8">
+                    <div class="fname">
+                        <div class="label">
+                            <label for="fname">First Name <span class="red">*</span></label>
+                        </div>
+                        <input type="text" placeholder="Your name.." required />
+                    </div>
+                    <div class="lname">
+                        <div class="label">
+                            <label for="lname">Last Name <span class="red">*</span></label>
+                        </div>
+                        <input type="text" placeholder="Your last name.." required />
+                    </div>
+                    <div class="country">
+                        <div class="label">
+                            <label for="lname">Country <span class="red">*</span></label>
+                        </div>
+                        <input type="text" placeholder="Enter your country" required />
+                    </div>
+                    <div class="subject">
+                        <div class="label">
+                            <label for="lname">Subject <span class="red">*</span></label>
+                        </div>
+                        <textarea name="text" id="text" cols="150" rows="7" placeholder="Write your msg" required></textarea>
+                    </div>
+
+                    <button onclick="JSalert()" type="submit" class="button">Submit</button>
+                </form>
+            </div>
         </div>
-      </div>
     </header>
 
     <footer>
-      <h2>&mu;SICOPHILIA</h2>
-      <p><em>Your Musical Getaway</em></p>
-      <h5>&copy; 2021 | Nilisha | All rights reserved.</h5>
+        <h2>&mu;SICOPHILIA</h2>
+        <p><em>Your Musical Getaway</em></p>
+        <h5>&copy; 2021 | Nilisha | All rights reserved.</h5>
     </footer>
     <script>
-      var toggleBtn = document.getElementById("myToggleBtn");
-      toggleBtn.addEventListener("click", () => {
-        var myLinks = document.querySelector(".navbar-nav");
-        myLinks.style.textAlign = "center";
-        myLinks.style.float = "right";
-        // myLinks.style.display = "inline-block";
-      });
+        var toggleBtn = document.getElementById("myToggleBtn");
+        toggleBtn.addEventListener("click", () => {
+            var myLinks = document.querySelector(".navbar-nav");
+            myLinks.style.textAlign = "center";
+            myLinks.style.float = "right";
+            // myLinks.style.display = "inline-block";
+        });
     </script>
     <!-- bootsdtrap js cdn -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function JSalert() {
+            swal("Congrats!", "Message was delivered successfully!", "success");
+        }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
 </html>

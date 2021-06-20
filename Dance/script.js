@@ -27,7 +27,7 @@ $(document).ready(function () {
     }
 
     function mainVid(id) {
-        $('#video').html(`
+        $('.video__container').html(`
 					<iframe  src="https://www.youtube.com/embed/${id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				`);
     }
@@ -43,19 +43,25 @@ $(document).ready(function () {
             var vid = item.id.videoId;
 
             $('main').append(`
-							<article class="item" data-key="${vid}">
-
-								<img src="${thumb}" alt="" class="thumb">
-								<div class="details">
-									<h4>${title}</h4>
-									<p>${desc}</p>
-								</div>
-
-							</article>
-						`);
+					<article class="item" data-key="${vid}">
+                       <img src="${thumb}" alt="" class="thumb">
+						    <div class="details">
+								<h4>${title}</h4>
+								<p>${desc}</p>
+							</div>
+                    </article>
+				`);
         });
     }
 
+    function toggleModal(){
+        $('.modal').toggleClass('modal__hidden'); 
+        $('.overlay').toggleClass('overlay__hidden'); 
+      }
+
+    function stopVideo(){
+        $('.video__container iframe').attr('src', $('iframe').attr('src'));
+    }
 
     $('.typeBtn').on('click',function () {
         var category = $(this).text();
@@ -64,12 +70,21 @@ $(document).ready(function () {
 
     });
 
-
-
     $('main').on('click', 'article', function () {
         var id = $(this).attr('data-key');
         mainVid(id);
+        toggleModal();
     });
+    
+    $('.overlay').on('click',function(){
+        toggleModal();
+        stopVideo();
+    });
+
+    $('.modal__closebar').on('click',function(){
+        toggleModal();
+        stopVideo();
+    })
 
 
 });
