@@ -1,62 +1,21 @@
 body {
   text-align: center;
-  background-color: #283149;
+  background-image: url(images/drum_background.jpg);
+  background-position: center;
+  height:100px;
 }
 
 h1 {
   font-size: 5rem;
   color: #DBEDF3;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
+  text-shadow: 3px 0 black;
 
-}
-
-footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
 }
 
 #title {
   margin-top: 90px;
 }
-
-.navbar-light .navbar-toggler {
-	margin: 4px;
-  }
-  
-  .navbar-brand {
-	margin-right: 0px;
-  }
-  .navbar-toggler {
-	padding: 6px !important;
-	font-size: 1rem !important;
-  }
-  
-  .navbar {
-	background-color: green !important;
-	margin:0px;
-	padding: 0px;
-  }
-  
-  .nav-img {
-	height: 50px;
-	width: 70px;
-	margin-top: 0px;
-	display: inline-block;
-  }
-  
-  #webTitle {
-	display: inline-block;
-	font-size: 25px;
-	color: rgb(17, 17, 17);
-	font-weight: bold;
-  }
-  
-  .nav-link {
-	color: white !important;
-	font-size: 18px !important;
-	padding: 13px 20px 13px 20px !important;
-  }
   
   .current {
 	background-color: rgba(0, 0, 0, 0.247);
@@ -116,12 +75,12 @@ footer {
 
 .drum {
   outline: none;
-  border: 10px solid #404B69;
+  border: 4px solid black;
   font-size: 5rem;
   font-family: 'Arvo', cursive;
   line-height: 2;
   font-weight: 900;
-  color: #DA0463;
+  color: black;
   text-shadow: 3px 0 #DBEDF3;
   border-radius: 15px;
   display: inline-block;
