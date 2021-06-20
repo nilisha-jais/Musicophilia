@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Karaoke</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+  </head>
+  <body>
+    
+    <header>
+    <center>
+      <h1 id="glow">KARAOKE</h1>
+      </center>
+    </header>
+    <br>
+    <br>
+    <div class="main" id="desc">
+      <h2>
+        Do you like Karaoke? Take a music file and drag it here.. You will listen the song without vocals.
+      </h2>
+
+      <div id="filedrag">Drop your MP3 file here (also .ogg or .wav)</div>
+      <div id="fileselect-container">
+        <label for="fileselect"><h3>Or select a file:</h3></label>
+        <br>
+        <h3><input type="file" id="fileselect" name="fileselect[]" /></h3>
+      </div>
+
+      <div id="current-song"></div>
+      <div id="options">
+        Options:
+        <h3><button id="disable-filter">Disable karaoke</button></h3>
+      </div>
+
+       
+    <script src="scripts/jDataView.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+  <br>
+
+  <footer>
+        <h2>&mu;SICOPHILIA</h2>
+        <p><em>Your Musical Getaway</em></p>
+        <h5>&copy; 2021 | All rights reserved.</h5>
+    </footer>
+</html>
