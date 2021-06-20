@@ -11,14 +11,6 @@ body {
     width: 100%;
 }
 
-.navbar-light .navbar-toggler {
-    margin: 4px;
-}
-
-.navbar-brand {
-    margin-right: 0px;
-}
-
 .navbar-toggler {
     padding: 6px !important;
     font-size: 1rem !important;
@@ -42,12 +34,6 @@ body {
     font-weight: bold;
 }
 
-.nav-link {
-    color: white !important;
-    font-size: 18px !important;
-    padding: 13px 20px 13px 20px !important;
-}
-
 .current {
     background-color: rgba(0, 0, 0, 0.247);
     border-radius: 20px;
@@ -62,6 +48,16 @@ body {
     background-color: lightslategrey !important;
     border: solid 2px black !important;
     font-size: 18px !important;
+    background: #121214;
+    width: 100%;
+}
+
+.navbar-light .navbar-toggler {
+    margin: 4px;
+}
+
+.navbar-brand {
+    margin-right: 0px;
 }
 
 .container {
@@ -191,8 +187,14 @@ body {
     overflow: hidden;
 }
 
-img {
-    width: 100%;
+.content a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background: #fff;
+    color: #121214;
+    padding: 10px 5px;
+    font-weight: 600;
 }
 
 footer {
