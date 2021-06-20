@@ -58,8 +58,59 @@ body {
 
 .navbar-brand {
     margin-right: 0px;
+  background: #121214;
+  width: 100%;
+}
+.navbar-light .navbar-toggler {
+  margin: 4px;
 }
 
+.navbar-brand {
+  margin-right: 0px;
+}
+.navbar-toggler {
+  padding: 6px !important;
+  font-size: 1rem !important;
+}
+
+.navbar {
+  background-color: green !important;
+}
+
+.nav-img {
+  height: 50px;
+  width: 70px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+#webTitle {
+  display: inline-block;
+  font-size: 25px;
+  color: rgb(17, 17, 17);
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 18px !important;
+  padding: 13px 20px 13px 20px !important;
+}
+
+.current {
+  background-color: rgba(0, 0, 0, 0.247);
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: bold;
+  border: solid 2px black;
+}
+.current:hover {
+  transition: 0.3s !important;
+  font-size: 20px !important;
+  background-color: lightslategrey !important;
+  border: solid 2px black !important;
+  font-size: 18px !important;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -105,6 +156,18 @@ body {
 .button:hover {
     background-color: rgb(4, 26, 10);
     color: #fff;
+}
+.button {
+  color: green;
+  background-color: #fff;
+  border: none;
+  padding: 6px 12px;
+  margin: 8px 0;
+}
+
+.button:hover {
+  background-color: rgb(4, 26, 10);
+  color: #fff;
 }
 
 .card:nth-child(1)::before,
@@ -201,4 +264,16 @@ footer {
     opacity: 0.9;
     background-color: green;
     text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background: #fff;
+  color: #121214;
+  padding: 10px 5px;
+  font-weight: 600;
+}
+footer {
+  opacity: 0.9;
+  background-color: green;
+  text-align: center;
 }
