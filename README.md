@@ -83,9 +83,9 @@ git remote add upstream https://github.com/nilisha-jais/Musicophilia.git
 ```
 git remote -v
 ```
-**6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
+**6.** Always take a pull from the upstream repository to your main branch to keep it at par with the main project(updated repository).
 ```
-git pull upstream master
+git pull upstream main
 ```
 **7.** Create a new branch.
 ```
@@ -134,7 +134,15 @@ git push -u origin <your_branch_name>
   </td>
   </tr>
 </table>
-
+<br>
+<h1 align=center> Project Admin ❤️ </h1>
+  
+<table align=center>
+<tr>
+<td align="center"><a href="https://github.com/nilisha-jais"><img src="https://avatars.githubusercontent.com/u/73216246?v=4/u/67006255?s=400&u=c0e16c3bba31328a028cfcca4b1fa7599509f905&v=4" width=150px height=150px /></a></br> <h4 style="color:red;">nilisha jais</h4>
+</tr>
+</table>
+<br>
 
 ## The geeks🤓 behind this initiative:
 

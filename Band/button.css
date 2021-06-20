@@ -1,39 +1,34 @@
-.backbutton 
-{
-  border:none;
-  border-radius: 10px;
-  padding: 10px;
 
-  letter-spacing: 1.5px;
-  font-size: 15px;
-  transition: 0.5s;
-  margin-top: 20px;
-  margin-left: -80%;
-  color:white;
+
+   button{
+      font-size:20px;
+      background-color:red;
+      color:white;
+      padding:10px;
+      margin-top:10px;
+      border:none;
+      border-radius:10px;
+      text-decoration:none;
+      position:absolute;
+      top:10%;
+      left:15%;
+    }
+   button:hover{
+      background-color:white;
+      color:red;
+    }
+    button:hover,h1:hover{
+      transform: scale(1.1);
+   
+    }
+
+  
+  
+      /******responsiveness for mobile view*****/
+@media screen and (max-width:830px){
+ button{
+   left:1%;
+   top:1%;
+ }
 }
-  
-  
-button
-{
-  border:none;
-  border-radius: 20px;
-  padding: 10px;
-  color:white;
-  letter-spacing: 1.5px;
-  font-size: 15px;
-  transition: 0.5s;
-  margin-top: 20px;
-  margin-left: 10%;
-    
-}
-button:hover,h1:hover
-{
-  transform: scale(1.1);
-}
-button:hover
-{
-  background-color:#e21336;
-} 
-  
-  
    

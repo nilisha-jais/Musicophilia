@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="button.css">
         <link rel="icon" href="..\favicon.png" type="image/gif" sizes="16x16">
@@ -15,14 +16,33 @@
             <header>
                 <h2>💃 LET's DANCE TOGETHER 🕺</h2>
             </header>
-            <div class="backbutton" align="left">
-                <a href="../index.html"><button type="button" style="background-color : #FD3656 ;">Back</button></a>
+            <div class="backbutton" >
+                <a href="../index.html"><button type="button">Back</button></a>
+            </div>
+            <div class="categories">
+                <button type="button" class="typeBtn">Modern</button>
+                <button type="button" class="typeBtn">HipHop</button>
+                <button type="button" class="typeBtn">Jazz</button>
+                <button type="button" class="typeBtn">Contemporary</button>
+                <button type="button" class="typeBtn">Ballet</button>
+                <button type="button" class="typeBtn">Ballroom</button>
+                <button type="button" class="typeBtn">Swing</button>
+                <button type="button" class="typeBtn">Tap</button>
+                <button type="button" class="typeBtn">Folk</button>
+                <button type="button" class="typeBtn">Irish</button>
             </div>
             <div id="wrapper">
-                <div id="video"></div>
                 <main></main>
             </div>
-        
+            <div class="overlay overlay__hidden"></div>
+            <div class="modal modal__hidden">
+                <div class="modal__contents">
+                  <div class="modal__closebar">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                  <div class="video__container" id="video__container"></div>
+                </div>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>

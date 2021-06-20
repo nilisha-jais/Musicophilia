@@ -1,23 +1,24 @@
 
 $(document).ready(function () {
 
-    var key = "AIzaSyDmGLXYgQOIJIqzNeVN0abN_IperaUyQOk";
-    var playlistId = 'PL2fnLUTsNyq7A335zB_RpOzu7hEUcSJbB';
+    var key = "AIzaSyB4tHsr-sIZfdQmkX4b06WQKCbbKSMzGvY"; 
     var URL = 'https://www.googleapis.com/youtube/v3/search';
-   
-
 
     var options = {
         part: 'snippet',
         key: key,
         maxResults: 50,
-        q:`world's best dances`,
+        q:'',
         type: 'video'
     }
 
-    loadVids();
+    loadVids(`world's best dances`);
 
-    function loadVids() {
+    function loadVids(q) {
+        
+        options.q = q;
+        $('main').html(``);
+
         $.getJSON(URL,options, function (data) {
             var id = data.items[0].id.videoId;
             mainVid(id);
@@ -26,7 +27,7 @@ $(document).ready(function () {
     }
 
     function mainVid(id) {
-        $('#video').html(`
+        $('.video__container').html(`
 					<iframe  src="https://www.youtube.com/embed/${id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				`);
     }
@@ -41,25 +42,49 @@ $(document).ready(function () {
             var desc = item.snippet.description.substring(0, 100);
             var vid = item.id.videoId;
 
-
             $('main').append(`
-							<article class="item" data-key="${vid}">
-
-								<img src="${thumb}" alt="" class="thumb">
-								<div class="details">
-									<h4>${title}</h4>
-									<p>${desc}</p>
-								</div>
-
-							</article>
-						`);
+					<article class="item" data-key="${vid}">
+                       <img src="${thumb}" alt="" class="thumb">
+						    <div class="details">
+								<h4>${title}</h4>
+								<p>${desc}</p>
+							</div>
+                    </article>
+				`);
         });
     }
+
+    function toggleModal(){
+        $('.modal').toggleClass('modal__hidden'); 
+        $('.overlay').toggleClass('overlay__hidden'); 
+      }
+
+    function stopVideo(){
+        $('.video__container iframe').attr('src', $('iframe').attr('src'));
+    }
+
+    $('.typeBtn').on('click',function () {
+        var category = $(this).text();
+        q = `best ${category} dances`;
+        loadVids(q);
+
+    });
 
     $('main').on('click', 'article', function () {
         var id = $(this).attr('data-key');
         mainVid(id);
+        toggleModal();
     });
+    
+    $('.overlay').on('click',function(){
+        toggleModal();
+        stopVideo();
+    });
+
+    $('.modal__closebar').on('click',function(){
+        toggleModal();
+        stopVideo();
+    })
 
 
 });
