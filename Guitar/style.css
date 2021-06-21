@@ -96,7 +96,7 @@ div#lutecircle
 {
     width: 315px;
     height: 315px;
-    background: #000000;
+    background: #f2f2f2;
     border: 8px solid #ffc023;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -105,7 +105,8 @@ div#lutecircle
 }
 body 
 {
-    background-color:rgba(165, 42, 42, 0.979);
+    background-image: url(background.jpg);no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -116,7 +117,7 @@ body
 }
 .container
 {
-    background-color:white;
+    background-color: black;
     height: 640px;
     color:white;
     width: 750px;

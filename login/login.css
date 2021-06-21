@@ -16,7 +16,9 @@ body {
 	height: 100%;
 	margin: -20px 0 50px;
 }
-
+.active {
+  border: 2px solid white;
+}
 h1 {
 	font-weight: bold;
 	margin: 0;
