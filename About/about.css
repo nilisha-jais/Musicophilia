@@ -35,6 +35,10 @@ body {
   margin-top: 0px;
   display: inline-block;
 }
+.active {
+  border: 2px solid white;
+    
+}
 
 #webTitle {
   display: inline-block;

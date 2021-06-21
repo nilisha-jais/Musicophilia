@@ -16,7 +16,9 @@ body {
 	height: 100%;
 	margin: -20px 0 50px;
 }
-
+.active {
+  border: 2px solid white;
+}
 h1 {
 	font-weight: bold;
 	margin: 0;
@@ -86,7 +88,13 @@ input {
 	margin: 8px 0;
 	outline: none;
 	width: 100%;
+	transition:  all 0.5s;
 }
+
+input:focus{
+	border-color:#97E5D7;
+	box-shadow:inset 0 0 5px #2fd072;
+  }
 
 .navbar-light .navbar-toggler {
 	margin: 4px;
@@ -285,4 +293,12 @@ input {
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
+}
+
+a.social{
+	transition: all 0.5s;
+}
+
+a.social:hover{
+	transform: scale(1.2);
 }
