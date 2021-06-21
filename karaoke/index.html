@@ -1,46 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Karaoke</title>
+    <title>Karaoke </title>
+    <meta name="description" content="Karaoke - Removing vocals with web audio API">
+    
     <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
   </head>
   <body>
-    
     <header>
-    <center>
-      <h1 id="glow">KARAOKE</h1>
-      </center>
+      <h1 id="glow">Karaoke</h1>
     </header>
-    <br>
-    <br>
-    <div class="main" id="desc">
-      <h2>
-        Do you like Karaoke? Take a music file and drag it here.. You will listen the song without vocals.
-      </h2>
+    <div class="main">
+      <p>Do you like Karaoke? Take a music file and drag and drop it here.You will listen the song without vocals.</p>
 
       <div id="filedrag">Drop your MP3 file here (also .ogg or .wav)</div>
       <div id="fileselect-container">
-        <label for="fileselect"><h3>Or select a file:</h3></label>
-        <br>
-        <h3><input type="file" id="fileselect" name="fileselect[]" /></h3>
+        <label for="fileselect">Or select a file:</label>
+        <input type="file" id="fileselect" name="fileselect[]"/>
       </div>
 
       <div id="current-song"></div>
       <div id="options">
         Options:
-        <h3><button id="disable-filter">Disable karaoke</button></h3>
+        <button id="disable-filter">Disable karaoke</button>
       </div>
 
-       
-    <script src="scripts/jDataView.js"></script>
-    <script src="scripts/main.js"></script>
-  </body>
-  <br>
+    <a id="demo-audio" href="#"></a> <a href="http://www.jamendo.com/en/track/1074874/happy"></a>.
 
-  <footer>
-        <h2>&mu;SICOPHILIA</h2>
+      
+    <footer>
+      <h2>&mu;SICOPHILIA</h2>
         <p><em>Your Musical Getaway</em></p>
         <h5>&copy; 2021 | All rights reserved.</h5>
     </footer>
+    <script src="scripts/jDataView.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
+
