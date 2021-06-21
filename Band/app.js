@@ -32,23 +32,23 @@ window.addEventListener('load', () => {
         closed_hithat.play();
         break;
       case 's':
-        var kick = new Audio('sounds/sound2.mp3');
+        var kick = new Audio('sounds/sound3.mp3');
         kick.play();
         break;
       case 'd':
-        var clap = new Audio('sounds/sound3.mp3');
+        var clap = new Audio('sounds/sound4.mp3');
         clap.play();
         break;
       case 'j':
-        var open_hithat = new Audio('sounds/sound4.mp3');
+        var open_hithat = new Audio('sounds/sound5.mp3');
         open_hithat.play();
         break;
       case 'k':
-        var snare = new Audio('sounds/sound5.mp3');
+        var snare = new Audio('sounds/sound6.mp3');
         snare.play();
         break;
       case 'l':
-        var crash = new Audio('sounds/sound6.mp3');
+        var crash = new Audio('sounds/sound2.mp3');
         crash.play();
         break;
     }
