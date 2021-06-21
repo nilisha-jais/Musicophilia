@@ -16,6 +16,10 @@
 .navbar-light .navbar-toggler {
   margin: 4px;
 }
+.active {
+  border: 2px solid white;
+}
+
 
 .navbar-brand {
   margin-right: 0px;

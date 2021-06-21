@@ -104,7 +104,7 @@
                 <a class="nav-link" href="login/login.html">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login/login.html">THEME <input type="checkbox" id="switch" name="theme" /><label for="switch"
+                <a class="nav-link" style="user-select: none;">THEME <input type="checkbox" id="switch" name="theme" /><label for="switch"
                   >Toggle</label
                 ></a>
               </li>
@@ -141,7 +141,7 @@
           <span><i class="bx bx-tada bxs-piano"></i></span>
           <h3>Play your own notes</h3>
           <a href="Piano/index.html"
-            ><button class="btn" id="box-1">GO</button>></a
+            ><button class="btn" id="box-1">GO</button></a
           >
           <br /><br />
         </div>
@@ -198,6 +198,14 @@
           <a href="Metronome/index.html"
             ><button class="btn" id="box-1">GO</button></a
           >
+          <br /><br />
+        </div>
+        <div class="content">
+          <h1>Lyrics Finder</h1>
+          <span style="font-size: 80px"><i class='fas fa-music'></i></span>
+          <h3>Know the songs stuck in your mind</h3>
+          <a href="Lyrics_finder/index.html">
+          <button class="btn" id="box-1">GO</button></a>
           <br /><br />
         </div>
       </div>
@@ -374,4 +382,11 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="MUSICOBOT"
+  agent-id="7ee16170-7252-40c5-958b-af8d7dbfa215"
+  language-code="en"
+></df-messenger>
 </html>
