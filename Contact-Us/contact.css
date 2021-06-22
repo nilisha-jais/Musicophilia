@@ -15,7 +15,7 @@
   padding: 0px !important;
 }
 .navbar-light .navbar-toggler {
-  margin: 4px;
+  margin: 3px;
 }
 
 .navbar-brand {
@@ -69,11 +69,16 @@
 }
 
 .red {
+<<<<<<< HEAD
   color: rgb(202, 6, 6);
+=======
+  color: rgb(235, 14, 14);
+>>>>>>> 9a3c954816ae3971c68fcab83c99474e3a904810
 }
  /* .contact-form {
   padding: 10px 10px;
   padding-bottom: 7px;
+<<<<<<< HEAD
   background-color: rgb(32, 48, 32);
   border-radius: 15px;
   opacity: 0.8;
@@ -86,6 +91,23 @@
   background-color: rgb(16, 126, 6);
   border: none;
   border-radius: 4px;
+=======
+  background-color: rgb(39, 51, 39);
+  border-radius: 7px;
+  opacity: 0.8;
+  width: 85vw;
+  margin-top: 130px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  color: rgb(234, 240, 234);
+  background-color: rgb(19, 77, 4);
+  border: none;
+  border-radius: 6px;
+>>>>>>> 9a3c954816ae3971c68fcab83c99474e3a904810
   padding: 6px 12px;
   margin: 10px 5px;
 }
@@ -94,6 +116,20 @@
   background-color: rgb(4, 26, 10);
   color: #fff;
 }
+.buttonres {
+  color: rgb(234, 240, 234);
+  background-color: rgb(160, 5, 5);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin: 8px;
+}
+
+.buttonres:hover {
+  background-color: rgb(75, 3, 3);
+  color: #fff;
+}
+
 
 .buttonres {
   color: rgb(255, 255, 255);
@@ -111,9 +147,9 @@
 
 input,
 textarea {
-  width: 98%;
+  width: 78%;
   border-radius: 1px;
-  padding: 7px 11px;
+  padding: 11px 11px;
   border: none;
 }
 
@@ -137,7 +173,7 @@ header {
   background: url("https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg")
     no-repeat center center fixed;
   background-size: cover;
-  padding-bottom: 40px;
+  
 }
 
 footer {
@@ -149,13 +185,13 @@ footer {
 /* @media (max-width: 1074px) {
   input,
   textarea {
-    width: 97%;
+    width: 77%;
   }
 }
 @media (max-width: 788px) {
   input,
   textarea {
-    width: 96%;
+    width: 76%;
   }
 } */
 
@@ -173,6 +209,12 @@ footer {
   }
   /* input,
   textarea {
+<<<<<<< HEAD
     width: 92%;
   } */
 }
+=======
+    width: 72%;
+  }
+}
+>>>>>>> 9a3c954816ae3971c68fcab83c99474e3a904810
