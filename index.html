@@ -83,12 +83,14 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse"></div>
         <div
           class="collapse navbar-collapse"
           id="navbarSupportedContent"
-          style="justify-content: flex-end"
+          style="
+          justify-content: flex-end"
         >
-          <ul class="navbar-nav">
+          <ul class="nav justify-content-center">
             <!--  me-auto mb-2 mb-lg-0 -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -497,4 +499,11 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="MUSICOBOT"
+  agent-id="7ee16170-7252-40c5-958b-af8d7dbfa215"
+  language-code="en"
+></df-messenger>
 </html>
