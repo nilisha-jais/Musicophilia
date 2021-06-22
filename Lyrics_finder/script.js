@@ -163,7 +163,7 @@ function getAlbumList(artistID) {
             contentType: 'application/json',
             success: function(data) {
                 var albumList = data.message.body.album_list;
-                backButton.innerHTML += `<button class="btn-back" style="width:13%" onclick="getArtist()">Back</button>`;
+                backButton.innerHTML += `<button class="btn-back" style="width:35%" onclick="getArtist()">Back</button>`;
                 resultsSection.innerHTML += `<thead>
                                                 <tr>
                                                   <th scope="col">Album Name</th>
@@ -182,7 +182,7 @@ function getAlbumList(artistID) {
                 });
                 if (albumList.length === 0) {
                     resetPage(); //necessary to clear the table header already printed above.
-                    backButton.innerHTML += `<button class="btn-back" style="width:13%" onclick="getArtist()">Back</button>`;
+                    backButton.innerHTML += `<button class="btn-back" style="width:35%" onclick="getArtist()">Back</button>`;
                     resultsSection.innerHTML += `<thead>
                                                     <tr>
                                                         <th scope="col">A problem has occurred</th>
@@ -224,7 +224,7 @@ function getTrackList(albumID) {
             contentType: 'application/json',
             success: function(data) {
                 var trackResults = data.message.body.track_list;
-                backButton.innerHTML += '<button class="btn-back" style="width:13%" onclick="getAlbumList(' + window['currentArtist'] + ')">Back</button>';
+                backButton.innerHTML += '<button class="btn-back" style="width:35%" onclick="getAlbumList(' + window['currentArtist'] + ')">Back</button>';
                 resultsSection.innerHTML += `<thead>
                                                 <tr>
                                                   <th scope="col">Track Name</th>
@@ -243,7 +243,7 @@ function getTrackList(albumID) {
                 });
                 if (trackResults.length === 0) {
                     resetPage(); //necessary to clear the table header already printed above.
-                    backButton.innerHTML += '<button class="btn-back" style="width:13%" onclick="getAlbumList(' + window['currentArtist'] + ')">Back</button>';
+                    backButton.innerHTML += '<button class="btn-back" style="width:35%" onclick="getAlbumList(' + window['currentArtist'] + ')">Back</button>';
                     resultsSection.innerHTML += `<thead>
                                                     <tr>
                                                         <th scope="col">A problem has occurred</th>
@@ -269,10 +269,10 @@ function returnLyrics(trackID, goBack) {
 
     function createBackButton() {
         if (goBack == 'getTrack') {
-            backButton.innerHTML += '<button class="btn-back" style="width:13%" onclick="getTrack()">Back</button>';
+            backButton.innerHTML += '<button class="btn-back" style="width:35%" onclick="getTrack()">Back</button>';
         }
         else {
-            backButton.innerHTML += '<button class="btn-back" style="width:13%" onclick="getTrackList(' + window['currentAlbum'] + ')">Back</button>';
+            backButton.innerHTML += '<button class="btn-back" style="width:35%" onclick="getTrackList(' + window['currentAlbum'] + ')">Back</button>';
         }
     }
     createBackButton();
