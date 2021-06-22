@@ -60,11 +60,11 @@ label:after {
   transition: 0.3s;
 }
 
-input:checked + label {
+input[type="checkbox"]:checked + label {
   background: var(--color-headings);
 }
 
-input:checked + label:after {
+input[type="checkbox"]:checked + label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
@@ -191,73 +191,87 @@ nav.shift ul li a:hover:after {
   font-size: 18px !important;
   padding: 13px 20px 13px 20px !important;
 }
-
-.current {
-  background-color: rgba(0, 0, 0, 0.247);
-  border-radius: 20px;
-  margin: 5px;
-  font-weight: bold;
-  border: solid 2px black;
+/*===========APPOINTMENT STARTS==============*/
+.appointment{
+    height: 780px;
 }
-.current:hover {
-  transition: 0.3s !important;
-  font-size: 20px !important;
-  background-color: lightslategrey !important;
-  border: solid 2px black !important;
-  font-size: 18px !important;
-}
-.center {
-  text-align: center;
+.container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);   
+    margin-top: 70px;
 }
 
-.red {
-  color: rgb(241, 129, 129);
+.appoint{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background: rgba(0, 128, 0, 0.3);
+    padding: 40px 50px;
+    border-radius: 5px;
 }
-.contact-form {
-  padding: 20px 10px;
-  padding-bottom: 7px;
-  background-color: green;
-  border-radius: 7px;
-  opacity: 0.6;
-  width: 85vw;
-  margin: 50px auto;
+.title h1{
+    font-size: 40px;
+    line-height: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #fff;
+    padding-bottom: 15px;
+}
+.input-fields{
+    padding: 0 30px;
+}
+.input-fields .items{
+    width: 100%;
+    padding-bottom: 15px;
+}
+.input-fields .items .label{
+    display: block;
+    font-size: 20px;
+    color:white;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+.input-fields .items .input,
+.input-fields .items .text-area{
+    background: transparent;
+    border: 0;
+    border: 2px solid #fff;
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    color:#fff;
+    border-radius: 3px;
+    
+}
+.btn{
+    margin: 0 30px;
+    background: green;
+    color: #fff;
+    font-size: 1.25em;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 95%;
+    border: transparent;
+    
 }
 
-.button {
-  color: green;
-  background-color: #fff;
-  border: none;
-  padding: 6px 12px;
-  margin: 8px 0;
+.btn:hover{
+    background: #fff;
+    color: green;
+}
+.items #msg{
+   height: 100px; 
 }
 
-.button:hover {
-  background-color: rgb(4, 26, 10);
-  color: #fff;
-}
-
-input,
-textarea {
-  width: 98%;
-  border-radius: 1px;
-  padding: 7px 11px;
-  border: none;
-}
-
-input,
-textarea {
-  color: grey;
-  font-size: 12px;
-}
-
-input,
-textarea:focus {
-  outline: none;
-}
-
-.label {
-  margin: 10px 0;
-}
 
  /*======FOOTER================*/
 
