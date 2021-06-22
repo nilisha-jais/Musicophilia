@@ -331,9 +331,18 @@ a:hover .fa-twitter {
     
   }
 
-footer {
-  background-color: green !important;
+@keyframes glow {
+  from {
+  text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 0 30px #9eff02;
+}
 
+to {
+  text-shadow:  0 0 10px #9eff02,0 0 20px #9eff02, 0 1 30px #9eff02;
+}
+}
+footer {
+  background: linear-gradient(90deg, green -60%, black 50%, green 160%);
+animation: glow 2s ease-in-out infinite alternate;
   text-align: center;
 }
 .content span {
