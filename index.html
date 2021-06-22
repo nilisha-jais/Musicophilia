@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musicophilia</title>
     <!-- botstrap css Cdn -->
+    <script src="https://kit.fontawesome.com/debf789820.js" ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -60,10 +61,6 @@
       </div>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fas fa-chevron-up"></i>
-    </button>
-
     <nav class="shift navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -83,12 +80,14 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse"></div>
         <div
           class="collapse navbar-collapse"
           id="navbarSupportedContent"
-          style="justify-content: flex-end"
+          style="
+          justify-content: flex-end"
         >
-          <ul class="navbar-nav">
+          <ul class="nav justify-content-center">
             <!--  me-auto mb-2 mb-lg-0 -->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -118,96 +117,190 @@
       <div class="heading">Mindful Music</div>
       <div class="container">
         <div class="content">
-          <h1>Music Box</h1>
-          <span><i class="bx bx-headphone bx-tada"></i></span>
-          <h3>Solace in songs</h3>
-          <a href="musicBox/index.html"
-            ><button class="btn" id="box-1">GO</button></a
-          >
-          <br /><br />
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Music Box</h1>
+                
+               </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-headphone bx-tada"></i></span>
+                <h3>Solace in songs</h3>
+                <a href="musicBox/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>   
         </div>
 
         <div class="content">
-          <h1>The Band</h1>
-          <span><i class="bx bx-tada bxs-playlist"></i></span>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>The Band</h1>
+               </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-playlist"></i></span>
           <h3>Make your own beats</h3>
           <a href="Band/index.html"
             ><button class="btn" id="box-1">GO</button></a
           >
           <br /><br />
+              </div>
+            </div>
+          </div>  
         </div>
         <div class="content">
-          <h1>Piano</h1>
-          <span><i class="bx bx-tada bxs-piano"></i></span>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Piano</h1>
+               </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-piano"></i></span>
           <h3>Play your own notes</h3>
           <a href="Piano/index.html"
             ><button class="btn" id="box-1">GO</button></a
           >
           <br /><br />
+              </div>
+            </div>
+          </div>  
         </div>
         <div class="content">
-
-                    <h1>The Flute</h1>
-                    <box-icon name='spotify' type='logo' animation='tada'></box-icon>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>The Flute</h1>
+               </div>
+              <div class="flip-card-back">
+                <box-icon name='spotify' type='logo' animation='tada'></box-icon>
                     <span><i class='bx bxl-spotify bx-tada'></i></span>
                     <h3>Straight from God's hand !</h3>
                     <a href="Flute/index.html"><button class="btn" id="box-1">GO</button></a>
                     <br><br>
+          <br /><br />
+              </div>
+            </div>
+          </div>       
                 </div>
 
         <div class="content">
-          <h1>Drum Kit</h1>
-          <span style="font-size: 80px"><i class="bx bx-tada">🥁</i></span>
-          <h3>Play your own beat</h3>
-          <a href="drum/index.html"
-            ><button class="btn" id="box-1">GO</button></a
-          >
-          <br /><br />
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Drum Kit</h1>
+               </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"><i class="bx bx-tada">🥁</i></span>
+                <h3>Play your own beat</h3>
+                <a href="drum/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>       
         </div>
         <div class="content">
-          <h1>Guitar</h1>
-          <span style="font-size: 80px"><i class="bx bx-tada">🎸</i></span>
-          <h3>First love was the sound of guitar, Play it!</h3>
-          <a href="Guitar/index.html"
-            ><button class="btn" id="box-1">GO</button></a
-          >
-          <br /><br />
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Guitar</h1>
+               </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"><i class="bx bx-tada">🎸</i></span>
+                <h3>First love was the sound of guitar, Play it!</h3>
+                <a href="Guitar/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>       
         </div>
         <div class="content">
-          <h1>Tabla</h1>
-          <span style="font-size: 80px"><i class="bx bx-tada">🥁</i></span>
-          <h3>Let's go traditional</h3>
-          <a href="tabla/index.html"
-            ><button class="btn" id="box-1">GO</button></a
-          >
-          <br /><br />
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Tabla</h1>
+               </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"><i class="bx bx-tada">🥁</i></span>
+                <h3>Let's go traditional</h3>
+                <a href="tabla/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>       
         </div>
         <div class="content">
-          <h1>Artist Details</h1>
-          <span style="font-size: 80px"><i class="bx bx-tada">👨🏻‍🎤</i></span>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Artist Details</h1>
+               </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"><i class="bx bx-tada">👨🏻‍🎤</i></span>
           <h3>Meet the singers</h3>
           <a href="artist/index.html"
             ><button class="btn" id="box-1">GO</button></a
           >
           <br /><br />
+              </div>
+            </div>
+          </div>       
         </div>
         <div class="content">
-          <h1>Metronome</h1>
-          <span style="font-size: 80px"><i class="bx bx-tada">⌛</i></span>
-          <h3>Get a clear sense of timing and tempo</h3>
-          <a href="Metronome/index.html"
-            ><button class="btn" id="box-1">GO</button></a
-          >
-          <br /><br />
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Metronome</h1>
+               </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"><i class="bx bx-tada">⌛</i></span>
+                <h3>Get a clear sense of timing and tempo</h3>
+                <a href="Metronome/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>      
         </div>
         <div class="content">
-          <h1>Lyrics Finder</h1>
-          <span style="font-size: 80px"><i class='fas fa-music'></i></span>
-          <h3>Know the songs stuck in your mind</h3>
-          <a href="Lyrics_finder/index.html">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Lyrics Finder</h1>
+               </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"><i class='fas fa-music'></i></span>
+                <h3>Know the songs stuck in your mind</h3>
+                <a href="Lyrics_finder/index.html">
+                <button class="btn" id="box-1">GO</button></a>
+                <br /><br />
+              </div>
+            </div>
+          </div>       
+        </div>
+
+      <div class="content">
+          <h1>Karaoke</h1>
+          <span style="font-size: 80px"><i class='bx bx-tada'>🎤</i></span>
+          <h3>Drag and drop your file and sing</h3>
+          <a href="karaoke/index.html">
           <button class="btn" id="box-1">GO</button></a>
           <br /><br />
         </div>
+
+
+
+
       </div>
     </div>
 
@@ -217,31 +310,57 @@
       <div class="heading">Rollick Games</div>
       <div class="container">
         <div class="content">
-          <h1>Memory Game</h1>
-          <span><i class="bx bx-tada bxs-medal"></i></span>
-          <h3>Test your memory by this music game</h3>
-          <a href="Memory-game/choose.html"
-            ><button class="btn" id="box-1">GO</button></a
-          >
-          <br /><br />
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Memory Game</h1>
+               </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-medal"></i></span>
+                <h3>Test your memory by this music game</h3>
+                <a href="Memory-game/choose.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
         </div>
         <div class="content">
-          <h1>Music Quiz</h1>
-          <span><i class="bx bx-tada bxs-music"></i></span>
-          <h3>How much do you know your music industry?</h3>
-          <a href="Quiz/index.html"
-            ><button class="btn" id="box-1">GO</button></a
-          >
-          <br /><br />
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Music Quiz</h1>
+               </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-music"></i></span>
+                <h3>How much do you know your music industry?</h3>
+                <a href="Quiz/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+          
+          
         </div>
         <div class="content">
-          <h1>Guess The Singer</h1>
-          <span><i class="bx bx-tada bxs-music"></i></span>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Guess The Singer</h1>
+               </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-music"></i></span>
           <h3>Can You Recognise Your Favourite Singer?</h3>
           <a href="Guess the Singers/index.html"
             ><button class="btn" id="box-1">GO</button></a
           >
           <br /><br />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -250,13 +369,21 @@
       <div class="heading">Zestful Dance</div>
       <div class="container">
         <div class="content">
-          <h1>Lets Dance</h1>
-          <span class="girl">💃</span>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Lets Dance</h1>
+               </div>
+              <div class="flip-card-back">
+                <span class="girl">💃</span>
           <h3>Dance along with us</h3>
           <a href="Dance/index.html"
             ><button class="btn" id="box-1">GO</button></a
           >
           <br /><br />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -284,6 +411,14 @@
 
       <br />
     </footer>
+
+  
+    <a href="#" class="to-top">
+      <i class="fa fa-arrow-up" style="font-size:36px"></i>
+      
+  </a>
+  <script src="main.js"></script>
+
 
     <!--The Below Script is written for Go to Top Button -->
     <script>
