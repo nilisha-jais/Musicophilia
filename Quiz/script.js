@@ -8,7 +8,9 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
+const ques_num_area = document.getElementById("quesNum");
 
+let quesNumber = 1;
 let currentQuiz = 0;
 let score = 0;
 
@@ -50,6 +52,9 @@ fetch(`https://opentdb.com/api.php?amount=10&category=12&type=multiple`)
         b_text.innerText = currentQuizData.answerChoices[1];
         c_text.innerText = currentQuizData.answerChoices[2];
         d_text.innerText = currentQuizData.answerChoices[3];
+
+        ques_num_area.innerText = "Question " + quesNumber + "/" + quizData.length;
+        quesNumber++;
         }
 
         var sec = 150;

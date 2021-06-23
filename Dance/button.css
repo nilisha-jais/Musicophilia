@@ -27,7 +27,7 @@
 button
 {
   border:none;
-  background-image : linear-gradient(to bottom,rgb(253,54,86),rgba(8, 101, 177));
+  background-image : linear-gradient(to bottom,rgb(253,54,86),rgb(8, 101, 177));
   border-radius: 20px;
   padding: 15px;
   color:white;

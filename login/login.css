@@ -7,7 +7,8 @@
 }
 
 body {
-	background: #f6f5f7;
+	background-image: url("https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg");
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -16,7 +17,9 @@ body {
 	height: 100%;
 	margin: -20px 0 50px;
 }
-
+.active {
+  border: 2px solid white;
+}
 h1 {
 	font-weight: bold;
 	margin: 0;
@@ -35,14 +38,14 @@ p {
 }
 
 span {
-	font-size: 12px;
+	font-size: 15px;
 }
 
 a {
 	color: #333;
-	font-size: 14px;
+	font-size: 16px;
 	text-decoration: none;
-	margin: 15px 0;
+	margin: 17px 0;
 }
 
 button {
@@ -58,7 +61,15 @@ button {
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
 }
-
+#btn{
+	background-size: 200% 100%;
+	transition: background-position 0.5s, color 0.5s;
+	background-image: linear-gradient(to right,#088108 50%, red 50%);
+}
+#btn:hover{
+	background-position: right bottom;
+	color: #fff;
+}
 button:active {
 	transform: scale(0.95);
 }
@@ -69,7 +80,8 @@ button.ghost {
 }
 
 form {
-	background-color: #FFFFFF;
+	background-image: url("https://us.123rf.com/450wm/nveri/nveri1601/nveri160100050/50903400-colorful-music-background.jpg?ver=6");
+    background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -80,18 +92,24 @@ form {
 }
 
 input {
-	background-color: #eee;
+	background: none;
 	border: none;
+	border-bottom: 3.5px solid #fff;
 	padding: 12px 15px;
-	margin: 8px 0;
+	margin: 15px 0;
 	outline: none;
 	width: 100%;
+	transition:  all 0.5s;
 }
-
+ input:focus{
+	transition: 0.5s;
+	border-bottom: 3.5px solid #2fd072;
+  }
+  
 .navbar-light .navbar-toggler {
 	margin: 4px;
   }
-  
+
   .navbar-brand {
 	margin-right: 0px;
   }
@@ -99,33 +117,33 @@ input {
 	padding: 6px !important;
 	font-size: 1rem !important;
   }
-  
+
   .navbar {
 	background-color: green !important;
 	margin:0px;
 	padding: 0px;
   }
-  
+
   .nav-img {
 	height: 50px;
 	width: 70px;
 	margin-top: 0px;
 	display: inline-block;
   }
-  
+
   #webTitle {
 	display: inline-block;
 	font-size: 25px;
 	color: rgb(17, 17, 17);
 	font-weight: bold;
   }
-  
+
   .nav-link {
 	color: white !important;
 	font-size: 18px !important;
 	padding: 13px 20px 13px 20px !important;
   }
-  
+
   .current {
 	background-color: rgba(0, 0, 0, 0.247);
 	border-radius: 20px;
@@ -144,13 +162,13 @@ input {
 .container {
 	background-color: #fff;
 	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
 				0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-	width: 768px;
+	width: 860px;
 	max-width: 100%;
-	min-height: 480px;
+	min-height: 560px;
 	margin-top: 130px;
 }
 
@@ -190,12 +208,13 @@ input {
 		opacity: 0;
 		z-index: 1;
 	}
-	
+
 	50%, 100% {
 		opacity: 1;
 		z-index: 5;
 	}
 }
+
 
 .forgot-password {
 	transition: letter-spacing .3s ease-in-out;
@@ -285,4 +304,74 @@ input {
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
+	background-size: 100% 200%;
+	transition: background-position 0.5s, color 0.5s;
+}
+
+a.social{
+	transition: all 0.5s;
+}
+
+a.social:hover{
+	transform: scale(1.2);
+
+}
+
+.field-icon{
+	position: absolute;
+	left: 81%;
+	top: 73%;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.field-icon1{
+	position: absolute;
+	top: 61%;
+	left: 81%;
+	cursor: pointer;
+	z-index: 2;
+}
+
+} 
+.social-container a:nth-child(1){
+	color: #1976d3;
+	font-size: 18px;
+	background-image: linear-gradient(#fff 50%, #1976d3 50%);
+}
+.social-container a:nth-child(2){
+	color: #f44236;
+	font-size: 18px;
+	background-image: linear-gradient(#fff 50%, #f44236 50%);
+}
+.social-container a:nth-child(3){
+	color: #03a9f5;
+	font-size: 18px;
+	background-image: linear-gradient(#fff 50%, #03a9f5 50%);
+}
+.social-container a:hover{
+	background-position: 0% 100%;
+	color: #fff;
+}
+
+::placeholder{
+	font-size: large;
+}
+.button{
+padding: 15px 0;
+}
+
+#btn1{
+	
+	background-size: 200% 100%;
+	transition: background-position 0.5s, color 0.5s;
+	background-image: linear-gradient(to right,darkslategray 50%, black 50%);
+}
+
+#btn1:hover{
+	background-position: right bottom;
+	color: #fff;
+}
+.btn2{
+	font-size: 14px;
 }
