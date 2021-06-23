@@ -368,10 +368,19 @@ background-image: linear-gradient(315deg, #63d471 10%, #5aff15 74%);
   background-image: linear-gradient(to right, #85e942, green);
 }
 
+@keyframes glow {
+  from {
+  text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 0 30px #9eff02;
+}
+
+to {
+  text-shadow:  0 0 10px #9eff02,0 0 20px #9eff02, 0 1 30px #9eff02;
+}
+}
 
 footer {
-  background-color: green !important;
-
+  background: linear-gradient(90deg, green -60%, black 50%, green 160%);
+  animation: glow 2s ease-in-out infinite alternate;
   text-align: center;
 }
 .content span {
@@ -519,4 +528,116 @@ footer h5 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.flip-card {
+  background-color:transparent;
+  width: 300px;
+  height: 350px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+ /* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: bottom;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+   transform: rotateY(-180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front {
+   position: absolute;
+   margin-top: 116px;
+   margin-left: 26px;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+   backface-visibility: hidden;
+  }
+ .flip-card-back {
+    position: absolute;
+    margin-top: 32px;
+    margin-left: -21px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+   }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+   
+    align-items: center;
+  }
+  .flip-card-back {
+ 
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  margin-right: 70px;
+  transform: rotateY(180deg);
+  }
+
+.collapse .navbar-collapse{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+
+}
+
+.collapse .navbar-collapse a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  font-family: sans-serif;
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.collapse .navbar-collapse a:hover {
+  background-color: #ffc31e;
+  color: black;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.to-top
+{
+    background-color: rgb(245, 241, 241);
+    position: fixed;
+    bottom: 16px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top:hover{
+  color:green;
+}
+
+.to-top.active
+{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
