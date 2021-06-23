@@ -1,12 +1,100 @@
-*{
+
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background: rgb(146, 198, 219);
+    background: #111;
 }
 header{
-    position: fixed;
-    
+    padding:5px;
+	min-height: 60px;
+    width: 100%;
+    background-image:linear-gradient(to bottom,rgb(243, 155, 221),rgb(245, 189, 198));
+	color:rgb(255,202,51);
+    text-align:center;
+    position:fixed;
+	z-index:100;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #000;
+}
+.slider .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0s;
+    z-index: 1;
+    clip-path: circle(0px at center);
+}
+.slider input[type="radio"]:checked + .imgBx
+{
+    z-index: 10;
+    clip-path: circle(1000px at center);
+    transition-delay: 0.75s;
+}
+.slider .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.slider .imgBx .content{
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+}
+.slider .imgBx .content h2{
+    font-size: 6em;
+    line-height: 1em;
+    color: #fff;
+}
+.slider .imgBx .content p{
+    font-size: 1.1em;
+    color: #fff;
+}
+.slider .imgBx .content a{
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 10px 30px;
+    color: #111;
+    font-weight: 500px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.slider input[type="radio"]{
+    position: relative;
+    z-index: 1000;
+    margin: 5px;
+    margin-bottom: 90px;
+    outline: none;
+    cursor: pointer;
+}
+@media (max-width:768px) {
+    .slider .imgBx{
+        padding: 40px;
+    }
+    .slider .imgBx .content h2{
+        font-size: 3em;
+    }
+    .slider .imgBx .content p{
+        font-size: 1em;
+        color: #fff;
+        margin-top: 10px;
+    }
 }
