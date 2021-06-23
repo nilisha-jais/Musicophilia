@@ -13,52 +13,70 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+     <script
+      src="https://kit.fontawesome.com/d5f154924f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a0dbbe476a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="login.css">
-   
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16" />
+   <title>Login | Musicophilia</title>
+        
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img class="nav-img" src="../music.png" alt="Musicophilia Logo" />
-        <span id="webTitle">&mu;<span style="color: white;font-size:23px">SICOPHILIA</span></span>
-      </a>
-      <button
-        class="navbar-toggler"
-        id="myToggleBtn"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse"
-        id="navbarSupportedContent"
-        style="justify-content: flex-end"
-      >
-        <ul class="navbar-nav">
-          <!--  me-auto mb-2 mb-lg-0 -->
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="../About/index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="../Contact-Us/contact.html">Contact Us</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link active" href="../login/login.html">Login</a>
+    <nav class="shift navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="nav-img" src="music.png" alt="Musicophilia Logo" />
+          <span id="webTitle"
+            >&mu;<span style="color: white">SICOPHILIA</span></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          id="myToggleBtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="justify-content: flex-end"
+        >
+          <ul class="navbar-nav">
+            <!--  me-auto mb-2 mb-lg-0 -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="../About/index.html">About</a>
+            </li>
+            <li class="nav-item">
+              
+              <a class="nav-link" href="../Contact-Us/contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">THEME <input type="checkbox" id="switch" name="theme" /><label for="switch"
+                  >Toggle</label
+                ></a>
+              </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+      
+    </nav>
 
     <div class="container" id="container">
   <div class="form-container sign-up-container">
@@ -69,7 +87,7 @@
         <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
         <a href="#" class="social"><i class="fab fa-twitter"></i></a>
       </div>
-      <span>or use your email for registration</span>
+      <span style="color: black;font-size: 15px;">or use your email for registration</span>
       <input type="text" placeholder="Name" />
       <input type="email" placeholder="Email" />
       <input type="password" placeholder="Password" />
@@ -84,10 +102,10 @@
         <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
         <a href="#" class="social"><i class="fab fa-twitter"></i></a>
       </div>
-      <span>or use your account</span>
+      <span style="color: black;font-size: 15px;">or use your account</span>
       <input type="email" placeholder="Email" />
       <input type="password" placeholder="Password" />
-      <a href="../ForgetPas/Forget.html" class="forgot-password">Forgot your password?</a>
+      <a href="#" class="forgot-password">Forgot your password?</a>
       <button>Sign In</button>
     </form>
   </div>
@@ -106,6 +124,31 @@
     </div>
   </div>
 </div>
+    <footer>
+
+      <br>
+         <div class="centerdiv">
+
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/login" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+        <h2>&mu;SICOPHILIA</h2>
+        <p><em>Your Musical Getaway</em></p>
+        <h5>&copy; 2021 | Nilisha | All rights reserved.</h5>
+
+    <br />
+    
+   
+
+
+      <br />
+    </footer>
+    <a href="#" class="to-top">
+      <i class="fa fa-arrow-up" style="font-size:36px"></i>
+      
+  </a>
+  <script src="main.js"></script>
 <script>
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
