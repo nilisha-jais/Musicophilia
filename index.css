@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(146, 198, 219);
+}
+header{
+    position: fixed;
+    
+}
