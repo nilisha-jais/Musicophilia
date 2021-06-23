@@ -152,13 +152,81 @@ header {
   padding-bottom: 40px;
 }
 
-footer {
+/*footer {
   width: 100%;
   opacity: 0.9;
   background-color: green;
   text-align: center;
+}*/
+/*Social Media*/
+.centerdiv {
+  font-size: larger;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerdiv a {
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  font-size: 10px;
+  background-color: white;
+  border-radius: 50%;
+
+ /*border: 5px solid #19911d;*/
+  margin: 0 8px;
+  text-align: center;
+  cursor: pointer;
+ /* float: left;*/
+
+  transition: all 0.5s ease;
 }
 
+.centerdiv a i {
+  /*margin-top: 5px;*/
+  size: 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.centerdiv a:hover i {
+  transition: all 0.5s ease;
+  transform: scale(1.8);
+}
+.fa-instagram {
+  color: rgba(0, 128, 0);
+  transition: 0.4s;
+}
+a:hover .fa-instagram {
+  color: rgba(0, 128, 0);
+
+ /* text-shadow: 0 0 15px #ee570f;*/
+}
+.fa-facebook-f {
+  color: rgba(0, 128, 0);
+
+  transition: 0.4s;
+}
+
+a:hover .fa-facebook-f {
+  color: rgba(0, 128, 0);
+  /*text-shadow: 0 0 15px #3b5998;*/
+}
+
+.fa-twitter {
+  color: rgba(0, 128, 0);
+  transition: 0.4s;
+}
+a:hover .fa-twitter {
+  color: rgba(0, 128, 0);
+
+ /*text-shadow: 0 0 15px #00aced;*/
+}
+ .centerdiv a:hover {
+      background-color: white;
+    
+  }
 @media (max-width: 1074px) {
   input,
   textarea {
