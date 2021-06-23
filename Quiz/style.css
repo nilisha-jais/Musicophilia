@@ -3,6 +3,29 @@
 * {
     box-sizing: border-box;
 }
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
+    background-color: #faf9f9;
+    border-radius: 15px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 15px;
+    background-color: #1d1c1c;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fff;
+    background-image: -webkit-gradient(
+      linear,
+      40% 0%,
+      75% 84%,
+      from(#61c4dd),
+      to(#0ab1f3),
+      color-stop(0.6, #88d3f1)
+    );
+  }
+  
 
 h3{
     background-image: linear-gradient(90deg, #1A0223,#DB26B6, #EE570F);
