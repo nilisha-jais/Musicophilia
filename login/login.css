@@ -105,11 +105,11 @@ input {
 	transition: 0.5s;
 	border-bottom: 3.5px solid #2fd072;
   }
-  
+
 .navbar-light .navbar-toggler {
 	margin: 4px;
   }
-  
+
   .navbar-brand {
 	margin-right: 0px;
   }
@@ -117,33 +117,33 @@ input {
 	padding: 6px !important;
 	font-size: 1rem !important;
   }
-  
+
   .navbar {
 	background-color: green !important;
 	margin:0px;
 	padding: 0px;
   }
-  
+
   .nav-img {
 	height: 50px;
 	width: 70px;
 	margin-top: 0px;
 	display: inline-block;
   }
-  
+
   #webTitle {
 	display: inline-block;
 	font-size: 25px;
 	color: rgb(17, 17, 17);
 	font-weight: bold;
   }
-  
+
   .nav-link {
 	color: white !important;
 	font-size: 18px !important;
 	padding: 13px 20px 13px 20px !important;
   }
-  
+
   .current {
 	background-color: rgba(0, 0, 0, 0.247);
 	border-radius: 20px;
@@ -162,7 +162,7 @@ input {
 .container {
 	background-color: #fff;
 	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
 				0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
@@ -208,7 +208,7 @@ input {
 		opacity: 0;
 		z-index: 1;
 	}
-	
+
 	50%, 100% {
 		opacity: 1;
 		z-index: 5;
@@ -314,7 +314,34 @@ a.social{
 
 a.social:hover{
 	transform: scale(1.2);
-} 
+
+}
+
+.field-icon{
+	position: absolute;
+	left: 81%;
+	top: 63.1%;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.field-icon1{
+	position: absolute;
+	top: 60.5%;
+	left: 81%;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.field-icon2{
+	position: absolute;
+	top: 77.5%;
+	left: 81%;
+	cursor: pointer;
+	z-index: 2;
+}
+
+}
 .social-container a:nth-child(1){
 	color: #1976d3;
 	font-size: 18px;
@@ -343,7 +370,7 @@ padding: 15px 0;
 }
 
 #btn1{
-	
+
 	background-size: 200% 100%;
 	transition: background-position 0.5s, color 0.5s;
 	background-image: linear-gradient(to right,darkslategray 50%, black 50%);
