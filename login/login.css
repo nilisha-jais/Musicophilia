@@ -105,7 +105,7 @@ input {
 	transition: 0.5s;
 	border-bottom: 3.5px solid #2fd072;
   }
-  
+
 .navbar-light .navbar-toggler {
 	margin: 4px;
   }
@@ -320,20 +320,28 @@ a.social:hover{
 .field-icon{
 	position: absolute;
 	left: 81%;
-	top: 73%;
+	top: 63.1%;
 	z-index: 2;
 	cursor: pointer;
 }
 
 .field-icon1{
 	position: absolute;
-	top: 61%;
+	top: 60.5%;
 	left: 81%;
 	cursor: pointer;
 	z-index: 2;
 }
 
-} 
+.field-icon2{
+	position: absolute;
+	top: 77.5%;
+	left: 81%;
+	cursor: pointer;
+	z-index: 2;
+}
+
+}
 .social-container a:nth-child(1){
 	color: #1976d3;
 	font-size: 18px;
@@ -362,7 +370,7 @@ padding: 15px 0;
 }
 
 #btn1{
-	
+
 	background-size: 200% 100%;
 	transition: background-position 0.5s, color 0.5s;
 	background-image: linear-gradient(to right,darkslategray 50%, black 50%);

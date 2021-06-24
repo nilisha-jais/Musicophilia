@@ -76,9 +76,9 @@
 
       <input type="password" placeholder="Password" id="pass_signup"/>
       <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-      <button>Sign Up</button>
-      <input type="password" placeholder="Password" />
-      <input type="password" placeholder="Confirm Password" />     
+      <input type="password" placeholder="Confirm Password" id="pass_signup_conf"/>
+      <span toggle="#password-field" class="fa fa-fw fa-eye field-icon2 toggle-password2"></span>
+
       <div class="button">
       <button id="btn">Sign Up</button>
       <button id="btn1">Reset</button>
@@ -98,11 +98,6 @@
       <input type="password" placeholder="Password" id="pass_signin"/>
       <span toggle="#password-field" class="fa fa-fw fa-eye field-icon1 toggle-password1"></span>
       <a href="../ForgetPas/Forget.html" class="forgot-password">Forgot your password?</a>
-      <button>Sign In</button>
-      <input type="password" placeholder="Password" />
-      <!-- <input type="checkbox" value="lsRememberMe" id="rememberMe">  -->
-      <!-- <label for="rememberMe" >Remember me</label> -->
-      <a href="#" class="forgot-password">Forgot your password?</a>
       <button id="btn" class="btn2">Sign In</button>
     </form>
   </div>
@@ -147,6 +142,16 @@ $(".toggle-password1").click(function() {
     $("#pass_signin").attr("type", "text");
   } else {
     $("#pass_signin").attr("type", "password");
+  }
+});
+
+$(".toggle-password2").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  if ($("#pass_signup_conf").attr("type") == "password") {
+    $("#pass_signup_conf").attr("type", "text");
+  } else {
+    $("#pass_signup_conf").attr("type", "password");
   }
 });
 
