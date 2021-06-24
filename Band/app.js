@@ -29,26 +29,32 @@ window.addEventListener('load', () => {
     switch (key) {
       case 'a':
         var closed_hithat = new Audio('sounds/sound1.mp3');
+        createBubbles(0);
         closed_hithat.play();
         break;
       case 's':
         var kick = new Audio('sounds/sound3.mp3');
+        createBubbles(1);
         kick.play();
         break;
       case 'd':
         var clap = new Audio('sounds/sound4.mp3');
+        createBubbles(2);
         clap.play();
         break;
       case 'j':
         var open_hithat = new Audio('sounds/sound5.mp3');
+        createBubbles(3);
         open_hithat.play();
         break;
       case 'k':
         var snare = new Audio('sounds/sound6.mp3');
+        createBubbles(4);
         snare.play();
         break;
       case 'l':
         var crash = new Audio('sounds/sound2.mp3');
+        createBubbles(5);
         crash.play();
         break;
     }
