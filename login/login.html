@@ -4,14 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.png" type="image/gif" sizes="16x16" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="login.css">
-   
+
 </head>
 <body>
-    
-   <div class="container" id="container">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="nav-img" src="../music.png" alt="Musicophilia Logo" />
+        <span id="webTitle">&mu;<span style="color: white;font-size:23px">SICOPHILIA</span></span>
+      </a>
+      <button
+        class="navbar-toggler"
+        id="myToggleBtn"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarSupportedContent"
+        style="justify-content: flex-end"
+      >
+        <ul class="navbar-nav">
+          <!--  me-auto mb-2 mb-lg-0 -->
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../About/index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="../Contact-Us/contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="../login/login.html">Login</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container" id="container">
   <div class="form-container sign-up-container">
     <form action="#">
       <h1>Create Account</h1>
@@ -23,8 +73,16 @@
       <span>or use your email for registration</span>
       <input type="text" placeholder="Name" />
       <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <button>Sign Up</button>
+
+      <input type="password" placeholder="Password" id="pass_signup"/>
+      <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+      <input type="password" placeholder="Confirm Password" id="pass_signup_conf"/>
+      <span toggle="#password-field" class="fa fa-fw fa-eye field-icon2 toggle-password2"></span>
+
+      <div class="button">
+      <button id="btn">Sign Up</button>
+      <button id="btn1">Reset</button>
+    </div>
     </form>
   </div>
   <div class="form-container sign-in-container">
@@ -37,9 +95,10 @@
       </div>
       <span>or use your account</span>
       <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <a href="#" class="forgot-password">Forgot your password?</a>
-      <button>Sign In</button>
+      <input type="password" placeholder="Password" id="pass_signin"/>
+      <span toggle="#password-field" class="fa fa-fw fa-eye field-icon1 toggle-password1"></span>
+      <a href="../ForgetPas/Forget.html" class="forgot-password">Forgot your password?</a>
+      <button id="btn" class="btn2">Sign In</button>
     </form>
   </div>
   <div class="overlay-container">
@@ -65,6 +124,37 @@ const container = document.getElementById('container');
 signUpButton.addEventListener('click', () => container.classList.add('right-panel-active'));
 
 signInButton.addEventListener('click', () => container.classList.remove('right-panel-active'));
+
+$(".toggle-password").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  if ($("#pass_signup").attr("type") == "password") {
+    $("#pass_signup").attr("type", "text");
+  } else {
+    $("#pass_signup").attr("type", "password");
+  }
+});
+
+$(".toggle-password1").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  if ($("#pass_signin").attr("type") == "password") {
+    $("#pass_signin").attr("type", "text");
+  } else {
+    $("#pass_signin").attr("type", "password");
+  }
+});
+
+$(".toggle-password2").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  if ($("#pass_signup_conf").attr("type") == "password") {
+    $("#pass_signup_conf").attr("type", "text");
+  } else {
+    $("#pass_signup_conf").attr("type", "password");
+  }
+});
+
 </script>
 </body>
 </html>

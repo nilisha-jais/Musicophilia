@@ -55,52 +55,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ,
     {
-        name: 'card1',
-        img: 'images/card1.png'
+        name: 'card7',
+        img: 'images/card7.png'
     },
     {
-        name: 'card1',
-        img: 'images/card1.png'
+        name: 'card7',
+        img: 'images/card7.png'
     },
     {
-        name: 'card2',
-        img: 'images/card2.png'
+        name: 'card8',
+        img: 'images/card8.png'
     },
     {
-        name: 'card2',
-        img: 'images/card2.png'
+        name: 'card8',
+        img: 'images/card8.png'
     },
     {
-        name: 'card3',
-        img: 'images/card3.png'
+        name: 'card9',
+        img: 'images/card9.png'
     },
     {
-        name: 'card3',
-        img: 'images/card3.png'
+        name: 'card9',
+        img: 'images/card9.png'
     },
     {
-        name: 'card4',
-        img: 'images/card4.png'
+        name: 'card10',
+        img: 'images/card10.png'
     },
     {
-        name: 'card4',
-        img: 'images/card4.png'
+        name: 'card10',
+        img: 'images/card10.png'
     },
     {
-        name: 'card5',
-        img: 'images/card5.png'
+        name: 'card11',
+        img: 'images/card11.png'
     },
     {
-        name: 'card5',
-        img: 'images/card5.png'
+        name: 'card11',
+        img: 'images/card11.png'
     },
     {
-        name: 'card6',
-        img: 'images/card6.png'
+        name: 'card12',
+        img: 'images/card12.png'
     },
     {
-        name: 'card6',
-        img: 'images/card6.png'
+        name: 'card12',
+        img: 'images/card12.png'
     }
 
     ]

@@ -4,6 +4,28 @@
   color: white;
   font-family: "segoe ui";
 }
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
+  background-color: #1d1c1c;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1d1c1c;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    40% 0%,
+    75% 84%,
+    from(#4d9c41),
+    to(#19911d),
+    color-stop(0.6, #54de5d)
+  );
+}
 .container,
 .container-fluid,
 .container-lg,
@@ -16,6 +38,10 @@
 .navbar-light .navbar-toggler {
   margin: 4px;
 }
+.active {
+  border: 2px solid white;
+}
+
 
 .navbar-brand {
   margin-right: 0px;
@@ -117,14 +143,17 @@ textarea:focus {
 }
 
 header {
+  width: 100%;
   height: 100vh;
-  background: url("https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg")
-    no-repeat center center fixed;
+  background: linear-gradient(rgb(1, 41, 1),rgb(78, 77, 77),rgb(1, 41, 1));
+ /* background: url("./black-silver-microphone-black-background.jpg")
+    no-repeat center center fixed; */
   background-size: cover;
   padding-bottom: 40px;
 }
 
 footer {
+  width: 100%;
   opacity: 0.9;
   background-color: green;
   text-align: center;
@@ -159,4 +188,34 @@ footer {
   textarea {
     width: 92%;
   }
+}
+
+.to-top
+{
+    background-color: green;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top:hover{
+  color: green;
+}
+
+.to-top.active
+{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }

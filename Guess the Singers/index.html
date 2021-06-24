@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="icon" href="../favicon.png" type="image/gif" sizes="16x16" />
     <title>
         Guess The Singer
     </title>
@@ -14,6 +15,7 @@
 <body>
     <div class="backbutton" align="left">
         <a style="text-decoration:none" href="../index.html"><button type="button" style="background-color: #6e1adb ;"><span id="btn">Back</span></button></a>
+        <div class="score" id='scores'> Score: 0/0</div>
     </div>
 
     <div id="intro">
@@ -23,7 +25,6 @@
     <div class="hints">
         <img id="singer_image" src="pictures/ar.png" alt="singers">
     </div>
-    <div class="score" id='scores'> Score: 0/0</div>
     <div class="options">
         <button type="submit" id="option1" onclick="checkAnswer()">A.R RAHMAN</button>
         <button type="submit" id="option2" onclick="checkAnswer()"> ARIJIT SINGH</button>

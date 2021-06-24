@@ -128,27 +128,40 @@ html.transition *:after {
 .navbar {
   background-color: green !important;
 }
+nav.shift ul li{
+    padding: 5px;
+}
 
 nav.shift ul li a {
   position:relative;
   z-index: 1;
+    text-transform: uppercase;
+    
 }
 nav.shift ul li a:hover {
-  color: #6edd6b;
+  border: 2px solid white;
+    transition: 0.2s;
+    
+  
+}
+.active {
+  border: 2px solid white;
+    
 }
 nav.shift ul li a:after {
-  display: block;
+  display: inline-block;
   position: absolute;
+    font-weight: bold;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  margin: auto;
+  /*margin: auto;*/
   width: 100%;
   height: 1px;
   content: '.';
   color: transparent;
-  background: #58e953;
+ /* background: #58e953;*/
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -199,12 +212,7 @@ hr {
   border-width: 0px 0px 0px 0px !important;
   height: 6px !important;
 
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 128, 0, 0.1),
-    rgba(0, 128, 0, 0.85),
-    rgba(0, 128, 0, 0.1)
-  );
+  background-image: linear-gradient(to right, #85e942, green);
 
   margin: 0 !important;
   opacity: 0.51;
@@ -250,7 +258,7 @@ hr {
 }
 .content:hover {
   border: 3px solid rgb(0, 128, 0);
-  box-shadow: 3px 3px 10px 0 rgb(170, 230, 175);
+  box-shadow: 5px 5px 10px 0 rgb(0, 128, 0);
   transform: scale(1.03);
 }
 .btn {
@@ -258,25 +266,25 @@ hr {
   font-weight: bold;
   border: none;
   color: white;
-  padding: 16px 25px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 25px;
   margin: 3px 2px;
-  transition-duration: 0.4s;
+  transition-duration: 0.1s;
   cursor: pointer;
   border-radius: 23px;
     height: 70px;
     width: 100px;
-}
-
-.q{
     text-align: center;
 }
 
-.q:hover {
-transform: scale(1.8);
+
+
+.btn:hover {
+transform:scaleX(1.2);
+   
 }
 
 
@@ -293,7 +301,7 @@ transform: scale(1.8);
   height: 50px;
   width: 50px;
   font-size: 10px;
-  background-color: black;
+  background-color: white;
   border-radius: 50%;
 
  /*border: 5px solid #19911d;*/
@@ -317,31 +325,31 @@ transform: scale(1.8);
   transform: scale(1.8);
 }
 .fa-instagram {
-  color: white;
+  color: rgba(0, 128, 0);
   transition: 0.4s;
 }
 a:hover .fa-instagram {
-  color: black;
+  color: rgba(0, 128, 0);
 
  /* text-shadow: 0 0 15px #ee570f;*/
 }
 .fa-facebook-f {
-  color: white;;
+  color: rgba(0, 128, 0);
 
   transition: 0.4s;
 }
 
 a:hover .fa-facebook-f {
-  color: black;
+  color: rgba(0, 128, 0);
   /*text-shadow: 0 0 15px #3b5998;*/
 }
 
 .fa-twitter {
-  color: white;
+  color: rgba(0, 128, 0);
   transition: 0.4s;
 }
 a:hover .fa-twitter {
-  color: black;
+  color: rgba(0, 128, 0);
 
  /*text-shadow: 0 0 15px #00aced;*/
 }
@@ -350,83 +358,28 @@ a:hover .fa-twitter {
     
   }
 
-#box-1 {
-  background-image: linear-gradient(to right, #20aae5, #a722d6);
+#box-1{
+ background-color: #00b712;
+background-image: linear-gradient(315deg, #63d471 10%, #5aff15 74%);
+
 }
-#box-2 {
-  background-image: linear-gradient(180deg, #0fa5e6, #7b06f0);
-}
-#box-3 {
-  background-image: linear-gradient(90deg, #1a0223, #db26b6, #ee570f);
-}
-#box-4 {
-  background-image: linear-gradient(to right, #06425c, #410955);
-}
-#box-5 {
-  background-image: linear-gradient(180deg, #1a0223, #db26b6, #ee570f);
-}
-#box-6 {
-  background-image: linear-gradient(to right, #e4bc0d, #ec430f);
+#box-1:hover {
+    transition: all 250ms ease;
+  background-image: linear-gradient(to right, #85e942, green);
 }
 
-#box-7 {
-  background-image: linear-gradient(to right, #20aae5, #a722d6);
+@keyframes glow {
+  from {
+  text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 0 30px #9eff02;
 }
 
-#box-10 {
-  background-image: linear-gradient(to right, #85e942, #f1753c);
+to {
+  text-shadow:  0 0 10px #9eff02,0 0 20px #9eff02, 0 1 30px #9eff02;
 }
- #box-1:hover {
-   transition: all 2500ms ease;
-    background-image: linear-gradient(to right, #85e942, green);
-  }
- 
-  #box-2:hover {
-    transition: all 2500ms ease;
-    background-image: linear-gradient(to right, #85e942, green);
-  }
-  #box-3:hover {
-    transition: all 2500ms ease;
-    background-image: linear-gradient(to right, #85e942, green);
-  }
-  #box-4:hover {
-    transition: all 2500ms ease;
-    background-image: linear-gradient(to right, #85e942, green);
-  }
-  #box-5:hover {
-    transition: all 2500ms ease;
-    background-image: linear-gradient(to right, #85e942, green);
-  }
-  #box-6:hover {
-    transition: all 2500ms ease;
-    background-image: linear-gradient(to right, #85e942, green);
-  }
-  
-  #box-7:hover {
-    transition: all 2500ms ease;
-    background-image: linear-gradient(to right, #85e942, green);
-  }
-  
-  #box-10:hover {
-    transition: all 2500ms ease;
-    background-image: linear-gradient(to right, #85e942, green);
-  }
-
-.btn:hover {
-  background-color: red;
-  color: black;
 }
-
-.btn:active {
-  transition-duration: 0s;
-  box-shadow: inset 5px 5px 5px rgb(68, 67, 67, 0.8),
-    inset -5px -5px 5px rgb(230, 227, 227, 0.6);
-  font-size: 15px;
-}
-
 footer {
-  background-color: green;
-
+  background: linear-gradient(90deg, green -60%, black 50%, green 160%);
+animation: glow 2s ease-in-out infinite alternate;
   text-align: center;
 }
 .content span {
@@ -574,4 +527,116 @@ footer h5 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.flip-card {
+  background-color:transparent;
+  width: 300px;
+  height: 350px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+ /* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: bottom;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+   transform: rotateY(-180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front {
+   position: absolute;
+   margin-top: 116px;
+   margin-left: 26px;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+   backface-visibility: hidden;
+  }
+ .flip-card-back {
+    position: absolute;
+    margin-top: 32px;
+    margin-left: -21px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+   }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+   
+    align-items: center;
+  }
+  .flip-card-back {
+ 
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  margin-right: 70px;
+  transform: rotateY(180deg);
+  }
+
+.collapse .navbar-collapse{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+
+}
+
+.collapse .navbar-collapse a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  font-family: sans-serif;
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.collapse .navbar-collapse a:hover {
+  background-color: #ffc31e;
+  color: black;
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.to-top
+{
+    background-color: rgb(245, 241, 241);
+    position: fixed;
+    bottom: 16px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top:hover{
+  color:green;
+}
+
+.to-top.active
+{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
