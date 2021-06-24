@@ -1,14 +1,8 @@
 .backbutton {
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    letter-spacing: 1.5px;
-    font-size: 15px;
-    transition: 0.5s;
-    margin-bottom: 750px;
-    margin-left: -10%;
-    color: white;
-    margin: 10px 10px 10px 500px;
+    display: flex;
+    justify-content:space-between;
+   margin: 5px;
+    
 }
 
 button {
@@ -27,5 +21,29 @@ button:hover {
 
 #btn {
     color: white;
-    font-size: 35px;
+    font-size: 22px;
+    padding: 2px 5px;
+}
+
+@media screen and (max-width:600px) {
+    button{
+        height:30px;
+        width:60px;
+       
+    }
+    #btn{
+        font-size:20px;
+       
+    }
+}
+@media screen and (max-width:320px) {
+    button{
+        height:20px;
+        width:45px;
+       
+    }
+    #btn{
+        font-size:12px;
+       
+    }
 }
