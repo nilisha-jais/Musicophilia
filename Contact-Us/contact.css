@@ -4,6 +4,7 @@
   color: white;
   font-family: "segoe ui";
 }
+
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
   background-color: #1d1c1c;
@@ -26,6 +27,7 @@
     color-stop(0.6, #54de5d)
   );
 }
+
 .container,
 .container-fluid,
 .container-lg,
@@ -38,10 +40,6 @@
 .navbar-light .navbar-toggler {
   margin: 4px;
 }
-.active {
-  border: 2px solid white;
-}
-
 
 .navbar-brand {
   margin-right: 0px;
@@ -53,6 +51,49 @@
 
 .navbar {
   background-color: green !important;
+}
+nav.shift ul li{
+    padding: 5px;
+}
+
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+    text-transform: uppercase;
+    
+}
+nav.shift ul li a:hover {
+  border: 2px solid white;
+    transition: 0.2s;
+    
+  
+}
+.active {
+  border: 2px solid white;
+    
+}
+nav.shift ul li a:after {
+  display: inline-block;
+  position: absolute;
+    font-weight: bold;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*margin: auto;*/
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+ /* background: #58e953;*/
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
 
 .nav-img {
@@ -74,7 +115,6 @@
   font-size: 18px !important;
   padding: 13px 20px 13px 20px !important;
 }
-
 .current {
   background-color: rgba(0, 0, 0, 0.247);
   border-radius: 20px;
@@ -152,70 +192,114 @@ header {
   padding-bottom: 40px;
 }
 
-footer {
-  width: 100%;
-  opacity: 0.9;
-  background-color: green;
+/*Social Media*/
+.centerdiv {
+  font-size: larger;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerdiv a {
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  font-size: 10px;
+  background-color: white;
+  border-radius: 50%;
+
+ /*border: 5px solid #19911d;*/
+  margin: 0 8px;
   text-align: center;
+  cursor: pointer;
+ /* float: left;*/
+
+  transition: all 0.5s ease;
 }
 
-@media (max-width: 1074px) {
-  input,
-  textarea {
-    width: 97%;
-  }
+.centerdiv a i {
+  /*margin-top: 5px;*/
+  size: 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-@media (max-width: 788px) {
-  input,
-  textarea {
-    width: 96%;
+.centerdiv a:hover i {
+  transition: all 0.5s ease;
+  transform: scale(1.8);
+}
+.fa-instagram {
+  color: rgba(0, 128, 0);
+  transition: 0.4s;
+}
+a:hover .fa-instagram {
+  color: rgba(0, 128, 0);
+
+ /* text-shadow: 0 0 15px #ee570f;*/
+}
+.fa-facebook-f {
+  color: rgba(0, 128, 0);
+
+  transition: 0.4s;
+}
+
+a:hover .fa-facebook-f {
+  color: rgba(0, 128, 0);
+  /*text-shadow: 0 0 15px #3b5998;*/
+}
+
+.fa-twitter {
+  color: rgba(0, 128, 0);
+  transition: 0.4s;
+}
+a:hover .fa-twitter {
+  color: rgba(0, 128, 0);
+
+ /*text-shadow: 0 0 15px #00aced;*/
+}
+ .centerdiv a:hover {
+      background-color: white;
+    
   }
+@keyframes glow {
+  from {
+  text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 0 30px #9eff02;
+}
+
+to {
+  text-shadow:  0 0 10px #9eff02,0 0 20px #9eff02, 0 1 30px #9eff02;
+}
+}
+footer {
+  background: linear-gradient(90deg, green -60%, black 50%, green 160%);
+animation: glow 2s ease-in-out infinite alternate;
+  text-align: center;
+  width: 100%;
+}
+.content span {
+  font-size: 6rem;
 }
 
 @media (max-width: 470px) {
-  footer > h2,
-  p {
-    margin: 7px;
+  .content {
+    font-size: 0.8rem;
+    overflow: auto;
   }
-  footer h5 {
-    margin-bottom: 0;
-    padding-bottom: 10px;
+  .content span {
+    font-size: 3rem;
   }
-  footer {
-    margin-top: -8px;
+
+  .btn {
+    font-size: 15px;
+    padding: 8px 16px;
   }
-  input,
-  textarea {
-    width: 92%;
-  }
+}
+footer > h2,
+p {
+  margin: 7px;
+}
+footer h5 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
-.to-top
-{
-    background-color: green;
-    position: fixed;
-    bottom: 16px;
-    right: 32px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50% ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    color: #1f1f1f;
-    text-decoration: none;
-    opacity: 0;
-    pointer-events: none;
-    transition: all .4s;
-}
-.to-top:hover{
-  color: green;
-}
-
-.to-top.active
-{
-    bottom: 32px;
-    pointer-events: auto;
-    opacity: 1;
-}
