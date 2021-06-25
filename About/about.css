@@ -433,7 +433,7 @@ footer h5 {
 /*================ TOP ARROW======================*/
 .to-top
 {
-    background-color: rgb(245, 241, 241);
+    background-color: black;
     position: fixed;
     bottom: 16px;
     left: 5px;
@@ -444,7 +444,7 @@ footer h5 {
     align-items: center;
     justify-content: center;
     font-size: 32px;
-    color: #1f1f1f;
+    color: white;
     text-decoration: none;
     opacity: 0;
     pointer-events: none;
