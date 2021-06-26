@@ -283,7 +283,7 @@ hr {
 
 
 .btn:hover {
-transform:scaleX(1.2);
+transform:scale(1.1);
    
 }
 
