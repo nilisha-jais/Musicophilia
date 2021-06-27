@@ -29,7 +29,7 @@
 
 
 body {
-  background: url(https://images.unsplash.com/photo-1584882793511-33ac865aedb7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)
+  background: url(https://wallpaperbat.com/img/297982-piano-wallpaper-0d-archives-left-of-the-hudson.jpg)
     no-repeat center center fixed;
   background-size: cover;
   margin: 0;
@@ -40,15 +40,21 @@ body {
 }
 
 .container {
-  background-color: black;
-  height: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: monotype corsiva;
+  word-spacing: 6px;
+  height: 100%;
   color: white;
-  width: 760px;
+  width: 1200px;
   text-align: center;
   border-radius: 16px;
 }
 .container:hover {
-  box-shadow: 2px 2px 40px #e4e3e3;
+  box-shadow: 2px 2px 40px #e62525;
+}
+
+.backbutton{
+  text-align: right;
 }
 .bt {
   height: 30px;
@@ -66,6 +72,7 @@ body {
 .piano {
   display: flex;
   justify-content: center;
+
 }
 
 .key {
