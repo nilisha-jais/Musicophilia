@@ -39,7 +39,7 @@ p {
 }
 
 span {
-	font-size: 15px;
+	font-size: 25px;
 }
 
 a {
@@ -553,6 +553,19 @@ padding: 15px 0;
 	/*text-shadow: 0 0 15px #3b5998;*/
   }
   
+
+  .fa-google-plus-g {
+	color: #f44236;
+  
+	transition: 0.4s;
+  }
+  
+  a:hover .fa-google-plus-g {
+	color: #fff;
+	/*text-shadow: 0 0 15px #3b5998;*/
+  }
+
+
   .fa-twitter {
 	color: rgba(0, 128, 0);
 	transition: 0.4s;
