@@ -11,6 +11,7 @@
 }
 .titleText{
   color: white;
+  font-family: sans-serif;
 }
 ::-webkit-scrollbar {
   width: 15px;
@@ -20,7 +21,12 @@
   border-radius: 10px;
   background-color: #fff;
 }
+.guitar{
+ 
+  height: 10%;
+  width: 80%;
 
+}
 body
 {
     font-family: 'Space Grotesk', sans-serif;
@@ -70,6 +76,9 @@ body
   border: 1px solid;
 border-radius: 20px;
 padding-top: 4px;
+border-color:white;
+color: white;
+font-size: 18px;
 padding-bottom: 4px;
 padding-left: 15px;
 padding-right: 15px;
@@ -189,7 +198,18 @@ padding-top:10px;
 .pad-6{
     background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
 }
-
+.pad-7{
+  background-image: linear-gradient(to right,#59C173 ,#a17fe0,#5D26C1);
+}
+.pad-8{
+  background-image: linear-gradient(to right,#fc4a1a ,#dd1818);
+}
+.pad-9{
+  background-image: linear-gradient(to bottom,#00b09b ,#96c93d);
+}
+.pad-10{
+  background-image: linear-gradient(to left,#1e3c72,#F29492);
+}
 
 .pads > div:hover{
     cursor: pointer;
