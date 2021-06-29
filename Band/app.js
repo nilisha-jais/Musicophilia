@@ -42,20 +42,50 @@ window.addEventListener('load', () => {
         createBubbles(2);
         clap.play();
         break;
-      case 'j':
+      case 'f':
         var open_hithat = new Audio('sounds/sound5.mp3');
         createBubbles(3);
         open_hithat.play();
         break;
-      case 'k':
+      case 'g':
         var snare = new Audio('sounds/sound6.mp3');
         createBubbles(4);
         snare.play();
         break;
-      case 'l':
+      case 'h':
         var crash = new Audio('sounds/sound2.mp3');
         createBubbles(5);
         crash.play();
+        break;
+        case 'q':
+        var drum = new Audio('sounds/sound7.wav');
+        createBubbles(5);
+        drum.play();
+        break;
+        case 'w':
+        var guitarStroke1 = new Audio('sounds/sound8.wav');
+        createBubbles(5);
+        guitarStroke1.play();
+        break;
+        case 'e':
+        var guitarStroke2 = new Audio('sounds/sound9.wav');
+        createBubbles(5);
+        guitarStroke2.play();
+        break;
+        case 'r':
+        var guitarStroke3 = new Audio('sounds/sound10.wav');
+        createBubbles(5);
+        guitarStroke3.play();
+        break;
+        case 't':
+        var flute1 = new Audio('sounds/sound12.wav');
+        createBubbles(5);
+        flute1.play();
+        break;
+        case 'y':
+        var flute2 = new Audio('sounds/sound12.wav');
+        createBubbles(5);
+        flute2.play();
         break;
     }
   }
