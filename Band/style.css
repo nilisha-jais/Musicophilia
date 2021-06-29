@@ -2,13 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
   background-color: #1d1c1c;
   border-radius: 15px;
 }
-
+.titleText{
+  color: white;
+  font-family: sans-serif;
+}
 ::-webkit-scrollbar {
   width: 15px;
   background-color: #1d1c1c;
@@ -16,30 +20,28 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #fff;
-  background-image: -webkit-gradient(
-    linear,
-    40% 0%,
-    75% 84%,
-    from(#4d9c41),
-    to(#19911d),
-    color-stop(0.6, #54de5d)
-  );
 }
+.guitar{
+ 
+  height: 10%;
+  width: 80%;
 
+}
 body
 {
     font-family: 'Space Grotesk', sans-serif;
     padding-top:50px;
-    background-color: black;
+    background-image: linear-gradient(#52c234,#061700)
 }
-
+.illustration{
+  height: 400px;
+}
 .app
 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-
 }
 
 .header{
@@ -56,27 +58,68 @@ body
     font-size: 4rem;
     letter-spacing: 0.25rem;
     font-weight: 900;
-    color: green;
+    color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    cursor: pointer;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.header h1:hover{
+  transform: scale(1.2);
+}
 
-
+.backButton{
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  transition:  all 0.5s;
+  border: 1px solid;
+border-radius: 20px;
+padding-top: 4px;
+border-color:white;
+color: white;
+font-size: 18px;
+padding-bottom: 4px;
+padding-left: 15px;
+padding-right: 15px;
+}
+.backButton:hover{
+  background-color: white;
+  color: #52c234;
+}
 .band-tagline{
     text-align: center;
     font-size: 25px;
-    color: grey;
+    color: white;
     margin-top:10px;
-    margin-bottom: 100px;
     font-family:cursive;
 }
+footer{
+  background-color: white;
+}
+.main-img{
+    margin:40px 0;
+}
 
-
-.header .backbutton{
+/*.header .backbutton{
     width: 50px;
     display: flex;
     justify-content: center;
+}*/
+.footerContent{
+  background-color:white;
+  color: black;
 }
-
+.footer-links i{
+  transition: all ease-in;
+  width:50px;
+  height:50px;
+font-size:30px;
+padding-top:10px;
+}
+.footer-links i:hover{
+  transform:scale(1.2);
+}
 #glow
 {
     font-size: 80px;
@@ -155,8 +198,27 @@ body
 .pad-6{
     background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
 }
-
-
+.pad-7{
+  background-image: linear-gradient(to right,#59C173 ,#a17fe0,#5D26C1);
+}
+.pad-8{
+  background-image: linear-gradient(to right,#fc4a1a ,#dd1818);
+}
+.pad-9{
+  background-image: linear-gradient(to bottom,#00b09b ,#96c93d);
+}
+.pad-10{
+  background-image: linear-gradient(to left,#1e3c72,#F29492);
+}
+.pad-11{
+  background-image: linear-gradient(to left,#f857a6,#ff5858);
+}
+.pad-12{
+  background-image: linear-gradient(to left,#C04848,#480048);
+}
+.flute{
+  transform:rotate(-30deg)
+}
 .pads > div:hover{
     cursor: pointer;
     box-shadow: 0 3px 12px white;
@@ -270,7 +332,7 @@ body
     }
 }
 
-/***************************Footer*******
+/***************************Footer*************************/
 
 footer
 {
@@ -289,17 +351,6 @@ footer
     justify-content:center;
   }
 
-  .footer-links i{
-      width:50px;
-      height:50px;
-    font-size:30px;
-    padding-top:10px;
-  }
-  .footer-links i:hover{
-      background-color:white;
-      border-radius:50px;
-      background-color:white;
-  }
 
   @media (max-width:470px)
 {
@@ -328,7 +379,6 @@ footer h5
   margin-bottom: 0;
   padding-bottom: 10px;
 }
-******************/
 /* Below styling is for go to the top button */
 html
 {
