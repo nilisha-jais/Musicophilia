@@ -37,6 +37,18 @@ p{
     background-image: url("img/tap2.png");
 }
 
+.u {
+    background-image: url("img/tap3.jpg");
+}
+
+.w {
+    background-image: url("img/tap4.jpg");
+}
+
+.y {
+    background-image: url("img/tap5.jpg");
+}
+
 .tabla {
     display: inline-block;
     width: 270px;
