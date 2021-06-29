@@ -72,10 +72,20 @@ window.addEventListener('load', () => {
         createBubbles(5);
         guitarStroke2.play();
         break;
-        case 'e':
+        case 'r':
         var guitarStroke3 = new Audio('sounds/sound10.wav');
         createBubbles(5);
         guitarStroke3.play();
+        break;
+        case 't':
+        var flute1 = new Audio('sounds/sound12.wav');
+        createBubbles(5);
+        flute1.play();
+        break;
+        case 'y':
+        var flute2 = new Audio('sounds/sound12.wav');
+        createBubbles(5);
+        flute2.play();
         break;
     }
   }

@@ -210,7 +210,15 @@ padding-top:10px;
 .pad-10{
   background-image: linear-gradient(to left,#1e3c72,#F29492);
 }
-
+.pad-11{
+  background-image: linear-gradient(to left,#f857a6,#ff5858);
+}
+.pad-12{
+  background-image: linear-gradient(to left,#C04848,#480048);
+}
+.flute{
+  transform:rotate(-30deg)
+}
 .pads > div:hover{
     cursor: pointer;
     box-shadow: 0 3px 12px white;
