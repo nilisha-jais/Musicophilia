@@ -266,20 +266,20 @@ nav.shift ul li a:hover:after {
 
 .card:nth-child(2)::before,
 .card:nth-child(2) {
-  background: linear-gradient(to right, #85e942, green);
+  background: linear-gradient(to right, #85e942, #064420);
 }
 
 .card:nth-child(3)::before,
 .card:nth-child(3) {
-  background: linear-gradient(to right, #85e942, green);
+  background: linear-gradient(to right, #85e942, #064420);
 }
 .card:nth-child(4)::before,
 .card:nth-child(4) {
-  background: linear-gradient(to right, #85e942, green);
+  background: linear-gradient(to right, #85e942, #064420);
 }
 .card:nth-child(5)::before,
 .card:nth-child(5) {
- background: linear-gradient(to right, #85e942, green);
+ background: linear-gradient(to right, #85e942, #064420);
 }
 
 .card span {
@@ -290,6 +290,10 @@ nav.shift ul li a:hover:after {
   bottom: 5px;
   background: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+}
+
+.card img{
+  padding: 10px;
 }
 
 .content {
