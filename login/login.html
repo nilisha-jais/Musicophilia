@@ -54,7 +54,7 @@
     <div class="container" id="container">
   <div class="form-container sign-up-container">
     <form action="#">
-      <h1>Create Account</h1>
+      <h1 class="form-header" style='padding-top: 100px;'>Create Account</h1>
       <div class="social-container">
         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
@@ -142,9 +142,22 @@ const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 
-signUpButton.addEventListener('click', () => container.classList.add('right-panel-active'));
+signUpButton.addEventListener('click', () => {
+  if(window.innerWidth > 750) {
+    container.classList.add('right-panel-active');
+  }else{
+    container.classList.add('right-panel-mobile-active');
+  }
+})
 
-signInButton.addEventListener('click', () => container.classList.remove('right-panel-active'));
+signInButton.addEventListener('click', () => {
+  if(window.innerWidth > 750) {
+    container.classList.remove('right-panel-active');
+  }else{
+    container.classList.remove('right-panel-mobile-active');
+  }
+})
+
 
 $(".toggle-password").click(function() {
 

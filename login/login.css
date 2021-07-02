@@ -56,7 +56,7 @@ a {
   }
   
   ::-webkit-scrollbar {
-	width: 10px;
+	width: 7px;
 	background-color: #1d1c1c;
   }
   ::-webkit-scrollbar-thumb {
@@ -192,8 +192,8 @@ button.ghost {
 }
 
 form {
-	background-image: url("https://us.123rf.com/450wm/nveri/nveri1601/nveri160100050/50903400-colorful-music-background.jpg?ver=6");
-    background-size: cover;
+	/* background-image: url("https://us.123rf.com/450wm/nveri/nveri1601/nveri160100050/50903400-colorful-music-background.jpg?ver=6");
+    background-size: cover; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -285,6 +285,8 @@ input {
 }
 
 .form-container {
+	background-image: url("https://us.123rf.com/450wm/nveri/nveri1601/nveri160100050/50903400-colorful-music-background.jpg?ver=6");
+    background-size: cover;
 	position: absolute;
 	top: 0;
 	height: 100%;
@@ -303,9 +305,11 @@ input {
 
 .sign-up-container {
 	left: 0;
+	height: 100%;
 	width: 50%;
+	overflow-y: scroll;
 	opacity: 0;
-	z-index: 1;
+	z-index: 2;
 }
 
 .container.right-panel-active .sign-up-container {
@@ -623,4 +627,88 @@ padding: 15px 0;
 	color: white;
   }
   
-  
+@media (max-width : 750px) {
+
+	  header{
+		height: auto;
+	  }
+	
+	  .container{
+		margin-top: 150px;
+		height: auto;
+		width: 90%;
+	  }
+	
+	  .form-container{
+		top: 0;
+		left: 0;
+		position: relative;
+		width: 100%;
+	  }
+
+	  .sign-in-container{
+		top: 0;
+		width: 100%;
+		position: relative;
+		height: auto;
+		padding: 30px 30px;
+		margin-top: 300px;
+		left: 0;
+	  }
+
+	  .sign-up-container{
+		top: 0;
+		left: 0;
+		width: 103%;
+		height: auto;
+		position: absolute;
+		transform: translateY(100%);
+		padding: 30px 30px;
+		margin-top: 300px;
+	  }
+
+	  .form-header{
+		  padding-top: 20px !important;
+	  }
+	
+	  .overlay-container{
+		left: 0;
+		width: 100%;
+		height: 300px;
+	  }
+
+	  .container.right-panel-mobile-active .sign-in-container {
+		transform: translateY(100%);
+		position: absolute;
+	  }
+
+	  .container.right-panel-mobile-active .sign-up-container {
+		transform: translateY(0%);
+		position: relative;
+		opacity: 1;
+		z-index: 5;
+		animation: show 0.6s;
+	  }
+
+	  .overlay-left {
+		  right: 0;
+		  transform: translateX(0);
+		  opacity: 0;
+		  transition: all 0.8s;
+	  }
+
+	  .overlay-right {
+		opacity: 1;
+		transition: opacity 0.8s;
+	  }
+
+	  .container.right-panel-mobile-active .overlay-left {
+		opacity: 1;
+		z-index: 3;
+	  }
+	
+	  .container.right-panel-mobile-active .overlay-right {
+		opacity: 0;
+	 }
+
+}
