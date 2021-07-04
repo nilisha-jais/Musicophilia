@@ -68,6 +68,12 @@ body {
     background: url("https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg") no-repeat center center fixed;
     background-size: cover;
 }
+.heading{
+  margin-top: 110px;
+  color:white;
+  margin-left: 33%;
+  font-size: 55px;
+}
 
 .card {
     width: 300px;
@@ -128,21 +134,25 @@ body {
 .card:nth-child(2)::before,
 .card:nth-child(2) {
     background: linear-gradient(315deg, #03a9f4 0%, #ff0058 100%);
+  background: linear-gradient(to right, #85e942, #064420);
 }
 
 .card:nth-child(3)::before,
 .card:nth-child(3) {
     background: linear-gradient(315deg, #4dff03 0%, #00d0ff 100%);
+  background: linear-gradient(to right, #85e942, #064420);
 }
 
 .card:nth-child(4)::before,
 .card:nth-child(4) {
     background: linear-gradient(315deg, #4f03ff 0%, #eb0c0c 100%);
+  background: linear-gradient(to right, #85e942, #064420);
 }
 
 .card:nth-child(5)::before,
 .card:nth-child(5) {
     background: linear-gradient(315deg, #18ff03 0%, #eb0ca1 100%);
+ background: linear-gradient(to right, #85e942, #064420);
 }
 
 .card span {
@@ -153,6 +163,10 @@ body {
     bottom: 5px;
     background: rgba(0, 0, 0, 0.5);
     pointer-events: none;
+}
+
+.card img{
+  padding: 10px;
 }
 
 .content {
@@ -188,8 +202,21 @@ body {
     overflow: hidden;
 }
 
-.content a {
-    display: inline-block;
+/*================ TOP ARROW======================*/
+.to-top
+{
+    background-color: black;
+    position: fixed;
+    bottom: 16px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
     text-decoration: none;
     text-align: center;
     background: #fff;
@@ -198,9 +225,17 @@ body {
     font-weight: 600;
 }
 
+
 footer {
     opacity: 0.9;
     background-color: green;
     text-align: center;
     width: 100%;
+}
+
+.to-top.active
+{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
