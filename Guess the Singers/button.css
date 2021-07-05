@@ -1,0 +1,49 @@
+.backbutton {
+    display: flex;
+    justify-content:space-between;
+   margin: 5px;
+    
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover,
+h1:hover {
+    transform: scale(1.1);
+}
+
+button:hover {
+    background-color: #e21336;
+}
+
+#btn {
+    color: white;
+    font-size: 22px;
+    padding: 2px 5px;
+}
+
+@media screen and (max-width:600px) {
+    button{
+        height:30px;
+        width:60px;
+       
+    }
+    #btn{
+        font-size:20px;
+       
+    }
+}
+@media screen and (max-width:320px) {
+    button{
+        height:20px;
+        width:45px;
+       
+    }
+    #btn{
+        font-size:12px;
+       
+    }
+}

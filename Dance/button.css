@@ -1,0 +1,49 @@
+.backbutton 
+{
+  border:none;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: 0.5s;
+  margin-right:auto;
+  margin-left: 2%;
+  color:white;
+  padding-top: 70px;
+}
+
+.categories{
+  padding:2%;
+  display:flex;
+  overflow-x:scroll;
+  overflow-y: hidden; 
+}
+
+.categories::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+
+
+button
+{
+  border:none;
+  background-image : linear-gradient(to bottom,rgb(253,54,86),rgb(8, 101, 177));
+  border-radius: 20px;
+  padding: 15px;
+  color:white;
+  cursor:pointer;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: 0.5s;
+  margin-right:5px;
+        
+}
+button:hover,h1:hover
+{
+  background-image : linear-gradient(to bottom,rgba(8, 101, 177),rgb(253,54,86));
+  transform: scale(0.9);
+}
+
+  
+  
+   

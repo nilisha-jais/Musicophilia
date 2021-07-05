@@ -1,206 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musicophilia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
-    <!-- BOX ICONS -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
-    <script href="app.js"></script>
-    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
-    <meta
-      name="Musicophilia"
-      content="A platform for Music Lovers "
+    <!-- botstrap css Cdn -->
+    <script src="https://kit.fontawesome.com/debf789820.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
     />
-    <meta property="og:title" content="Musicophilia - A platform for Music Lovers " />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d5f154924f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a0dbbe476a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script href="app.js"></script>
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16" />
+    <meta name="Musicophilia" content="A platform for Music Lovers " />
+    <meta
+      property="og:title"
+      content="Musicophilia - A platform for Music Lovers "
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://musicophilia.netlify.app/" />
-    <meta name="keywords" content="Music, Music lover, Quiz,HTML, CSS, JavaScript">
-    <meta name="description" content="You can listen your favourite musicheadphones ,try your hands on the band and the pianomusical_keyboard, play music related games and dance on the music beatswoman_dancing.">
-    <meta name="author" content=" Nilisha Jais">
+    <meta
+      name="keywords"
+      content="Music, Music lover, Quiz,HTML, CSS, JavaScript"
+    />
+    <meta
+      name="description"
+      content="You can listen your favourite musicheadphones ,try your hands on the band and the pianomusical_keyboard, play music related games and dance on the music beatswoman_dancing."
+    />
+    <meta name="author" content=" Nilisha Jais" />
+  </head>
 
-    <!--Below styling is for go to the top button-->
-    <style>
-
-        html{
-            scroll-behavior: smooth;
-        }
-
-         #myBtn {
-                display: none;
-                position: fixed;
-                bottom: 20px;
-                right: 30px;
-                z-index: 99;
-                font-size: 18px;
-                border: none;
-                outline: none;
-                background-color: green;
-                color: white;
-                cursor: pointer;
-                padding: 15px;
-                border-radius: 4px;
-          }
-
-         #myBtn:hover {
-         background-color: black;
-         }
-
-         /*For icon shaking*/
-                 
-        @keyframes shakeit {
-                0% { -webkit-transform: translate(2px, 1px) rotate(0deg);}
-                10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-                20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-                30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-                40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-                50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-                60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-                70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-                80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-                90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-                100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
-        }
-        .girl {
-            animation-name: shakeit;
-            -webkit-animation-name: shakeit;
-            animation-duration: 1.2s;
-            -webkit-animation-duration: 1.2s;
-            transform-origin:50% 50%;
-            -webkit-transform-origin:50% 50%;
-            animation-iteration-count: infinite;
-            -webkit-animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            -webkit-animation-timing-function: linear;
-        }
-     </style>
-</head>
-
-<body>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
-
-    <div class="nav">
-
-        <div class="nav-header">
-            <div class="nav-title">
-                &mu;SICOPHILIA
-            </div>
-        </div>
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact Us</a>
-
-        </div>
+  <body>
+    <div id="preloader">
+      <div class="preloader-div">
+        <div class="rotator"></div>
+        <img class="preloader-img" src="gif1.gif" alt="" />
+      </div>
     </div>
+
+    <nav class="shift navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="nav-img" src="music.png" alt="Musicophilia Logo" />
+          <span id="webTitle"
+            >&mu;<span style="color: white">SICOPHILIA</span></span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          id="myToggleBtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"></div>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="justify-content: flex-end"
+        >
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About/index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact-Us/contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="user-select: none"
+                >THEME <input type="checkbox" id="switch" name="theme" /><label
+                  for="switch"
+                  >Toggle</label
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="main">
-        <div class="heading">Mindfull Music</div>
-        <div class="container">
-
-
-            <div class="content">
+      <div class="heading">Mindful Music</div>
+      <div class="container">
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
                 <h1>Music Box</h1>
-                <span style='font-size:80px;'><i class='bx bx-headphone bx-tada'></i></span>
+                <h5>
+                  <i
+                    >"Music is the language of the spirit. It opens the secret
+                    of life bringing peace, abolishing strife."<br />
+
+                    -Kahlil Gibran</i
+                  >
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-headphone bx-tada"></i></span>
                 <h3>Solace in songs</h3>
-                <a href="musicBox/index.html"><button class="btn"  id="box-1">GO</button></a>
-                <br><br>
+                <a href="musicBox/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
             </div>
-            <div class="content" >
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
                 <h1>The Band</h1>
-                <span style='font-size:80px;'><i class='bx bx-tada bxs-playlist'></i></span>
+                <h5>
+                  <i
+                    >"Music is the only language in which you cannot say a mean
+                    or sarcastic thing."<br />
+
+                    -John Erskine</i
+                  >
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-playlist"></i></span>
                 <h3>Make your own beats</h3>
-                <a href="Band/index.html"><button class="btn" id="box-6">GO</button></a>
-                <br><br>
+                <a href="Band/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
             </div>
-            <div class="content" >
+          </div>
+        </div>
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
                 <h1>Piano</h1>
-                <span style='font-size:80px;'><i class='bx bx-tada bxs-piano'></i></span>
+                <h5>
+                  <i
+                    >"The piano is able to communicate the subtlest universal
+                    truths by means of wood, metal and vibrating air."<br />
+                    -Kenneth Miller</i
+                  >
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-piano"></i></span>
                 <h3>Play your own notes</h3>
-                <a href="Piano/index.html"><button class="btn" id="box-2">GO</button></a>
-                <br><br>
+                <a href="Piano/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
             </div>
+          </div>
         </div>
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>The Flute</h1>
+                <h5>
+                  <i
+                    >"Sometimes the break in your heart is like the hole in the
+                    flute. Sometimes it’s the place where the music comes
+                    through."<br />-Andrea Gibson</i
+                  >
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <box-icon
+                  name="spotify"
+                  type="logo"
+                  animation="tada"
+                ></box-icon>
+                <span><i class="bx bxl-spotify bx-tada"></i></span>
+                <h3>Straight from God's hand !</h3>
+                <a href="Flute/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Drum Kit</h1>
+                <h5>
+                  <i
+                    >"With horns and a full rhythm section, the drums always
+                    looked like the best seat in the house." <br />-Levon
+                    Helm</i
+                  >
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"
+                  ><i class="bx bx-tada">🥁</i></span
+                >
+                <h3>Play your own beat</h3>
+                <a href="drum/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Guitar</h1>
+                <h5>
+                  <i
+                    >"When I have downtime, music is a big part of my life. Not
+                    so much singing, but I play the guitar." <br />-KJ Apa</i
+                  >
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"
+                  ><i class="bx bx-tada">🎸</i></span
+                >
+                <h3>First love was the sound of guitar, Play it!</h3>
+                <a href="Guitar/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Tabla</h1>
+                <h5>
+                  <i
+                    >"If Music is a Place — then Jazz is the City, Folk is the
+                    Wilderness, Rock is the Road, Classical is a Temple."
+                    <br />-Vera Nazarin</i
+                  >
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"
+                  ><i class="bx bx-tada">🥁</i></span
+                >
+                <h3>Let's go traditional</h3>
+                <a href="tabla/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Artist Details</h1>
+                <h5><i>"Lets do a deep dive about artist Details."</i></h5>
+              </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"
+                  ><i class="bx bx-tada">👨🏻‍🎤</i></span
+                >
+                <h3>Meet the singers</h3>
+                <a href="artist/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Metronome</h1>
+                <h5>
+                  <i>
+                    "I put a metronome up to all the songs, and I tried to
+                    really keep it true to the original tempos."
+                    <br />-Brian Setzer</i
+                  >
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"
+                  ><i class="bx bx-tada">⌛</i></span
+                >
+                <h3>Get a clear sense of timing and tempo</h3>
+                <a href="Metronome/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Lyrics Finder</h1>
+                <h5>
+                  <i> "Know your song easily." </i>
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"
+                  ><i class="fas fa-music bx-tada"></i
+                ></span>
+                <h3>Know the songs stuck in your mind</h3>
+                <a href="Lyrics_finder/index.html">
+                  <button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Karaoke</h1>
+                <h5>
+                  <i> "Karaoke is the great equalizer."<br />-Aisha Tyler </i>
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span style="font-size: 80px"
+                  ><i class="bx bx-tada">🎤</i></span
+                >
+                <h3>Drag and drop your file and sing</h3>
+                <a href="karaoke/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="main">
-        <div class="heading">Rollick Games</div>
-        <div class="container">
+    <hr />
 
-            <div class="content">
-                <h1>Memory Game</h1>
-                <span style='font-size:80px;'><i class='bx bx-tada bxs-medal'></i></span>
+    <div class="main">
+      <div class="heading">Rollick Games</div>
+      <div class="container">
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1 class="alignment">Memory Game</h1>
+                <h5>
+                  <i> "Test your memory power here."<br /> </i>
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-medal"></i></span>
                 <h3>Test your memory by this music game</h3>
-                <a href="Memory-game/choose.html"><button class="btn"  id="box-3">GO</button></a>
-                <br><br>
+                <a href="Memory-game/choose.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
             </div>
-            <div class="content">
-                <h1>Music Quiz</h1>
-                <span style='font-size:80px;'><i class='bx bx-tada bxs-music'></i></span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1 class="alignment">Piano Game</h1>
+                <h5>
+                  <i> "Test your hearing and piano skills"<br /> </i>
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-piano"></i></span>
+                <h3>Test your memory by this music game</h3>
+                <a href="piano_2/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1 class="alignment">Music Quiz</h1>
+                <h5>
+                  <i> "Lets play some quiz and have fun."<br /> </i>
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-music"></i></span>
                 <h3>How much do you know your music industry?</h3>
-                <a href="Quiz/index.html"><button class="btn"  id="box-4">GO</button></a>
-                <br><br>
+                <a href="Quiz/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
             </div>
-
+          </div>
         </div>
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1 class="alignment">Guess The Singer</h1>
+                <h5>
+                  <i> "Can you guess your Favourite Singer?"<br /> </i>
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span><i class="bx bx-tada bxs-music"></i></span>
+                <h3>Can You Recognise Your Favourite Singer?</h3>
+                <a href="Guess the Singers/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <hr />
     <div class="main">
-        <div class="heading">Zestful Dance</div>
-        <div class="container">
-
-            <div class="content">
-                <h1>Lets Dance</h1>
-                <div style='font-size:80px;' class="girl">💃</div>
+      <div class="heading">Zestful Dance</div>
+      <div class="container">
+        <div class="content">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1 class="alignment">Lets Dance</h1>
+                <h5>
+                  <i>
+                    “Work like you don’t need the money. Love like you’ve never
+                    been hurt. Dance like nobody’s watching.”. <br />
+                    – Satchel Paige
+                  </i>
+                </h5>
+              </div>
+              <div class="flip-card-back">
+                <span class="girl"><i class="bx bx-tada">💃</i></span>
                 <h3>Dance along with us</h3>
-                <a href="https://www.youtube.com/results?search_query=dances++of+world"><button class="btn" id="box-5">GO</button></a>
-                <br><br>
+                <a href="Dance/index.html"
+                  ><button class="btn" id="box-1">GO</button></a
+                >
+                <br /><br />
+              </div>
             </div>
-
-
+          </div>
         </div>
+      </div>
     </div>
-    <br><br>
+
+    <br />
+
+    <br />
     <footer>
-          &copy; 2021 | Nilisha | All rights reserved.
+      <br />
+      <div class="centerdiv">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fab fa-facebook-f fa-2x"></i
+        ></a>
+
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a href="https://twitter.com/login" target="_blank"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+      </div>
+      <h2>&mu;SICOPHILIA</h2>
+      <p><em>Your Musical Getaway</em></p>
+      <h5>&copy; 2021 | Nilisha | All rights reserved.</h5>
+
+      <br />
+      <br />
     </footer>
+
+    <a href="#" class="to-top">
+      <i class="fa fa-arrow-up" style="font-size: 36px"></i>
+    </a>
+    <script src="main.js"></script>
 
     <!--The Below Script is written for Go to Top Button -->
     <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
+      //Get the button
+      window.onload = function () {
+        var preloader = document.getElementById("preloader");
+        setTimeout(function () {
+          preloader.style.display = "none";
+        }, 1000);
+      };
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
+      function displayContent() {
+        loader.style.display = "none";
+        document.getElementById("content").style.display = "block";
+      }
 
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
+      document.addEventListener("DOMContentLoaded", function () {
+        loader = document.getElementById("loader");
+        loadNow(1);
+      });
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
         }
+      }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      var checkbox = document.querySelector("input[name=theme]");
+
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          trans();
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          trans();
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        </script>
+      });
 
-</body>
+      let trans = () => {
+        document.documentElement.classList.add("transition");
+        window.setTimeout(() => {
+          document.documentElement.classList.remove("transition");
+        }, 1000);
+      };
+    </script>
+    <script>
+      var checkbox = document.querySelector("input[name=theme]");
 
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          trans();
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+          trans();
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      });
+
+      let trans = () => {
+        document.documentElement.classList.add("transition");
+        window.setTimeout(() => {
+          document.documentElement.classList.remove("transition");
+        }, 1000);
+      };
+    </script>
+    <script>
+      var toggleBtn = document.getElementById("myToggleBtn");
+      toggleBtn.addEventListener("click", () => {
+        var myLinks = document.querySelector(".navbar-nav");
+        myLinks.style.textAlign = "center";
+        myLinks.style.float = "right";
+        // myLinks.style.display = "inline-block";
+      });
+    </script>
+    <!-- bootsdtrap js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="MUSICOBOT"
+    agent-id="7ee16170-7252-40c5-958b-af8d7dbfa215"
+    language-code="en"
+  ></df-messenger>
 </html>

@@ -1,5 +1,5 @@
-const WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
-const BLACK_KEYS = ['s', 'd', 'g', 'h', 'j']
+const WHITE_KEYS = ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', '1', '2', '3', '4', '5', '6', '7']
+const BLACK_KEYS = ['w', 'e', 't', 'y', 'u', 'z', 'x', 'c', 'v', 'b']
 
 const keys = document.querySelectorAll('.key')
 const whiteKeys = document.querySelectorAll('.key.white')
@@ -19,7 +19,8 @@ document.addEventListener('keydown', e => {
   if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
 })
 
-function playNote(key) {
+function playNote(key) 
+{
   const noteAudio = document.getElementById(key.dataset.note)
   noteAudio.currentTime = 0
   noteAudio.play()
