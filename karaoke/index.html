@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Karaoke </title>
+    <meta name="description" content="Karaoke - Removing vocals with web audio API">
+    <link rel="icon" href="..\favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="glow">Karaoke</h1>
+    </header>
+    <div class="main">
+      <div class="backbutton" align="left">
+        <a href="../index.html"><button type="button" style="background-color: #67db39"><span id="btn">Back</span></button></a>
+    </div>
+      <p>Do you like Karaoke? Take a music file and drag and drop it here.You will listen the song without vocals.</p>
+
+      <div id="filedrag">Drop your MP3 file here (also .ogg or .wav)</div>
+      <div id="fileselect-container">
+        <label for="fileselect">Or select a file:</label>
+        <input type="file" id="fileselect" name="fileselect[]"/>
+      </div>
+
+      <div id="current-song"></div>
+      <div id="options">
+        Options:
+        <button id="disable-filter">Disable karaoke</button>
+      </div>
+
+    <a id="demo-audio" href="#"></a> <a href="http://www.jamendo.com/en/track/1074874/happy"></a>.
+
+      
+    <footer>
+      <h2>&mu;SICOPHILIA</h2>
+        <p><em>Your Musical Getaway</em></p>
+        <h5>&copy; 2021 | All rights reserved.</h5>
+    </footer>
+    <script src="scripts/jDataView.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
+

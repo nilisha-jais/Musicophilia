@@ -1,8 +1,34 @@
-body{
-    background-color:black;
-    color:white;
+body
+{
+    background-color:rgb(107, 105, 109);
+    background-image: url("images/background.jpg");
+    background-size: cover;
 }
-.grid{
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
+    background-color: #1d1c1c;
+    border-radius: 15px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 15px;
+    background-color: #1d1c1c;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fff;
+    background-image: -webkit-gradient(
+      linear,
+      40% 0%,
+      75% 84%,
+      from(#5e5a5b),
+      to(#302d2d),
+      color-stop(0.6, #444343)
+    );
+  }
+  
+.grid
+{
     display:flex;
     flex-wrap:wrap;
     height:200px;

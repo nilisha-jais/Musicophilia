@@ -2,76 +2,232 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
 
-body{
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
+  background-color: #1d1c1c;
+  border-radius: 15px;
+}
+.titleText{
+  color: white;
+  font-family: sans-serif;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1d1c1c;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+}
+.guitar{
+ 
+  height: 10%;
+  width: 80%;
+
+}
+body
+{
     font-family: 'Space Grotesk', sans-serif;
-    background-color: black;
+    padding-top:50px;
+    background-image: linear-gradient(#52c234,#061700)
 }
-
-.app{
+.illustration{
+  height: 400px;
+}
+.app
+{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    height: 98vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.pressed {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ADFF2F, 0 0 10px #ADFF2F, 0 0 10px #ADFF2F, 0 0 10px #ADFF2F, 0 0 10px#ADFF2F;
+  transform: scale(1.02);
 }
 
 .header h1{
-    margin: 5px 0px 32px 0px;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4rem;
     letter-spacing: 0.25rem;
     font-weight: 900;
-    color: grey;
+    color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header h1:hover{
+  transform: scale(1.2);
 }
 
-.header p{
+.backButton{
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  transition:  all 0.5s;
+  border: 1px solid;
+border-radius: 20px;
+padding-top: 4px;
+border-color:white;
+color: white;
+font-size: 18px;
+padding-bottom: 4px;
+padding-left: 15px;
+padding-right: 15px;
+}
+.backButton:hover{
+  background-color: white;
+  color: #52c234;
+}
+.band-tagline{
     text-align: center;
-    font-size: 19px;
-    color: grey;
+    font-size: 25px;
+    color: white;
+    margin-top:10px;
+    font-family:cursive;
+}
+footer{
+  background-color: white;
+}
+.main-img{
+    margin:40px 0;
 }
 
-img{
-    margin-top: 30px;
-    margin-bottom: 30px;
+/*.header .backbutton{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}*/
+.footerContent{
+  background-color:white;
+  color: black;
+}
+.footer-links i{
+  transition: all ease-in;
+  width:50px;
+  height:50px;
+font-size:30px;
+padding-top:10px;
+}
+.footer-links i:hover{
+  transform:scale(1.2);
+}
+#glow
+{
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ADFF2F, 0 0 20px #ADFF2F, 0 0 25px #ADFF2F, 0 0 30px #ADFF2F, 0 0 40px#ADFF2F;
+    }
+
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #9ACD32, 0 0 40px #9ACD32, 0 0 50px #9ACD32, 0 0 60px #9ACD32, 0 0 70px #9ACD32, 0 0 80px #9ACD32;
+    }
+  }
+
+
+.keyboard-keys{
+    font-size:3rem;
+    position:relative;
+    top:-25px;
+    font-family:cursive;
+    color:white;
+    text-shadow:2px 2px 2px grey;
+}
 .pads{
-    background: black;
     width: 90vw;
     display: flex;
     flex-wrap:wrap;
+    box-sizing:border-box;
+    justify-content: center;
 }
 
 .pads > div{
-    height: 230px;
-    width: 100px;
-    flex: 1;
+    height: 170px;
+    width: 170px;
     border-radius: 30px;
-    margin-right: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    /* border: solid green 5px; */
+    border-radius: 20px;
 }
 
-.pad-1{
+.pads > div img{
+    width: 100px;
+    height: 100px;
+    margin-bottom:15px;
+    padding-top:15px;
+}
+
+.pad-1
+{
     background-image: linear-gradient(to right,#20AAE5 ,#A722D6);
 }
-.pad-2{
+.pad-2
+{
     background-image: linear-gradient(180deg,#0fa5e6 ,#7b06f0);
 }
+
 .pad-3{
      background-image: linear-gradient(90deg, #1A0223,#DB26B6, #EE570F);
 }
+
 .pad-4{
     background-image: linear-gradient(to right,#06425c ,#410955);
 }
+
 .pad-5{
     background-image: linear-gradient(180deg, #1A0223,#DB26B6, #EE570F);
 }
 .pad-6{
     background-image: linear-gradient(to right,#e4bc0d ,#ec430f);
 }
+.pad-7{
+  background-image: linear-gradient(to right,#59C173 ,#a17fe0,#5D26C1);
+}
+.pad-8{
+  background-image: linear-gradient(to right,#fc4a1a ,#dd1818);
+}
+.pad-9{
+  background-image: linear-gradient(to bottom,#00b09b ,#96c93d);
+}
+.pad-10{
+  background-image: linear-gradient(to left,#1e3c72,#F29492);
+}
+.pad-11{
+  background-image: linear-gradient(to left,#f857a6,#ff5858);
+}
+.pad-12{
+  background-image: linear-gradient(to left,#C04848,#480048);
+}
+.flute{
+  transform:rotate(-30deg)
+}
+.pads > div:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 12px white;
+    border: 2px solid rgb(72, 241, 72);
+    transform: scale(1.02);
+}
 
-.visual > div {
+.visual > div
+{
     position: absolute;
     width: 50px;
     height: 50px;
@@ -81,7 +237,8 @@ img{
     z-index: -1;
 }
 
-@keyframes jump{
+@keyframes jump
+{
     0%{
         left: 20%;
         bottom: 0px;
@@ -98,14 +255,14 @@ img{
 
 
 /* For Responsiveness */
+
 @media (min-width: 1020px) and (max-width:1190px){
-    .app{
-        height: 80vh;
-    }
+
     .pads > div{
-        margin: 1.1rem;
+        margin: 0.5rem;
     }
-    @keyframes jump{
+    @keyframes jump
+    {
         0%{
             left: 20%;
             bottom: 0px;
@@ -120,54 +277,143 @@ img{
         }
     }
 }
-@media only screen and (min-width: 601px) {
-    .pads > div{
-        width: 10rem;
-        height: auto;
+
+@media only screen and (max-width:600px){
+
+    .header img{
+        width: 400px;
+        height: 250px;
+        margin:30px auto;
+      }
+      .pads > div{
+        width: 150px;
+        height: 150px;
         margin: 0.8rem;
     }
     .pads > div img{
-        width: 10rem;
-        height: auto;        
+        width: 100px;
+        height: 100px;
+    }
+    .keyboard-keys{
+        font-size:2rem;
+        top:-20px;
     }
 
-}
-@media only screen and (max-width:600px){
-    .header img{
-        width: auto;
-        height: 15rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto; 
-      }
-      .pads > div{
-        width: 7rem;
-        height: auto;
-        margin: 0.8rem;
-    }
-    .pads > div img{
-        width: 7rem;
-        height: auto;        
+    .header{
+        display: flex;
+        justify-content: space-evenly;
     }
 }
-@media only screen and (max-width:330px){
+@media only screen and (max-width:440px)
+{
     .header img{
-        width: auto;
-        height: 12rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto; 
+        width: 250px;
+        height: 200px;
+        margin: 30px auto;
       }
-      .pads > div{
-        width: 6rem;
-        height: auto;
+      .pads > div
+      {
+        width:100px;;
+       height:100px;
         margin: 0.7rem;
     }
-    .pads > div img{
-        width: 6rem;
-        height: auto;        
+    .pads > div img
+    {
+        width: 70px;
+        height: 70px;
     }
-    .header p{
+    .keyboard-keys{
+        font-size:1.5rem;
+        top:-20px;
+    }
+    .header p
+    {
         font-size: 1rem;
     }
+}
+
+/***************************Footer*************************/
+
+footer
+{
+  background-color:green;
+  text-align: center;
+ color:white;
+ margin-top:50px;
+}
+.content span
+{
+  font-size: 6rem;
+}
+
+  .footer-content{
+    display:flex;
+    justify-content:center;
+  }
+
+
+  @media (max-width:470px)
+{
+  .content
+  {
+    font-size: .8rem;
+    overflow: auto;
+  }
+  .content span
+  {
+    font-size: 3rem;
+  }
+
+  .btn
+  {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+}
+footer > h2,p
+{
+  margin: 7px;
+}
+footer h5
+{
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+/* Below styling is for go to the top button */
+html
+{
+  scroll-behavior: smooth;
+}
+
+#myBtn
+{
+    width:40px;
+    height:40px;
+  display: none;
+  position: fixed;
+  top:90%;
+  left: 95%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+#myBtn .fas
+{
+  position: relative;
+}
+ #myBtn:hover
+{
+  background-color: rgb(39, 37, 37);
+  transition: 0.5s;
+}
+#myBtn:hover .fas
+{
+  transition: 0.5s;
+  bottom:5px;
 }

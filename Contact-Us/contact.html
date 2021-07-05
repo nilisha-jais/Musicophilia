@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- botstrap css Cdn -->
+    <script src="https://kit.fontawesome.com/debf789820.js" ></script>
+    <link rel="icon" href="../favicon.png" type="image/gif" sizes="16x16" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../login/login.css">
+    <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+    <header>
+      <nav class="shift navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="nav-img" src="../music.png" alt="Musicophilia Logo" />
+                <span id="webTitle">&mu;<span style="color: white">SICOPHILIA</span></span>
+            </a>
+            <button class="navbar-toggler" id="myToggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="
+          justify-content: flex-end">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../About/index.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href=#>CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login/login.html">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+    </nav>
+
+      <div class="container border shadow">
+        <div class="form-container sign-in-container">
+          <form action="#" style="padding: 30px 50px;">
+            <h1 style="color: green;">Contact Us</h1>
+            <input type="text " placeholder="Full name" style="border: green;" />
+            <input type="email" placeholder="Email" />
+            <input type="number" placeholder="Contact number" />
+            <textarea style="background-color: rgb(245, 241, 241);color: black;font-size: 15px;" name="text" id="text" cols="150" rows="7" placeholder="Write your msg" required></textarea>
+            <br>
+            <button id="btn">Contact Us</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay" >
+              <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <h2>Contact us</h2>
+                <p>Leave us a message:</p>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    </header>
+
+    <footer>
+
+      <br>
+      <div class="centerdiv">
+
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://twitter.com/login" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+      <h2>&mu;SICOPHILIA</h2>
+      <p><em>Your Musical Getaway</em></p>
+      <h5>&copy; 2021 | Nilisha | All rights reserved.</h5>
+
+      <br />
+      <br />
+  </footer>
+
+    
+    <script src="../main.js"></script>
+
+    <script>
+        var toggleBtn = document.getElementById("myToggleBtn");
+        toggleBtn.addEventListener("click", () => {
+            var myLinks = document.querySelector(".navbar-nav");
+            myLinks.style.textAlign = "center";
+            myLinks.style.float = "right";
+            // myLinks.style.display = "inline-block";
+        });
+    </script>
+    <!-- bootsdtrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function JSalert() {
+            swal("Congrats!", "Message was delivered successfully!", "success");
+        }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>

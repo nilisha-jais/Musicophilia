@@ -1,0 +1,140 @@
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0;
+}
+
+#metronome {
+  background: linear-gradient(to right, #cc2b5e, #753a88);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#progress {
+  width: 100%;
+  height: 3em;
+  position: absolute;
+  bottom: 0;
+  background-color: #ffffff;
+  border: solid rgba(255, 99, 71, 0.78);
+  border-width: 0.3em 0 0.4em 0;
+  padding: 0.3em 0 0.3em 0;
+}
+
+#progress-bar {
+  width: 0;
+  height: 100%;
+  background-image: linear-gradient(to right, white, rgb(255, 99, 71));
+  border-radius: 0 25px 25px 0;
+  animation: 1s linear infinite paused progress;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#bpm > input {
+  text-align: center;
+  height: 40px;
+  width: 3em;
+  font-size: 2em;
+}
+
+#bpm span {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#start-btn {
+  display: block;
+  width: 100%;
+  margin-top: 5em;
+}
+
+#start-btn input[type="button"] {
+  background-color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 1em;
+  margin-top: 5em;
+}
+
+#div-sound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#sound-icon {
+  font-size: 30px;
+}
+
+.bpm-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 240px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.start-btn {
+  margin-bottom: 10px;
+  background-color: #6699cc;
+  color: #ffffff;
+  font-size: 16px;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+.back button {
+  margin: 1em 0;
+  background-color: #6699cc;
+  display: flex;
+  border: none;
+  width: 5em;
+  padding: 4px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bpm-info {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.bpm-range {
+  width: 90%;
+  margin-bottom: 10px;
+}

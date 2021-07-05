@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="../favicon.png" type="image/gif" sizes="16x16" />
+    <title>
+        Guess The Singer
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="button.css">
+
+</head>
+
+<body>
+    <div class="backbutton" align="left">
+        <a style="text-decoration:none" href="../index.html"><button type="button" style="background-color: #6e1adb ;"><span id="btn">Back</span></button></a>
+        <div class="score" id='scores'> Score: 0/0</div>
+    </div>
+
+    <div id="intro">
+        <h1>GUESS THE SINGER</h1>
+    </div>
+
+    <div class="hints">
+        <img id="singer_image" src="pictures/ar.png" alt="singers">
+    </div>
+    <div class="options">
+        <button type="submit" id="option1" onclick="checkAnswer()">A.R RAHMAN</button>
+        <button type="submit" id="option2" onclick="checkAnswer()"> ARIJIT SINGH</button>
+        <button type="submit" id="option3" onclick="checkAnswer()">KUMAR SANU</button>
+        <button type="submit" id="option4" onclick="checkAnswer()">ATIF ASLAM</button>
+        <button type="submit" id="next_button" onclick="nextQuestion()">Next</button>
+        <button type="submit" id="close_button" onclick="startAgain()">Start Again</button>
+    </div>
+    <div id="hints_punjabi">
+        <img id="singer_image_punjabi" src="pictures/ammy.png" alt="singers">
+    </div>
+    <div id="options_punjabi">
+        <button type="submit" id="option1Punjabi" onclick="checkAnswerPunjabi()">AMMY VIRK</button>
+        <button type="submit" id="option2Punjabi" onclick="checkAnswerPunjabi()"> B PRAAK</button>
+        <button type="submit" id="option3Punjabi" onclick="checkAnswerPunjabi()">GARRY SANDHU</button>
+        <button type="submit" id="option4Punjabi" onclick="checkAnswerPunjabi()">DILJIT DOSANJH</button>
+        <button type="submit" id="next_button_punjabi" onclick="nextQuestionPunjabi()">Next</button>
+        <button type="submit" id="close_button_punjabi" onclick="startAgainPunjabi()">Start Again</button>
+    </div>
+    <div id="hints_english">
+        <img id="singer_image_english" src="pictures/ed.png" alt="singers">
+    </div>
+    <div id="options_english">
+        <button type="submit" id="option1English" onclick="checkAnswerEnglish()">ED SHEERAN</button>
+        <button type="submit" id="option2English" onclick="checkAnswerEnglish()"> ZAYN</button>
+        <button type="submit" id="option3English" onclick="checkAnswerEnglish()">EMINEM</button>
+        <button type="submit" id="option4English" onclick="checkAnswerEnglish()">BRUNO MARS</button>
+        <button type="submit" id="next_button_english" onclick="nextQuestionEnglish()">Next</button>
+        <button type="submit" id="close_button_english" onclick="startAgainEnglish()">Start Again</button>
+    </div>
+
+    <div id="industries">
+        <h3>Choose The Industry</h3>
+        <button type="submit" id="industry1" onclick="hollywood()">Hollywood</button>
+        <button type="submit" id="industry2" onclick="startAgain()"> Bollywood</button>
+        <button type="submit" id="industry3" onclick="punjabi()">Punjabi</button>
+    </div>
+
+
+    <script type="text/javascript" src="jscode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.backbutton {
+  border:none;
+	border-radius: 10px;
+	padding: 10px;
+	letter-spacing: 1.5px;
+	font-size: 15px;
+	transition: 0.5s;
+  margin-top: 20px;
+  color:white;
+  position: absolute;
+  left: 5vw;
+}
+
+
+  button{
+    border:none;
+    border-radius: 20px;
+    padding: 1vh;
+    color:white;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: 0.5s;
+      margin-top: 2vh;
+      margin-left: 20%;
+
+  }
+  button:hover,h1:hover{
+    transform: scale(1.1);
+
+  }
+  button:hover{
+    background-color:#e21336;
+  }

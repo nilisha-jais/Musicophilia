@@ -1,8 +1,10 @@
-body{
+body
+{
     background-color:black;
     color:white;
 }
-.grid{
+.grid
+{
     display:flex;
     flex-wrap:wrap;
     height:300px;

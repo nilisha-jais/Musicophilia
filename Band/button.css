@@ -1,0 +1,14 @@
+
+
+  
+
+  
+  
+      /******responsiveness for mobile view*****/
+@media screen and (max-width:830px){
+ button{
+   left:1%;
+   top:1%;
+ }
+}
+   
