@@ -214,9 +214,9 @@ nav.shift ul li a:hover:after {
 }
 
 .heading {
-    margin-top: 110px;
+    text-align: center;
+    margin: 110px 20% 0 20%;
     color: white;
-    margin-left: 33%;
     font-size: 55px;
 }
 
