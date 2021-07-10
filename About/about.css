@@ -477,3 +477,58 @@ footer h5 {
     pointer-events: auto;
     opacity: 1;
 }
+.flip-card {
+    background-color:transparent;
+    width: 300px;
+    height: 450px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+   /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: bottom;
+    text-align: center;  
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    }
+  
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+     transform: rotateY(-180deg);
+    }
+    .flip-card-front {
+        position: absolute;
+        margin-top: 116px;
+        margin-left: -35px;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+    }
+  
+    /* Position the front and back side */
+    .flip-card-back {
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 34px;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+    }
+    
+  
+    .flip-card-front {
+        align-items: center;
+    }
+    
+    .flip-card-back {
+        color: white;
+        font-size: larger;
+        font-weight: bold;
+        margin-right: 50px;
+        transform: rotateY(180deg);
+    }
+  
