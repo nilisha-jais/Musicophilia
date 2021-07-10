@@ -35,9 +35,14 @@
 .container-sm,
 .container-xl,
 .container-xxl {
+<<<<<<< HEAD
   padding: 0px ;
 }
 
+=======
+  padding: 0px !important;
+}
+>>>>>>> ba7249104b5460a476960c439115e0028111f6ce
 .navbar-light .navbar-toggler {
   margin: 4px;
 }
@@ -273,7 +278,11 @@ to {
 }
 footer {
   background: linear-gradient(90deg, green -60%, black 50%, green 160%);
+<<<<<<< HEAD
   animation: glow 2s ease-in-out infinite alternate;
+=======
+animation: glow 2s ease-in-out infinite alternate;
+>>>>>>> ba7249104b5460a476960c439115e0028111f6ce
   text-align: center;
   width: 100%;
 }
@@ -299,12 +308,16 @@ footer > h2,
 p {
   margin: 7px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ba7249104b5460a476960c439115e0028111f6ce
 footer h5 {
   margin-bottom: 0;
   padding-bottom: 10px;
 }
 
+<<<<<<< HEAD
 @media (max-width: 700px) {
 
   header{
@@ -332,3 +345,5 @@ footer h5 {
     height: 300px;
   }
 }
+=======
+>>>>>>> ba7249104b5460a476960c439115e0028111f6ce

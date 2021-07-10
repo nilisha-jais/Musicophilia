@@ -56,7 +56,11 @@ a {
   }
   
   ::-webkit-scrollbar {
+<<<<<<< HEAD
 	width: 7px;
+=======
+	width: 10px;
+>>>>>>> ba7249104b5460a476960c439115e0028111f6ce
 	background-color: #1d1c1c;
   }
   ::-webkit-scrollbar-thumb {
@@ -192,8 +196,13 @@ button.ghost {
 }
 
 form {
+<<<<<<< HEAD
 	/* background-image: url("https://us.123rf.com/450wm/nveri/nveri1601/nveri160100050/50903400-colorful-music-background.jpg?ver=6");
     background-size: cover; */
+=======
+	background-image: url("https://us.123rf.com/450wm/nveri/nveri1601/nveri160100050/50903400-colorful-music-background.jpg?ver=6");
+    background-size: cover;
+>>>>>>> ba7249104b5460a476960c439115e0028111f6ce
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -285,8 +294,11 @@ input {
 }
 
 .form-container {
+<<<<<<< HEAD
 	background-image: url("https://us.123rf.com/450wm/nveri/nveri1601/nveri160100050/50903400-colorful-music-background.jpg?ver=6");
     background-size: cover;
+=======
+>>>>>>> ba7249104b5460a476960c439115e0028111f6ce
 	position: absolute;
 	top: 0;
 	height: 100%;
@@ -305,11 +317,17 @@ input {
 
 .sign-up-container {
 	left: 0;
+<<<<<<< HEAD
 	height: 100%;
 	width: 50%;
 	overflow-y: scroll;
 	opacity: 0;
 	z-index: 2;
+=======
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+>>>>>>> ba7249104b5460a476960c439115e0028111f6ce
 }
 
 .container.right-panel-active .sign-up-container {
@@ -627,6 +645,7 @@ padding: 15px 0;
 	color: white;
   }
   
+<<<<<<< HEAD
 @media (max-width : 750px) {
 
 	  header{
@@ -712,3 +731,6 @@ padding: 15px 0;
 	 }
 
 }
+=======
+  
+>>>>>>> ba7249104b5460a476960c439115e0028111f6ce

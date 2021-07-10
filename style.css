@@ -279,9 +279,15 @@ hr {
   transform: scale(1.1);
 }
 
+<<<<<<< HEAD
 /* .alignment {
   margin-top: 40px;s
 } */
+=======
+.alignment {
+  margin-top: 40px;
+}
+>>>>>>> ba7249104b5460a476960c439115e0028111f6ce
 
 /*Social Media*/
 .centerdiv {

@@ -32,7 +32,6 @@ body {
   background-image: url("https://source.unsplash.com/1600x900/?music");
   font-family: cursive;
 
-  /* background-size: cover; */
   margin: 0;
 }
 .listen {
@@ -49,7 +48,6 @@ body {
   position: relative;
 }
 .backbutton {
-  /* width: 100%; */
   position: absolute;
   left: 200px;
 }
@@ -67,9 +65,6 @@ body {
   position: relative;
   top: 30vh;
 }
-/* .start {
-  display: none;
-} */
 .hidden {
   display: none;
 }
@@ -80,7 +75,6 @@ body {
   font-weight: bolder;
 }
 .align {
-  /* display: flex; */
   display: inline-flex;
   text-align: center;
   justify-content: center;

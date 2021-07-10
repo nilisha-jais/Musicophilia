@@ -74,7 +74,6 @@ function afterStart(key) {
         if (j === 5) {
           modal[1].classList.remove("hidden");
           overlay.classList.remove("hidden");
-          l = 1;
         }
       });
 
@@ -90,7 +89,6 @@ function afterStart(key) {
         if (k === 3) {
           modal[0].classList.remove("hidden");
           overlay.classList.remove("hidden");
-          l = 0;
         }
       });
     }
@@ -118,8 +116,7 @@ document.addEventListener("keydown", function (e) {
 againWon.addEventListener("click", () => {
   modal[1].classList.add("hidden");
   overlay.classList.add("hidden");
-  j = 0;
-  k = 0;
+  restartGame();
 });
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
@@ -129,29 +126,7 @@ document.addEventListener("keydown", function (e) {
     k = 0;
   }
 });
-// document.addEventListener("keydown", (e) => {
-//   const key = e.key;
-//   const whiteKeyIndex = WHITE_KEYS.indexOf(key);
-//   const blackKeyIndex = BLACK_KEYS.indexOf(key);
-//   if (whiteKeyIndex > -1) afterStart(whiteKeys[whiteKeyIndex]);
-//   if (blackKeyIndex > -1) afterStart(blackKeys[blackKeyIndex]);
-// });
-
-// keys.forEach((key) => {
-//   key.addEventListener("click", () => {
-//     if (satisfy) {
-//       document.addEventListener("keydown", (e) => {
-//         const key = e.key;
-//         const whiteKeyIndex = WHITE_KEYS.indexOf(key);
-//         const blackKeyIndex = BLACK_KEYS.indexOf(key);
-//         if (whiteKeyIndex > -1) playNotes(whiteKeys[whiteKeyIndex]);
-//         if (blackKeyIndex > -1) playNotes(blackKeys[blackKeyIndex]);
-//       });
-//       playNotes(key);
-//     }
-//   });
-// });
-restart.addEventListener("click", () => {
+function restartGame() {
   j = 0;
   k = 0;
   document.querySelector(".listen").classList.remove("hidden");
@@ -161,6 +136,9 @@ restart.addEventListener("click", () => {
   for (let i = 0; i < 5; i++) {
     sou[i] = Math.floor(Math.random() * sound.length);
   }
+}
+restart.addEventListener("click", () => {
+  restartGame();
 });
 let noteAudio;
 function playNote(key, i) {
