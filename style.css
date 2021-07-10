@@ -187,12 +187,15 @@ nav.shift ul li a:hover:after {
 }
 
 hr {
-    border-width: 0px 0px 0px 0px !important;
+    margin:  20px auto auto;
+    width: 10%;
+    /* border-width: 0px 0px 0px 0px !important; */
+    border-width: 10px;
     height: 6px !important;
-    background-image: linear-gradient(to right, #85e942, green);
-    margin: 0 !important;
+    background-image: linear-gradient(to right, #85e942, green); 
     opacity: 0.51;
 }
+
 
 .main {
     padding: 24px;
@@ -230,8 +233,8 @@ hr {
 
 .heading {
     margin: 14px auto;
-    font-size: 35px;
-    font-family: "Chango", cursive;
+    font-size: 40px;
+    font-family: "Dancing Script", cursive;
 }
 
 .content:hover {
