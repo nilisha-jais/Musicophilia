@@ -86,7 +86,7 @@ html.transition *:after {
 .container-sm,
 .container-xl,
 .container-xxl {
-    padding: 0px !important;
+    padding: 10px !important;
 }
 
 .navbar-light .navbar-toggler {
@@ -95,6 +95,10 @@ html.transition *:after {
 
 .navbar-brand {
     margin-right: 0px;
+}
+
+#myToggleBtn{
+  margin-right: 10%;
 }
 
 .navbar-toggler {

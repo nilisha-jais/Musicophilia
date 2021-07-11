@@ -104,7 +104,11 @@ html.transition *:after {
 .container-sm,
 .container-xl,
 .container-xxl {
-    padding: 0px !important;
+    padding: 10px !important;
+}
+
+#myToggleBtn{
+    margin-right: 10%;
 }
 
 .navbar-light .navbar-toggler {
@@ -218,6 +222,7 @@ nav.shift ul li a:hover:after {
     margin: 110px 20% 0 20%;
     color: white;
     font-size: 55px;
+    padding-top: 30px;
 }
 
 .card {
