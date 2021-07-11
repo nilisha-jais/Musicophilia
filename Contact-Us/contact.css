@@ -38,6 +38,9 @@
   padding: 10px;
 }
 
+nav{
+  height: 10%;
+}
 #myToggleBtn{
   margin-right: 10%;
 }
@@ -48,6 +51,7 @@
 
 .navbar-brand {
   margin-right: 0px;
+  margin-left: 2%;
 }
 .navbar-toggler {
   padding: 6px !important;
@@ -55,7 +59,7 @@
 }
 
 .navbar {
-  background-color: green !important;
+  background-color: #206A5D !important;
 }
 nav.shift ul li {
   padding: 5px;
@@ -67,11 +71,11 @@ nav.shift ul li a {
   text-transform: uppercase;
 }
 nav.shift ul li a:hover {
-  border: 2px solid white;
+  border: 2px dashed white;
   transition: 0.2s;
 }
 .active {
-  border: 2px solid white;
+  border: 2px dashed white;
 }
 nav.shift ul li a:after {
   display: inline-block;
@@ -83,7 +87,7 @@ nav.shift ul li a:after {
   right: 0;
   /*margin: auto;*/
   width: 100%;
-  height: 1px;
+  height: 20px;
   content: ".";
   color: transparent;
   /* background: #58e953;*/
@@ -113,8 +117,8 @@ nav.shift ul li a:hover:after {
 
 .nav-link {
   color: white !important;
-  font-size: 18px !important;
-  padding: 13px 20px 13px 20px !important;
+  font-size: 15px !important;
+    padding: 10px 15px 10px 15px !important;
 }
 .current {
   background-color: rgba(0, 0, 0, 0.247);

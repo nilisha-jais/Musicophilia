@@ -89,6 +89,10 @@ html.transition *:after {
     padding: 10px !important;
 }
 
+
+nav{
+    height: 10%;
+}
 .navbar-light .navbar-toggler {
     margin: 4px;
 }
@@ -108,7 +112,6 @@ html.transition *:after {
 }
 
 .navbar {
-    /* background-color: #064420 !important; */
     background-color: #206A5D !important;
 }
 
@@ -145,7 +148,7 @@ nav.shift ul li a:after {
     right: 0;
     /*margin: auto;*/
     width: 100%;
-    height: 1px;
+    height: 20px;
     content: ".";
     color: transparent;
     /* background: #58e953; */
