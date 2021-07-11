@@ -198,8 +198,16 @@ hr {
 
 
 .main {
+  padding: 24px;
+  margin-top: 80px;
+  /* border:6px  solid green; */
+  border-radius: 17px;
+  padding: 24px;
+  height: auto;
+  text-align: center;
+  /* box-shadow: 5px 5px 3px green; */
     padding: 24px;
-    margin-top: 40px;
+    margin-top: 65px;
     /* border:6px  solid green; */
     border-radius: 17px;
     padding: 24px;
