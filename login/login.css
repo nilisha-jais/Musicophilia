@@ -7,6 +7,10 @@
   	padding: 0;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body {
 	background-image: url("https://cdn.pixabay.com/photo/2016/09/27/23/03/guitar-1699501_960_720.jpg");
 	background-size: cover;
@@ -50,27 +54,21 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
-	background-color: #1d1c1c;
-	border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar {
-	width: 7px;
-	background-color: #1d1c1c;
-  }
-  ::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background-color: #fff;
-	background-image: -webkit-gradient(
-	  linear,
-	  40% 0%,
-	  75% 84%,
-	  from(#4d9c41),
-	  to(#19911d),
-	  color-stop(0.6, #54de5d)
-	);
-  }
+    -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
+    background-color: #1d1c1c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1d1c1c;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fff;
+    background-image: -webkit-gradient( linear, 40% 0%, 75% 84%, from(#4d9c41), to(#19911d), color-stop(0.6, #54de5d));
+}
   
   .container,
   .container-fluid,
