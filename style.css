@@ -95,6 +95,7 @@ html.transition *:after {
 
 .navbar-brand {
     margin-right: 0px;
+    margin-left: 2%;
 }
 
 .navbar-toggler {
@@ -103,7 +104,12 @@ html.transition *:after {
 }
 
 .navbar {
-    background-color: green !important;
+    /* background-color: #064420 !important; */
+    background-color: #206A5D !important;
+}
+
+.collapse{
+    background-color: #206A5D;
 }
 
 nav.shift ul li {
@@ -117,12 +123,12 @@ nav.shift ul li a {
 }
 
 nav.shift ul li a:hover {
-    border: 2px solid white;
+    border: 2px dashed white;
     transition: 0.2s;
 }
 
 .active {
-    border: 2px solid white;
+    border: 2px dashed white;
 }
 
 nav.shift ul li a:after {
@@ -138,7 +144,7 @@ nav.shift ul li a:after {
     height: 1px;
     content: ".";
     color: transparent;
-    /* background: #58e953;*/
+    /* background: #58e953; */
     visibility: none;
     opacity: 0;
     z-index: -1;
@@ -166,8 +172,8 @@ nav.shift ul li a:hover:after {
 
 .nav-link {
     color: white !important;
-    font-size: 18px !important;
-    padding: 13px 20px 13px 20px !important;
+    font-size: 15px !important;
+    padding: 10px 15px 10px 15px !important;
 }
 
 .current {
