@@ -35,7 +35,11 @@
 .container-sm,
 .container-xl,
 .container-xxl {
-  padding: 0px;
+  padding: 10px;
+}
+
+#myToggleBtn{
+  margin-right: 10%;
 }
 
 .navbar-light .navbar-toggler {
