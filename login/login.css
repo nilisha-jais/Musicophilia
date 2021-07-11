@@ -79,12 +79,16 @@ a {
   .container-sm,
   .container-xl,
   .container-xxl {
-	padding: 0px !important;
+	padding: 10px !important;
   }
+  
   .navbar-light .navbar-toggler {
 	margin: 4px;
   }
-  
+
+  #myToggleBtn{
+    margin-right: 10%;
+}
   .navbar-brand {
 	margin-right: 0px;
   }
@@ -281,7 +285,7 @@ input {
 	width: 860px;
 	max-width: 100%;
 	min-height: 560px;
-	margin-top: 130px;
+	margin-top: 170px;
 }
 
 .form-container {

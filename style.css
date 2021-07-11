@@ -86,7 +86,7 @@ html.transition *:after {
 .container-sm,
 .container-xl,
 .container-xxl {
-    padding: 0px !important;
+    padding: 10px !important;
 }
 
 .navbar-light .navbar-toggler {
@@ -96,6 +96,10 @@ html.transition *:after {
 .navbar-brand {
     margin-right: 0px;
     margin-left: 2%;
+}
+
+#myToggleBtn{
+  margin-right: 10%;
 }
 
 .navbar-toggler {
@@ -204,8 +208,16 @@ hr {
 
 
 .main {
+  padding: 24px;
+  margin-top: 80px;
+  /* border:6px  solid green; */
+  border-radius: 17px;
+  padding: 24px;
+  height: auto;
+  text-align: center;
+  /* box-shadow: 5px 5px 3px green; */
     padding: 24px;
-    margin-top: 40px;
+    margin-top: 65px;
     /* border:6px  solid green; */
     border-radius: 17px;
     padding: 24px;
@@ -246,7 +258,7 @@ hr {
 .content:hover {
     border: 3px solid rgb(0, 128, 0);
     box-shadow: 5px 5px 10px 0 rgb(0, 128, 0);
-    transform: scale(1.03);
+    transform: scale(0.9);
 }
 
 .btn {
