@@ -176,11 +176,11 @@ button {
 #btn{
 	background-size: 200% 100%;
 	transition: background-position 0.5s, color 0.5s;
-	background-image: linear-gradient(to right,#088108 50%, red 50%);
 }
 #btn:hover{
-	background-position: right bottom;
-	color: #fff;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	transform: translateY(1px);
+	border: solid 2px white;
 }
 button:active {
 	transform: scale(0.95);
