@@ -113,8 +113,9 @@ html.transition *:after {
 
 
 nav{
-    height: 10%;
+    height: 20%;
 }
+
 .navbar-light .navbar-toggler {
     margin: 4px;
 }

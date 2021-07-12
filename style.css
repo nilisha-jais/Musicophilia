@@ -107,9 +107,10 @@ html.transition *:after {
 }
 
 
-nav{
-    height: 10%;
+ nav{
+    height: 20%;
 }
+
 .navbar-light .navbar-toggler {
     margin: 4px;
 }
@@ -766,7 +767,7 @@ div .lines2 {
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     margin-top: 30px;
 }
 
