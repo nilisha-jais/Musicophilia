@@ -37,7 +37,7 @@ html{
 }
 
 nav{
-  height: 10%;
+  height: 23%;
 }
 #myToggleBtn{
   margin-right: 10%;
@@ -59,6 +59,11 @@ nav{
 .navbar {
   background-color: #206A5D !important;
 }
+
+.collapse{
+  background-color: #206A5D;
+}
+
 nav.shift ul li {
   padding: 5px;
 }
@@ -134,6 +139,32 @@ nav.shift ul li a:hover:after {
 }
 .center {
   text-align: center;
+}
+
+.collapse .navbar-collapse {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.collapse .navbar-collapse a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  font-family: sans-serif;
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+.collapse .navbar-collapse a:hover {
+  background-color: #ffc31e;
+  color: black;
+  opacity: 1;
+  transition: 0.8s;
 }
 
 .red {
