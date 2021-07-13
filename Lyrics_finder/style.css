@@ -16,7 +16,7 @@ html{
   ::-webkit-scrollbar-thumb {
     border-radius: 12px;
     background-color: #fff;
-    background-image: -webkit-gradient( linear, 40% 0%, 75% 84%, from(#bac0c4), to(#808088), color-stop(0.6,#b2b4b9 ));
+    background-image: -webkit-gradient( linear, 40% 0%, 75% 84%, from(#eff3f7), to(#eff3f7), color-stop(0.6,#d6d7da ));
   }
 
 
