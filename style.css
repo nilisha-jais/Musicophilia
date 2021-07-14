@@ -108,7 +108,7 @@ html.transition *:after {
 
 
  nav{
-    height: 21%;
+    height: 16%;
 }
 
 .navbar-light .navbar-toggler {
@@ -218,7 +218,10 @@ nav.shift ul li a:hover:after {
 }
 
 hr {
-    margin:  20px auto auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     width: 10%;
     /* border-width: 0px 0px 0px 0px !important; */
     border-width: 10px;
@@ -229,19 +232,15 @@ hr {
 
 
 .main {
-  padding: 24px;
-  margin-top: 80px;
+  padding: 18px;
+  margin-top: 10px;
   /* border:6px  solid green; */
   border-radius: 17px;
-  padding: 24px;
   height: auto;
   text-align: center;
   /* box-shadow: 5px 5px 3px green; */
-    padding: 24px;
-    margin-top: 65px;
     /* border:6px  solid green; */
     border-radius: 17px;
-    padding: 24px;
     height: auto;
     text-align: center;
     /* box-shadow: 5px 5px 3px green; */
@@ -249,7 +248,7 @@ hr {
 
 .container {
     display: flex;
-    padding: 24px;
+    padding: 10px;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
@@ -270,8 +269,13 @@ hr {
     /* margin-right: 20px; */
 }
 
+#main-heading{
+    margin: 58px 50px auto;
+    font-size: 40px;
+    font-family: "Dancing Script", cursive;
+}
 .heading {
-    margin: 14px auto;
+    margin-top: 0px;
     font-size: 40px;
     font-family: "Dancing Script", cursive;
 }
