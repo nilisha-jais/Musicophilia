@@ -6,7 +6,7 @@
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
     background-color: #faf9f9;
-    border-radius: 15px;
+    border-radius: 10px;
   }
   
   ::-webkit-scrollbar {
@@ -20,9 +20,9 @@
       linear,
       40% 0%,
       75% 84%,
-      from(#61c4dd),
-      to(#0ab1f3),
-      color-stop(0.6, #88d3f1)
+      from(#0d728b),
+      to(#1b98c9),
+      color-stop(0.6, #cae0e9)
     );
   }
   
