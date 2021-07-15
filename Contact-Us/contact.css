@@ -4,6 +4,13 @@
   color: white;
   font-family: "segoe ui";
 }
+body {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  height: 100%;
+}
 
 html{
   scroll-behavior: smooth;
@@ -33,7 +40,7 @@ html{
 .container-sm,
 .container-xl,
 .container-xxl {
-  padding: 10px;
+  padding: 10px !important;
 }
 
 nav{
@@ -220,12 +227,12 @@ textarea:focus {
 
 header {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: linear-gradient(rgb(1, 41, 1), rgb(78, 77, 77), rgb(1, 41, 1));
   /* background: url("./black-silver-microphone-black-background.jpg")
     no-repeat center center fixed; */
   background-size: cover;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 /*Social Media*/
@@ -310,6 +317,7 @@ footer {
   animation: glow 2s ease-in-out infinite alternate;
   text-align: center;
   width: 100%;
+  margin-top: auto;
 }
 .content span {
   font-size: 6rem;
@@ -339,16 +347,16 @@ footer h5 {
   padding-bottom: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   header {
     height: auto;
   }
 
   .container {
-    display: flex;
+    margin-top: 150px;
     height: auto;
     width: 90%;
-    flex-direction: column;
+    
   }
 
   .form-container {

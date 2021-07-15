@@ -20,7 +20,8 @@ body {
 	flex-direction: column;
 	font-family: 'Ubuntu', sans-serif;
 	height: 100%;
-	margin: -20px 0 50px;
+	
+	
 }
 .active {
   border: 2px solid white;
@@ -595,9 +596,11 @@ padding: 15px 0;
   }
   footer {
 	background: linear-gradient(90deg, green -60%, black 50%, green 160%);
-  animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
 	text-align: center;
 	width: 100%;
+	margin-top: auto;
+	
   }
   .content span {
 	font-size: 6rem;
