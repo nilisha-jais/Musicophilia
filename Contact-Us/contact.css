@@ -6,13 +6,13 @@
 }
 body {
   display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100%;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -30,7 +30,14 @@ html{
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #fff;
-  background-image: -webkit-gradient( linear, 40% 0%, 75% 84%, from(#4d9c41), to(#19911d), color-stop(0.6, #54de5d));
+  background-image: -webkit-gradient(
+    linear,
+    40% 0%,
+    75% 84%,
+    from(#4d9c41),
+    to(#19911d),
+    color-stop(0.6, #54de5d)
+  );
 }
 
 .container,
@@ -43,10 +50,11 @@ html{
   padding: 10px !important;
 }
 
-nav{
-  height: 23%;
+.active {
+  background: rgb(5, 88, 23);
 }
-#myToggleBtn{
+
+#myToggleBtn {
   margin-right: 10%;
 }
 
@@ -58,57 +66,120 @@ nav{
   margin-right: 0px;
   margin-left: 2%;
 }
+
 .navbar-toggler {
   padding: 6px !important;
   font-size: 1rem !important;
 }
 
 .navbar {
-  background-color: #206A5D !important;
+  background-color: #13a41e !important;
 }
 
-.collapse{
-  background-color: #206A5D;
+.collapse {
+  background-color: #13a41e;
 }
 
-nav.shift ul li {
-  padding: 5px;
+nav ul {
+  list-style: none;
+  text-align: center;
 }
 
-nav.shift ul li a {
-  position: relative;
-  z-index: 1;
-  text-transform: uppercase;
-}
-nav.shift ul li a:hover {
-  border: 2px dashed white;
-  transition: 0.2s;
-}
-.active {
-  border: 2px dashed white;
-}
-nav.shift ul li a:after {
+nav ul li {
   display: inline-block;
-  position: absolute;
-  font-weight: bold;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  /*margin: auto;*/
+}
+
+nav {
   width: 100%;
-  height: 20px;
+  margin: 0 auto;
+  /* max-height: 90px; */
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  color: #3c8119;
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
   content: ".";
   color: transparent;
-  /* background: #58e953;*/
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
+  background: rgb(5, 88, 23);
+  height: 1px;
 }
-nav.shift ul li a:hover:after {
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #3c8119;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
   opacity: 1;
-  visibility: visible;
-  height: 100%;
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 102, 45);
+  }
 }
 
 .nav-img {
@@ -117,7 +188,6 @@ nav.shift ul li a:hover:after {
   margin-top: 0px;
   display: inline-block;
 }
-
 #webTitle {
   display: inline-block;
   font-size: 25px;
@@ -128,7 +198,7 @@ nav.shift ul li a:hover:after {
 .nav-link {
   color: white !important;
   font-size: 15px !important;
-    padding: 10px 15px 10px 15px !important;
+  padding: 10px 15px 10px 15px !important;
 }
 .current {
   background-color: rgba(0, 0, 0, 0.247);
@@ -146,32 +216,6 @@ nav.shift ul li a:hover:after {
 }
 .center {
   text-align: center;
-}
-
-.collapse .navbar-collapse {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.collapse .navbar-collapse a {
-  padding: 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  display: block;
-  font-family: sans-serif;
-  opacity: 0.8;
-  transition: 0.3s ease-in-out;
-}
-
-.collapse .navbar-collapse a:hover {
-  background-color: #ffc31e;
-  color: black;
-  opacity: 1;
-  transition: 0.8s;
 }
 
 .red {
@@ -356,7 +400,6 @@ footer h5 {
     margin-top: 150px;
     height: auto;
     width: 90%;
-    
   }
 
   .form-container {
