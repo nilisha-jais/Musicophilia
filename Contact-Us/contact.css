@@ -4,6 +4,17 @@
   color: white;
   font-family: "segoe ui";
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
@@ -15,6 +26,7 @@
   width: 10px;
   background-color: #1d1c1c;
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #fff;
@@ -35,7 +47,15 @@
 .container-sm,
 .container-xl,
 .container-xxl {
-  padding: 0px ;
+  padding: 10px !important;
+}
+
+.active {
+  background: rgb(5, 88, 23);
+}
+
+#myToggleBtn {
+  margin-right: 10%;
 }
 
 .navbar-light .navbar-toggler {
@@ -44,57 +64,122 @@
 
 .navbar-brand {
   margin-right: 0px;
+  margin-left: 2%;
 }
+
 .navbar-toggler {
   padding: 6px !important;
   font-size: 1rem !important;
 }
 
 .navbar {
-  background-color: green !important;
-}
-nav.shift ul li{
-    padding: 5px;
+  background-color: #13a41e !important;
 }
 
-nav.shift ul li a {
-  position:relative;
-  z-index: 1;
-    text-transform: uppercase;
-    
+.collapse {
+  background-color: #13a41e;
 }
-nav.shift ul li a:hover {
-  border: 2px solid white;
-    transition: 0.2s;
-    
-  
+
+nav ul {
+  list-style: none;
+  text-align: center;
 }
-.active {
-  border: 2px solid white;
-    
-}
-nav.shift ul li a:after {
+
+nav ul li {
   display: inline-block;
-  position: absolute;
-    font-weight: bold;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  /*margin: auto;*/
-  width: 100%;
-  height: 1px;
-  content: '.';
-  color: transparent;
- /* background: #58e953;*/
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
 }
-nav.shift ul li a:hover:after {
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  /* max-height: 90px; */
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  color: #3c8119;
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: rgb(5, 88, 23);
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #3c8119;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
   opacity: 1;
-  visibility: visible;
-  height: 100%;
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 102, 45);
+  }
 }
 
 .nav-img {
@@ -103,7 +188,6 @@ nav.shift ul li a:hover:after {
   margin-top: 0px;
   display: inline-block;
 }
-
 #webTitle {
   display: inline-block;
   font-size: 25px;
@@ -113,8 +197,8 @@ nav.shift ul li a:hover:after {
 
 .nav-link {
   color: white !important;
-  font-size: 18px !important;
-  padding: 13px 20px 13px 20px !important;
+  font-size: 15px !important;
+  padding: 10px 15px 10px 15px !important;
 }
 .current {
   background-color: rgba(0, 0, 0, 0.247);
@@ -172,6 +256,8 @@ input,
 textarea {
   color: grey;
   font-size: 12px;
+  background: #fffac6;
+  border-radius: 15px;
 }
 
 input,
@@ -185,12 +271,12 @@ textarea:focus {
 
 header {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(rgb(1, 41, 1),rgb(78, 77, 77),rgb(1, 41, 1));
- /* background: url("./black-silver-microphone-black-background.jpg")
+  height: auto;
+  background: linear-gradient(rgb(1, 41, 1), rgb(78, 77, 77), rgb(1, 41, 1));
+  /* background: url("./black-silver-microphone-black-background.jpg")
     no-repeat center center fixed; */
   background-size: cover;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 /*Social Media*/
@@ -209,11 +295,11 @@ header {
   background-color: white;
   border-radius: 50%;
 
- /*border: 5px solid #19911d;*/
+  /*border: 5px solid #19911d;*/
   margin: 0 8px;
   text-align: center;
   cursor: pointer;
- /* float: left;*/
+  /* float: left;*/
 
   transition: all 0.5s ease;
 }
@@ -236,7 +322,7 @@ header {
 a:hover .fa-instagram {
   color: rgba(0, 128, 0);
 
- /* text-shadow: 0 0 15px #ee570f;*/
+  /* text-shadow: 0 0 15px #ee570f;*/
 }
 .fa-facebook-f {
   color: rgba(0, 128, 0);
@@ -256,26 +342,26 @@ a:hover .fa-facebook-f {
 a:hover .fa-twitter {
   color: rgba(0, 128, 0);
 
- /*text-shadow: 0 0 15px #00aced;*/
+  /*text-shadow: 0 0 15px #00aced;*/
 }
- .centerdiv a:hover {
-      background-color: white;
-    
-  }
+.centerdiv a:hover {
+  background-color: white;
+}
 @keyframes glow {
   from {
-  text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 0 30px #9eff02;
-}
+    text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 0 30px #9eff02;
+  }
 
-to {
-  text-shadow:  0 0 10px #9eff02,0 0 20px #9eff02, 0 1 30px #9eff02;
-}
+  to {
+    text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 1 30px #9eff02;
+  }
 }
 footer {
   background: linear-gradient(90deg, green -60%, black 50%, green 160%);
   animation: glow 2s ease-in-out infinite alternate;
   text-align: center;
   width: 100%;
+  margin-top: auto;
 }
 .content span {
   font-size: 6rem;
@@ -305,26 +391,24 @@ footer h5 {
   padding-bottom: 10px;
 }
 
-@media (max-width: 700px) {
-
-  header{
+@media (max-width: 750px) {
+  header {
     height: auto;
   }
 
-  .container{
-    display: flex;
+  .container {
+    margin-top: 150px;
     height: auto;
     width: 90%;
-    flex-direction: column;
   }
 
-  .form-container{
+  .form-container {
     margin-top: 300px;
     position: relative;
     width: 100%;
   }
 
-  .overlay-container{
+  .overlay-container {
     position: absolute;
     top: 0;
     left: 0;

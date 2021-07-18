@@ -8,9 +8,9 @@ body {
   margin: 0px;
   font-family: "segoe ui";
   background: var(--bg-background);
-
   background-size: cover;
 }
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -20,6 +20,30 @@ html {
   --bg-panel: #0f0e0e;
   --color-headings: #0077ff;
   --color-text: #333333;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
+  background-color: #1d1c1c;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1d1c1c;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: -webkit-gradient(
+    linear,
+    40% 0%,
+    75% 84%,
+    from(#4d9c41),
+    to(#19911d),
+    color-stop(0.6, #54de5d)
+  );
 }
 
 html[data-theme="dark"] {
@@ -81,29 +105,6 @@ html.transition *:after {
   transition-delay: 0 !important;
 }
 
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(238, 234, 234, 0.205);
-  background-color: #1d1c1c;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: #1d1c1c;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #fff;
-  background-image: -webkit-gradient(
-    linear,
-    40% 0%,
-    75% 84%,
-    from(#4d9c41),
-    to(#19911d),
-    color-stop(0.6, #54de5d)
-  );
-}
-
 .container,
 .container-fluid,
 .container-lg,
@@ -111,61 +112,135 @@ html.transition *:after {
 .container-sm,
 .container-xl,
 .container-xxl {
-  padding: 0px !important;
+  padding: 10px !important;
 }
-.navbar-light .navbar-toggler {
-  margin: 4px;
+
+.active {
+  background: rgb(5, 88, 23);
 }
 
 .navbar-brand {
   margin-right: 0px;
+  margin-left: 2%;
 }
+
+#myToggleBtn {
+  margin-right: 10%;
+}
+
 .navbar-toggler {
   padding: 6px !important;
   font-size: 1rem !important;
 }
 
 .navbar {
-  background-color: green !important;
-}
-nav.shift ul li {
-  padding: 5px;
+  background-color: #13a41e !important;
 }
 
-nav.shift ul li a {
-  position: relative;
-  z-index: 1;
-  text-transform: uppercase;
+.collapse {
+  background-color: #13a41e;
 }
-nav.shift ul li a:hover {
-  border: 2px solid white;
-  transition: 0.2s;
+
+nav ul {
+  list-style: none;
+  text-align: center;
 }
-.active {
-  border: 2px solid white;
-}
-nav.shift ul li a:after {
+
+nav ul li {
   display: inline-block;
-  position: absolute;
-  font-weight: bold;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  /*margin: auto;*/
+}
+
+nav {
   width: 100%;
-  height: 1px;
+  margin: 0 auto;
+  max-height: fit-content;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  color: #3c8119;
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
   content: ".";
   color: transparent;
-  /* background: #58e953;*/
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
+  background: rgb(5, 88, 23);
+  height: 1px;
 }
-nav.shift ul li a:hover:after {
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #3c8119;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
   opacity: 1;
-  visibility: visible;
-  height: 100%;
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 102, 45);
+  }
 }
 
 .nav-img {
@@ -184,8 +259,8 @@ nav.shift ul li a:hover:after {
 
 .nav-link {
   color: white !important;
-  font-size: 18px !important;
-  padding: 13px 20px 13px 20px !important;
+  font-size: 15px !important;
+  padding: 10px 15px 10px 15px !important;
 }
 
 .current {
@@ -195,28 +270,36 @@ nav.shift ul li a:hover:after {
   font-weight: bold;
   border: solid 2px black;
 }
+
 .current:hover {
   transition: 0.3s !important;
   font-size: 20px !important;
   background-color: lightslategrey !important;
-
   border: solid 2px black !important;
   font-size: 18px !important;
 }
 
 hr {
-  border-width: 0px 0px 0px 0px !important;
+  margin: 20px auto auto;
+  width: 10%;
+  /* border-width: 0px 0px 0px 0px !important; */
+  border-width: 10px;
   height: 6px !important;
-
   background-image: linear-gradient(to right, #85e942, green);
-
-  margin: 0 !important;
   opacity: 0.51;
 }
 
 .main {
   padding: 24px;
-  margin-top: 40px;
+  margin-top: 80px;
+  /* border:6px  solid green; */
+  border-radius: 17px;
+  padding: 24px;
+  height: auto;
+  text-align: center;
+  /* box-shadow: 5px 5px 3px green; */
+  padding: 24px;
+  margin-top: 65px;
   /* border:6px  solid green; */
   border-radius: 17px;
   padding: 24px;
@@ -224,6 +307,7 @@ hr {
   text-align: center;
   /* box-shadow: 5px 5px 3px green; */
 }
+
 .container {
   display: flex;
   padding: 24px;
@@ -232,9 +316,9 @@ hr {
   flex-wrap: wrap;
   margin-top: 30px;
 }
+
 .content {
   padding: 1rem 0px;
-
   height: auto;
   width: 350px;
   transition: 0.3s;
@@ -246,17 +330,20 @@ hr {
   margin-bottom: 20px;
   /* margin-right: 20px; */
 }
+
 .heading {
   margin: 14px auto;
-
-  font-size: 35px;
-  font-family: "Chango", cursive;
+  font-size: 50px;
+  font-weight: 600;
+  /* font-family: "Dancing Script", cursive; */
 }
+
 .content:hover {
   border: 3px solid rgb(0, 128, 0);
   box-shadow: 5px 5px 10px 0 rgb(0, 128, 0);
-  transform: scale(1.03);
+  transform: scale(0.9);
 }
+
 .btn {
   font-weight: bold;
   border: none;
@@ -279,11 +366,8 @@ hr {
   transform: scale(1.1);
 }
 
-/* .alignment {
-  margin-top: 40px;s
-} */
-
 /*Social Media*/
+
 .centerdiv {
   font-size: larger;
   /* height: 100vh; */
@@ -291,6 +375,7 @@ hr {
   justify-content: center;
   align-items: center;
 }
+
 .centerdiv a {
   padding: 15px;
   height: 50px;
@@ -298,13 +383,11 @@ hr {
   font-size: 10px;
   background-color: white;
   border-radius: 50%;
-
   /*border: 5px solid #19911d;*/
   margin: 0 8px;
   text-align: center;
   cursor: pointer;
   /* float: left;*/
-
   transition: all 0.5s ease;
 }
 
@@ -315,22 +398,24 @@ hr {
   transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .centerdiv a:hover i {
   transition: all 0.5s ease;
   transform: scale(1.8);
 }
+
 .fa-instagram {
   color: rgba(0, 128, 0);
   transition: 0.4s;
 }
+
 a:hover .fa-instagram {
   color: rgba(0, 128, 0);
-
   /* text-shadow: 0 0 15px #ee570f;*/
 }
+
 .fa-facebook-f {
   color: rgba(0, 128, 0);
-
   transition: 0.4s;
 }
 
@@ -343,11 +428,12 @@ a:hover .fa-facebook-f {
   color: rgba(0, 128, 0);
   transition: 0.4s;
 }
+
 a:hover .fa-twitter {
   color: rgba(0, 128, 0);
-
   /*text-shadow: 0 0 15px #00aced;*/
 }
+
 .centerdiv a:hover {
   background-color: white;
 }
@@ -356,6 +442,7 @@ a:hover .fa-twitter {
   background-color: #00b712;
   background-image: linear-gradient(315deg, #63d471 10%, #5aff15 74%);
 }
+
 #box-1:hover {
   transition: all 250ms ease;
   background-image: linear-gradient(to right, #85e942, green);
@@ -365,16 +452,17 @@ a:hover .fa-twitter {
   from {
     text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 0 30px #9eff02;
   }
-
   to {
     text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 1 30px #9eff02;
   }
 }
+
 footer {
   background: linear-gradient(90deg, green -60%, black 50%, green 160%);
   animation: glow 2s ease-in-out infinite alternate;
   text-align: center;
 }
+
 .content span {
   font-size: 6rem;
 }
@@ -387,20 +475,22 @@ footer {
   .content span {
     font-size: 3rem;
   }
-
   .btn {
     font-size: 15px;
     padding: 8px 16px;
   }
 }
+
 footer > h2,
 p {
   margin: 7px;
 }
+
 footer h5 {
   margin-bottom: 0;
   padding-bottom: 10px;
 }
+
 /* Below styling is for go to the top button */
 
 #myBtn {
@@ -418,18 +508,23 @@ footer h5 {
   padding: 15px;
   border-radius: 50%;
 }
+
 #myBtn .fas {
   position: relative;
 }
+
 #myBtn:hover {
   background-color: rgb(39, 37, 37);
   transition: 0.5s;
 }
+
 #myBtn:hover .fas {
   transition: 0.5s;
   bottom: 5px;
 }
+
 /*For icon shaking*/
+
 @keyframes shakeit {
   0% {
     -webkit-transform: translate(2px, 1px) rotate(0deg);
@@ -465,6 +560,7 @@ footer h5 {
     -webkit-transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
 .girl {
   animation-name: shakeit;
   -webkit-animation-name: shakeit;
@@ -480,45 +576,177 @@ footer h5 {
 
 /* CSS for Pre-loader */
 
+/* CSS for Pre-loader */
+
 #preloader {
   width: 100%;
   height: 100vh;
-  background-color: #1b4203;
-  display: grid;
-  align-items: center;
-  place-items: center;
+  background: black;
   position: fixed;
   z-index: 9999;
+  top: 0;
 }
-.preloader-div {
-  width: 30rem;
-  height: 30rem;
-  position: relative;
+
+#preloader div {
+  height: 100vh;
+  background: black;
 }
-.rotator {
-  width: 30rem;
-  height: 30rem;
-  border-radius: 50%;
-  animation: rotator 1s linear infinite;
-  border-right: 3px solid #fff;
-}
-.preloader-img {
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 10%;
+  margin: auto;
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #fff;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  object-fit: cover;
+  z-index: 5;
 }
-@keyframes rotator {
+
+.lines {
+  width: 5px;
+  height: 20px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  background: #797979;
+  animation: animate 0.75s ease infinite;
+  box-shadow: 0 0 5px rgba(24, 138, 24, 0.25);
+}
+
+div .lines2 {
+  height: 24px;
+  animation: animate2 0.75s ease infinite;
+}
+
+.lines3 {
+  height: 26px;
+  animation: animate3 1s ease infinite;
+}
+
+.lines4 {
+  height: 34px;
+  animation: animate4 0.75s ease infinite;
+}
+
+.lines5 {
+  height: 28px;
+  animation: animate5 1s ease infinite;
+}
+
+.lines6 {
+  height: 30px;
+  animation: animate6 0.75s ease infinite;
+}
+
+.lines7 {
+  height: 45px;
+  animation: animate7 1s ease infinite;
+}
+
+@keyframes animate {
   0% {
-    transform: rotate(0deg);
+    height: 20px;
+    background: rgb(24, 138, 24);
+  }
+  50% {
+    height: 10px;
+    background: green;
   }
   100% {
-    transform: rotate(360deg);
+    height: 20px;
+    background: rgb(24, 138, 24);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    height: 12px;
+    background: green;
+  }
+  50% {
+    height: 24px;
+    background: rgb(24, 138, 24);
+  }
+  100% {
+    height: 12px;
+    background: green;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    height: 26px;
+    background: rgb(24, 138, 24);
+  }
+  50% {
+    height: 13px;
+    background: green;
+  }
+  100% {
+    height: 26px;
+    background: rgb(24, 138, 24);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    height: 34px;
+    background: green;
+  }
+  50% {
+    height: 17px;
+    background: rgb(24, 138, 24);
+  }
+  100% {
+    height: 34px;
+    background: green;
+  }
+}
+
+@keyframes animate5 {
+  0% {
+    height: 14px;
+    background: rgb(24, 138, 24);
+  }
+  50% {
+    height: 28px;
+    background: green;
+  }
+  100% {
+    height: 14px;
+    background: rgb(24, 138, 24);
+  }
+}
+
+@keyframes animate6 {
+  0% {
+    height: 30px;
+    background: green;
+  }
+  50% {
+    height: 15px;
+    background: rgb(24, 138, 24);
+  }
+  100% {
+    height: 30px;
+    background: green;
+  }
+}
+
+@keyframes animate7 {
+  0% {
+    height: 22.5px;
+    background: rgb(24, 138, 24);
+  }
+  50% {
+    height: 45px;
+    background: green;
+  }
+  100% {
+    height: 22.5px;
+    background: rgb(24, 138, 24);
   }
 }
 
@@ -526,10 +754,12 @@ footer h5 {
   background-color: transparent;
   width: 300px;
   height: 350px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
+
 .flip-card-inner {
   position: bottom;
   text-align: center;
@@ -538,34 +768,45 @@ footer h5 {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-card:hover .flip-card-inner {
   transform: rotateY(-180deg);
 }
 
 /* Position the front and back side */
+
+.flip-card-front h1 {
+  font-size: 35px;
+}
+
 .flip-card-front {
   position: absolute;
   margin-top: 116px;
   margin-left: 26px;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
+
 .flip-card-back {
   position: absolute;
   margin-top: 32px;
   margin-left: -21px;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
 
 /* Style the front side (fallback if image is missing) */
+
 .flip-card-front {
   align-items: center;
 }
+
 .flip-card-back {
   color: white;
   font-size: larger;
@@ -578,7 +819,7 @@ footer h5 {
   position: relative;
   top: 25%;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 30px;
 }
 
@@ -618,6 +859,7 @@ footer h5 {
   pointer-events: none;
   transition: all 0.4s;
 }
+
 .to-top:hover {
   color: green;
 }
