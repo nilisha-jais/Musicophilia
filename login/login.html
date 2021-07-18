@@ -53,7 +53,7 @@
 
     <div class="container" id="container">
   <div class="form-container sign-up-container">
-    <form action="#">
+    <form action="/" method="post">
       <h1 class="form-header" style='padding-top: 100px;'>Create Account</h1>
       <div class="social-container">
         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -61,16 +61,15 @@
         <a href="#" class="social"><i class="fab fa-twitter"></i></a>
       </div>
       <span>or use your email for registration</span>
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-
-      <input type="password" placeholder="Password" id="pass_signup"/>
+      <input type="text" name="name" placeholder="Name" />
+      <input type="email" name="email" placeholder="Email" />
+      <input type="password" name="password" placeholder="Password" id="pass_signup"/>
       <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-      <input type="password" placeholder="Confirm Password" id="pass_signup_conf"/>
+      <input type="password" name="confirmPassword" placeholder="Confirm Password" id="pass_signup_conf"/>
       <span toggle="#password-field" class="fa fa-fw fa-eye field-icon2 toggle-password2"></span>
 
       <div class="button">
-      <button id="btn">Sign Up</button>
+      <button type="submit" id="btn">Sign Up</button>
       <button id="btn1">Reset</button>
     </div>
     </form>
