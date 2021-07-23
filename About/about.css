@@ -423,6 +423,7 @@ nav.fill ul li a:hover:after {
 
 .centerdiv {
   font-size: larger;
+  margin-top: 50px;
   /* height: 100vh; */
   display: flex;
   justify-content: center;
