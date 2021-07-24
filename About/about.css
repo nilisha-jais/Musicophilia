@@ -631,4 +631,7 @@ footer h5 {
  .heading{
   font-size: 20px;
  }
+ .content {
+    overflow: hidden;
+}
 }
