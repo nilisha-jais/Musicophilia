@@ -618,3 +618,17 @@ footer h5 {
   margin-right: 50px;
   transform: rotateY(180deg);
 }
+
+@media (max-width: 360px){
+ .content{
+  display: block;
+ }
+ .heading{
+  font-size: 20px;
+ }
+}
+@media (max-width: 460px){
+ .heading{
+  font-size: 20px;
+ }
+}
