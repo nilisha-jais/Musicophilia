@@ -583,7 +583,12 @@ footer h5 {
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
+
+
 .flip-card-front {
   position: absolute;
   margin-top: 116px;
