@@ -872,3 +872,8 @@ div .lines2 {
   pointer-events: auto;
   opacity: 1;
 }
+
+/* df-messenger styling */
+df-messenger{
+  --df-messenger-button-titlebar-color: #03940f;
+}
