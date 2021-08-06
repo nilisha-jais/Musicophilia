@@ -63,14 +63,12 @@ a {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #fff;
-  background-image: -webkit-gradient(
-    linear,
-    40% 0%,
-    75% 84%,
-    from(#4d9c41),
-    to(#19911d),
-    color-stop(0.6, #54de5d)
-  );
+  background-image: -webkit-gradient(linear,
+      40% 0%,
+      75% 84%,
+      from(#4d9c41),
+      to(#19911d),
+      color-stop(0.6, #54de5d));
 }
 
 .container,
@@ -126,13 +124,16 @@ nav {
   width: 100%;
   margin: 0 auto;
 }
+
 nav ul {
   list-style: none;
   text-align: center;
 }
+
 nav ul li {
   display: inline-block;
 }
+
 nav ul li a {
   display: block;
   padding: 10px;
@@ -159,6 +160,7 @@ nav.stroke ul li a,
 nav.fill ul li a {
   position: relative;
 }
+
 nav.stroke ul li a:after,
 nav.fill ul li a:after {
   position: absolute;
@@ -172,6 +174,7 @@ nav.fill ul li a:after {
   background: rgb(5, 88, 23);
   height: 1px;
 }
+
 nav.stroke ul li a:hover:after {
   width: 100%;
 }
@@ -186,10 +189,12 @@ nav.fill ul li a:after {
   margin: 0;
   opacity: 0;
 }
+
 nav.fill ul li a:hover {
   color: #3c8119;
   z-index: 1;
 }
+
 nav.fill ul li a:hover:after {
   z-index: -10;
   animation: fill 1s forwards;
@@ -204,10 +209,12 @@ nav.fill ul li a:hover:after {
     width: 0%;
     height: 1px;
   }
+
   50% {
     width: 100%;
     height: 1px;
   }
+
   100% {
     width: 100%;
     height: 100%;
@@ -235,31 +242,6 @@ nav.fill ul li a:hover:after {
   padding: 10px 15px 10px 15px !important;
 }
 
-/* .collapse .navbar-collapse {
-	position: relative;
-	top: 25%;
-	width: 100%;
-	text-align: center;
-	margin-top: 30px;
-  }
-  
-  .collapse .navbar-collapse a {
-	padding: 16px;
-	text-decoration: none;
-	font-size: 18px;
-	color: white;
-	display: block;
-	font-family: sans-serif;
-	opacity: 0.8;
-	transition: 0.3s ease-in-out;
-  }
-  
-  .collapse .navbar-collapse a:hover {
-	background-color: #ffc31e;
-	color: black;
-	opacity: 1;
-	transition: 0.8s;
-  } */
 
 button {
   border-radius: 20px;
@@ -274,16 +256,19 @@ button {
   text-transform: uppercase;
   transition: transform 80ms ease-in;
 }
+
 #btn {
   background-size: 200% 100%;
   transition: background-position 0.5s, color 0.5s;
 }
+
 #btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   transform: translateY(1px);
   border: solid 2px white;
 }
+
 button:active {
   transform: scale(0.95);
 }
@@ -294,8 +279,6 @@ button.ghost {
 }
 
 form {
-  /* background-image: url("https://us.123rf.com/450wm/nveri/nveri1601/nveri160100050/50903400-colorful-music-background.jpg?ver=6");
-    background-size: cover; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -315,6 +298,7 @@ input {
   width: 100%;
   transition: all 0.5s;
 }
+
 input:focus {
   transition: 0.5s;
   border-bottom: 3.5px solid #2fd072;
@@ -327,6 +311,7 @@ input:focus {
   font-weight: bold;
   border: solid 2px black;
 }
+
 .current:hover {
   transition: 0.3s !important;
   font-size: 20px !important;
@@ -383,6 +368,7 @@ input:focus {
 }
 
 @keyframes show {
+
   0%,
   49.99% {
     opacity: 0;
@@ -506,7 +492,7 @@ a.social:hover {
 
 .field-icon1 {
   position: absolute;
-  top: 60.5%;
+  top: 65%;
   left: 81%;
   cursor: pointer;
   z-index: 2;
@@ -525,16 +511,19 @@ a.social:hover {
   font-size: 18px;
   background-image: linear-gradient(#fff 50%, #1976d3 50%);
 }
+
 .social-container a:nth-child(2) {
   color: #f44236;
   font-size: 18px;
   background-image: linear-gradient(#fff 50%, #f44236 50%);
 }
+
 .social-container a:nth-child(3) {
   color: #03a9f5;
   font-size: 18px;
   background-image: linear-gradient(#fff 50%, #03a9f5 50%);
 }
+
 .social-container a:hover {
   background-position: 0% 100%;
   color: #fff;
@@ -543,6 +532,7 @@ a.social:hover {
 ::placeholder {
   font-size: large;
 }
+
 .button {
   padding: 15px 0;
 }
@@ -557,6 +547,7 @@ a.social:hover {
   background-position: right bottom;
   color: #fff;
 }
+
 .btn2 {
   font-size: 14px;
 }
@@ -564,7 +555,6 @@ a.social:hover {
 /*Social Media*/
 .centerdiv {
   font-size: larger;
-  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -577,13 +567,9 @@ a.social:hover {
   font-size: 10px;
   background-color: white;
   border-radius: 50%;
-
-  /*border: 5px solid #19911d;*/
   margin: 0 8px;
   text-align: center;
   cursor: pointer;
-  /* float: left;*/
-
   transition: all 0.5s ease;
 }
 
@@ -594,19 +580,23 @@ a.social:hover {
   transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .centerdiv a:hover i {
   transition: all 0.5s ease;
   transform: scale(1.8);
 }
+
 .fa-instagram {
   color: rgba(0, 128, 0);
   transition: 0.4s;
 }
+
 a:hover .fa-instagram {
   color: rgba(0, 128, 0);
 
   /* text-shadow: 0 0 15px #ee570f;*/
 }
+
 .fa-facebook-f {
   color: rgba(0, 128, 0);
 
@@ -620,7 +610,6 @@ a:hover .fa-facebook-f {
 
 .fa-google-plus-g {
   color: #f44236;
-
   transition: 0.4s;
 }
 
@@ -633,14 +622,34 @@ a:hover .fa-google-plus-g {
   color: rgba(0, 128, 0);
   transition: 0.4s;
 }
+
 a:hover .fa-twitter {
   color: rgba(0, 128, 0);
 
   /*text-shadow: 0 0 15px #00aced;*/
 }
+
 .centerdiv a:hover {
   background-color: white;
 }
+
+
+.social-container .social > .social__facebook{
+  color: #1976d3;
+}
+.social-container .social > .social__facebook:hover{
+  color: #fff;
+  transition: 0;
+}
+.social-container .social > .social__twitter{
+  color: #03a9f5;
+}
+.social-container .social > .social__twitter:hover{
+color:#fff;
+}
+
+
+
 @keyframes glow {
   from {
     text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 0 30px #9eff02;
@@ -650,6 +659,7 @@ a:hover .fa-twitter {
     text-shadow: 0 0 10px #9eff02, 0 0 20px #9eff02, 0 1 30px #9eff02;
   }
 }
+
 footer {
   background: linear-gradient(90deg, green -60%, black 50%, green 160%);
   animation: glow 2s ease-in-out infinite alternate;
@@ -657,6 +667,7 @@ footer {
   width: 100%;
   margin-top: auto;
 }
+
 .content span {
   font-size: 6rem;
 }
@@ -666,6 +677,7 @@ footer {
     font-size: 0.8rem;
     overflow: auto;
   }
+
   .content span {
     font-size: 3rem;
   }
@@ -675,11 +687,13 @@ footer {
     padding: 8px 16px;
   }
 }
-footer > h2,
+
+footer>h2,
 p {
   margin: 7px;
   color: white;
 }
+
 footer h5 {
   margin-bottom: 0;
   padding-bottom: 10px;
