@@ -806,9 +806,6 @@ div .lines2 {
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(-180deg);
-  backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 /* Position the front and back side */
